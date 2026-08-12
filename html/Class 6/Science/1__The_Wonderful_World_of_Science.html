@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: The Wonderful World of Science - Cheat Sheet</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Patrick Hand', cursive;
+            background-color: #fefcf3;
+            background-image: 
+                linear-gradient(#e2e8f0 1.5px, transparent 1.5px),
+                linear-gradient(90deg, #e2e8f0 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+            color: #1e293b;
+            font-size: 1.15rem;
+            line-height: 1.35;
+        }
+
+        .hand-heading {
+            font-family: 'Kalam', cursive;
+        }
+
+        /* Hand-drawn sketchy box styles */
+        .sketch-card {
+            border: 2.5px solid #1e293b;
+            box-shadow: 4px 5px 0px #1e293b;
+            transition: all 0.2s ease;
+        }
+
+        .sketch-card-1 {
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        }
+
+        .sketch-card-2 {
+            border-radius: 15px 225px 15px 255px/255px 15px 225px 15px;
+        }
+
+        .sketch-card-3 {
+            border-radius: 20px 280px 20px 250px/250px 20px 280px 20px;
+        }
+
+        .sketch-pill {
+            border: 2px solid #1e293b;
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            box-shadow: 2px 3px 0px #1e293b;
+        }
+
+        .rot-left-1 { transform: rotate(-1deg); }
+        .rot-right-1 { transform: rotate(1deg); }
+        .rot-left-2 { transform: rotate(-1.8deg); }
+        .rot-right-2 { transform: rotate(1.8deg); }
+
+        .tape-effect {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-2deg);
+            width: 90px;
+            height: 24px;
+            background-color: rgba(243, 244, 246, 0.75);
+            border: 1px dashed #9ca3af;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .doodle-underline {
+            text-decoration: underline wavy #f59e0b 3px;
+        }
+    </style>
+</head>
+<body class="p-3 md:p-6 min-h-screen">
+
+    <!-- Header Section -->
+    <header class="max-w-7xl mx-auto mb-6 relative">
+        <div class="sketch-card sketch-card-1 bg-amber-100 p-4 md:p-6 text-center relative rot-left-1">
+            <div class="tape-effect"></div>
+            <div class="flex flex-wrap justify-between items-center mb-1">
+                <span class="sketch-pill bg-white px-3 py-0.5 text-sm font-bold tracking-wide">
+                    <i class="fa-solid fa-book-open text-amber-600 mr-1"></i> GRADE 6 SCIENCE
+                </span>
+                <span class="sketch-pill bg-amber-200 px-3 py-0.5 text-sm font-bold">
+                    <i class="fa-solid fa-brain text-purple-600 mr-1"></i> CURIOSITY CHAPTER 1
+                </span>
+            </div>
+            <h1 class="hand-heading text-3xl md:text-5xl font-bold text-slate-900 my-1">
+                <i class="fa-solid fa-earth-americas text-teal-600 mr-2"></i>
+                1. The Wonderful World of Science
+                <i class="fa-solid fa-flask text-indigo-600 ml-2"></i>
+            </h1>
+            <p class="text-slate-700 text-lg md:text-xl max-w-3xl mx-auto italic">
+                "Science is a way of thinking, observing, and doing things to understand the world and uncover the secrets of the universe!"
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- CARD 1: WHAT IS SCIENCE? -->
+        <section class="sketch-card sketch-card-2 bg-yellow-50 p-5 relative rot-right-1 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between border-b-2 border-slate-800 pb-2 mb-3">
+                    <h2 class="hand-heading text-2xl font-bold text-amber-900">
+                        <i class="fa-solid fa-lightbulb text-amber-500 mr-2"></i>What is Science?
+                    </h2>
+                    <span class="text-2xl">&quest;</span>
+                </div>
+                <ul class="space-span-2 space-y-2">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-star text-amber-500 mt-1 mr-2 text-sm"></i>
+                        <span><strong>The Core Engine:</strong> It all starts with <strong>Curiosity</strong> &mdash; asking <em>Why?</em> and <em>How?</em></span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-puzzle-piece text-amber-600 mt-1 mr-2 text-sm"></i>
+                        <span><strong>The Jigsaw Puzzle Analogy:</strong> Science is like a giant unending puzzle. Every discovery adds a piece.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-rotate-left text-amber-700 mt-1 mr-2 text-sm"></i>
+                        <span><strong>Self-Correcting:</strong> Sometimes a piece was put in the wrong place. New discoveries change our understanding!</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-4 bg-amber-200/60 p-3 sketch-pill text-center">
+                <p class="font-bold text-slate-800">
+                    <i class="fa-solid fa-magnifying-glass mr-1"></i> Science = Observing + Wondering + Doing!
+                </p>
+            </div>
+        </section>
+
+        <!-- CARD 2: THE SCIENTIFIC METHOD (SPAN 2 COLS ON LG) -->
+        <section class="sketch-card sketch-card-1 bg-sky-50 p-5 relative rot-left-1 lg:col-span-2 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between border-b-2 border-slate-800 pb-2 mb-3">
+                    <h2 class="hand-heading text-2xl font-bold text-sky-900">
+                        <i class="fa-solid fa-diagram-project text-sky-600 mr-2"></i>The Scientific Method (Step-by-Step)
+                    </h2>
+                    <span class="sketch-pill bg-sky-200 text-xs px-2 py-1 font-bold">5 STEPS</span>
+                </div>
+                <p class="mb-3 text-slate-700">Science is not just memorizing facts &mdash; it is a systematic process to solve mysteries:</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-5 gap-2 text-center text-sm font-bold">
+                    <div class="bg-blue-100 p-2 sketch-pill flex flex-col items-center justify-center">
+                        <span class="text-sky-700 text-base">1. Observe</span>
+                        <i class="fa-solid fa-eye text-sky-600 my-1"></i>
+                        <span class="text-xs font-normal">Notice something interesting or odd.</span>
+                    </div>
+                    <div class="bg-sky-100 p-2 sketch-pill flex flex-col items-center justify-center">
+                        <span class="text-sky-700 text-base">2. Question</span>
+                        <i class="fa-solid fa-circle-question text-sky-600 my-1"></i>
+                        <span class="text-xs font-normal">Ask why or how it happens.</span>
+                    </div>
+                    <div class="bg-indigo-100 p-2 sketch-pill flex flex-col items-center justify-center">
+                        <span class="text-indigo-700 text-base">3. Guess</span>
+                        <i class="fa-solid fa-lightbulb text-indigo-600 my-1"></i>
+                        <span class="text-xs font-normal">Form a possible answer (Hypothesis).</span>
+                    </div>
+                    <div class="bg-teal-100 p-2 sketch-pill flex flex-col items-center justify-center">
+                        <span class="text-teal-700 text-base">4. Test</span>
+                        <i class="fa-solid fa-vial text-teal-600 my-1"></i>
+                        <span class="text-xs font-normal">Perform experiments or observation.</span>
+                    </div>
+                    <div class="bg-emerald-100 p-2 sketch-pill flex flex-col items-center justify-center">
+                        <span class="text-emerald-700 text-base">5. Analyze</span>
+                        <i class="fa-solid fa-square-check text-emerald-600 my-1"></i>
+                        <span class="text-xs font-normal">Check if results answer the question!</span>
+                    </div>
+                </div>
+
+                <!-- Case Study Box -->
+                <div class="mt-4 bg-white p-3 sketch-pill border-dashed border-2 border-sky-400">
+                    <span class="font-bold text-sky-900 block mb-1">
+                        <i class="fa-solid fa-pen-ruler mr-1 text-amber-600"></i> Example: "Why did my pen stop writing?"
+                    </span>
+                    <div class="text-xs md:text-sm text-slate-700 space-y-1">
+                        <p>&bull; <strong>Observation:</strong> Pen stopped writing. &rarr; <strong>Guess 1:</strong> Ink is finished.</p>
+                        <p>&bull; <strong>Test 1:</strong> Open pen & check refill. Refill is full! Guess 1 was wrong!</p>
+                        <p>&bull; <strong>Guess 2:</strong> Ink has dried at the tip. &rarr; <strong>Test 2:</strong> Scribble on rough paper or warm tip &rarr; It works!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARD 3: EVERYONE IS A SCIENTIST! -->
+        <section class="sketch-card sketch-card-3 bg-emerald-50 p-5 relative rot-right-2">
+            <div class="flex items-center justify-between border-b-2 border-slate-800 pb-2 mb-3">
+                <h2 class="hand-heading text-2xl font-bold text-emerald-900">
+                    <i class="fa-solid fa-user-astronaut text-emerald-600 mr-2"></i>Everyday Scientists
+                </h2>
+                <i class="fa-solid fa-people-group text-emerald-600 text-xl"></i>
+            </div>
+            <p class="text-slate-700 mb-3">You don't need a lab coat! Anyone using the scientific method is working like a scientist:</p>
+            <ul class="space-y-2 text-sm md:text-base">
+                <li class="bg-white p-2 sketch-pill flex items-center">
+                    <i class="fa-solid fa-utensils text-orange-500 text-lg w-8 text-center mr-2"></i>
+                    <span><strong>The Cook:</strong> <em>"Why did the dal spill out of the pressure cooker? Was there too much water?"</em></span>
+                </li>
+                <li class="bg-white p-2 sketch-pill flex items-center">
+                    <i class="fa-solid fa-bicycle text-blue-500 text-lg w-8 text-center mr-2"></i>
+                    <span><strong>Cycle Mechanic:</strong> <em>"Why is the tyre flat? Where is the air leaking from?"</em></span>
+                </li>
+                <li class="bg-white p-2 sketch-pill flex items-center">
+                    <i class="fa-solid fa-plug text-yellow-600 text-lg w-8 text-center mr-2"></i>
+                    <span><strong>Electrician:</strong> <em>"Why is the light bulb not working? Is it the bulb or the switch?"</em></span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- CARD 4: WHAT WILL WE EXPLORE? (THE DOMAINS) -->
+        <section class="sketch-card sketch-card-1 bg-rose-50 p-5 relative rot-left-2">
+            <div class="flex items-center justify-between border-b-2 border-slate-800 pb-2 mb-3">
+                <h2 class="hand-heading text-2xl font-bold text-rose-900">
+                    <i class="fa-solid fa-compass-drafting text-rose-600 mr-2"></i>What We Explore
+                </h2>
+                <i class="fa-solid fa-microscope text-rose-600 text-xl"></i>
+            </div>
+            <div class="space-y-2 text-sm md:text-base">
+                <div class="flex items-start">
+                    <span class="bg-rose-200 sketch-pill px-2 py-0.5 text-xs font-bold mr-2 mt-1">NATURE</span>
+                    <span><strong>Living World:</strong> Seed &rarr; Plant growth, Caterpillar &rarr; Butterfly, Animal life.</span>
+                </div>
+                <div class="flex items-start">
+                    <span class="bg-amber-200 sketch-pill px-2 py-0.5 text-xs font-bold mr-2 mt-1">FOOD</span>
+                    <span><strong>Food & Nutrition:</strong> Tasty cuisines across India & what materials make them up.</span>
+                </div>
+                <div class="flex items-start">
+                    <span class="bg-blue-200 sketch-pill px-2 py-0.5 text-xs font-bold mr-2 mt-1">PHYSICS</span>
+                    <span><strong>Water & Temperature:</strong> Rain, freezing &rarr; ice, boiling &rarr; steam, hot vs. cold, fever.</span>
+                </div>
+                <div class="flex items-start">
+                    <span class="bg-purple-200 sketch-pill px-2 py-0.5 text-xs font-bold mr-2 mt-1">MATTER</span>
+                    <span><strong>Materials Around Us:</strong> Paper, metal key, plastic ruler, rubber eraser, magnets & separation.</span>
+                </div>
+                <div class="flex items-start">
+                    <span class="bg-indigo-200 sketch-pill px-2 py-0.5 text-xs font-bold mr-2 mt-1">SPACE</span>
+                    <span><strong>Beyond Earth:</strong> Sun, Moon, Stars, Galaxies, Deserts, Oceans & Mountains.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARD 5: GOLDEN RULES & TAKEAWAYS -->
+        <section class="sketch-card sketch-card-2 bg-purple-50 p-5 relative rot-right-1 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between border-b-2 border-slate-800 pb-2 mb-3">
+                    <h2 class="hand-heading text-2xl font-bold text-purple-900">
+                        <i class="fa-solid fa-key text-purple-600 mr-2"></i>Golden Rules of Science
+                    </h2>
+                    <i class="fa-solid fa-award text-purple-600 text-xl"></i>
+                </div>
+
+                <div class="bg-purple-200/70 p-3 sketch-pill mb-3 text-center">
+                    <p class="text-purple-950 font-bold text-lg">
+                        <i class="fa-solid fa-quote-left text-purple-500 mr-1"></i>
+                        To be a wise person, you must be a "WHYS" person!
+                        <i class="fa-solid fa-quote-right text-purple-500 ml-1"></i>
+                    </p>
+                </div>
+
+                <ul class="space-y-2 text-sm md:text-base">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-users text-purple-600 mt-1 mr-2"></i>
+                        <span><strong>Teamwork:</strong> Science is rarely done alone! Scientists across the world work together in large teams.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-road text-purple-600 mt-1 mr-2"></i>
+                        <span><strong>Long Journey:</strong> You won't find all answers in Grade 6. It is a 5-year journey and beyond!</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-heart text-rose-500 mt-1 mr-2"></i>
+                        <span><strong>Never Stop Wondering:</strong> Keep exploring, keep asking questions, and enjoy the adventure!</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mt-4 pt-2 border-t border-slate-300 text-center text-xs text-slate-500">
+                <span>Summary Cheat Sheet &bull; Grade 6 Science &bull; Curiosity Ch. 1</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Dynamic Export Button Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '1._The_Wonderful_World_of_Science.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

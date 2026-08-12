@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Notes Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fef9c3;
+            background-image: linear-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 100% 2rem;
+            font-family: 'Patrick Hand', cursive;
+            line-height: 2rem;
+            padding-top: 4px;
+        }
+        .doodly-card {
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            border: 2px solid #334155;
+            box-shadow: 4px 4px 0px #94a3b8;
+            transition: transform 0.2s, box-shadow 0.2s;
+            background: #ffffff;
+        }
+        .doodly-card:hover {
+            transform: translate(-2px, -2px) rotate(-1deg);
+            box-shadow: 6px 6px 0px #64748b;
+        }
+    </style>
+</head>
+<body class="text-slate-800 p-8">
+    <div class="max-w-7xl mx-auto">
+        <header class="mb-12 border-b-4 border-slate-700 pb-4" style="border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;">
+            <h1 class="text-6xl font-bold text-slate-900 tracking-tight ml-4">My Cheat Sheets</h1>
+        </header>
+<div class="mb-12"><h2 class="text-5xl font-bold mb-6 text-blue-800 underline decoration-wavy">Class 6</h2><h3 class="text-4xl font-semibold mb-6 text-rose-700 ml-4 border-l-4 border-rose-500 pl-3">Science</h3><div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10 pl-4">
+                <div class="doodly-card flex flex-col overflow-hidden">
+                    <div class="w-full h-48 border-b-2 border-slate-700 bg-slate-50 overflow-hidden relative">
+                        <iframe src="./html/Class%206/Science/1__The_Wonderful_World_of_Science.html" style="width: 400%; height: 800px; transform: scale(0.25); transform-origin: 0 0; border: none; pointer-events: none;" scrolling="no" loading="lazy" tabindex="-1"></iframe>
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <h4 class="font-bold text-2xl mb-4 leading-tight">1  The Wonderful World Of Science</h4>
+                        <a href="./html/Class%206/Science/1__The_Wonderful_World_of_Science.html" target="_blank" class="w-full text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-2 rounded-lg transition-colors font-sans tracking-wide">Open Cheat Sheet</a>
+                    </div>
+                </div>
+                
+                <div class="doodly-card flex flex-col overflow-hidden">
+                    <div class="w-full h-48 border-b-2 border-slate-700 bg-slate-50 overflow-hidden relative">
+                        <iframe src="./html/Class%206/Science/2__Diversity_in_the_Living_World.html" style="width: 400%; height: 800px; transform: scale(0.25); transform-origin: 0 0; border: none; pointer-events: none;" scrolling="no" loading="lazy" tabindex="-1"></iframe>
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col justify-between">
+                        <h4 class="font-bold text-2xl mb-4 leading-tight">2  Diversity In The Living World</h4>
+                        <a href="./html/Class%206/Science/2__Diversity_in_the_Living_World.html" target="_blank" class="w-full text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-2 rounded-lg transition-colors font-sans tracking-wide">Open Cheat Sheet</a>
+                    </div>
+                </div>
+                </div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diversity in the Living World - Cheat Sheet</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Patrick Hand & Kalam -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Patrick Hand', 'Kalam', cursive, sans-serif;
+            background-color: #fdfbf7;
+            background-image: 
+                linear-gradient(#e2e8f0 1.5px, transparent 1.5px),
+                linear-gradient(90deg, #e2e8f0 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+            color: #1e293b;
+            font-size: 1.1rem;
+            line-height: 1.3;
+        }
+        
+        .notebook-margin {
+            border-left: 3px double #f87171;
+        }
+
+        .doodle-card {
+            background-color: #ffffff;
+            border: 2.5px solid #0f172a;
+            box-shadow: 4px 4px 0px #0f172a;
+            border-radius: 14px;
+            transition: transform 0.2s ease;
+        }
+
+        .doodle-card:hover {
+            transform: translateY(-2px) scale(1.005);
+        }
+
+        .doodle-badge {
+            border: 2px solid #0f172a;
+            box-shadow: 2px 2px 0px #0f172a;
+        }
+
+        .tape-effect {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-2deg);
+            width: 110px;
+            height: 26px;
+            background-color: rgba(254, 240, 138, 0.75);
+            border: 1px dashed #ca8a04;
+            z-index: 10;
+        }
+
+        .highlight-yellow {
+            background: linear-gradient(120deg, rgba(254, 240, 138, 0.8) 0%, rgba(254, 240, 138, 0.8) 100%);
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+
+        .highlight-green {
+            background: linear-gradient(120deg, rgba(187, 247, 208, 0.8) 0%, rgba(187, 247, 208, 0.8) 100%);
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+
+        .highlight-pink {
+            background: linear-gradient(120deg, rgba(251, 207, 232, 0.8) 0%, rgba(251, 207, 232, 0.8) 100%);
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+
+        .highlight-blue {
+            background: linear-gradient(120deg, rgba(186, 230, 253, 0.8) 0%, rgba(186, 230, 253, 0.8) 100%);
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="p-3 md:p-6 min-h-screen">
+
+    <!-- MAIN CONTAINER -->
+    <div class="max-w-7xl mx-auto notebook-margin pl-3 md:pl-6">
+        
+        <!-- HEADER BANNER -->
+        <header class="relative doodle-card p-4 md:p-6 mb-6 bg-amber-50 text-center transform rotate-[-0.5deg]">
+            <div class="tape-effect"></div>
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b-2 border-slate-800 pb-3 mb-3">
+                <span class="doodle-badge bg-emerald-300 text-slate-900 font-bold px-3 py-1 rounded-lg text-sm">
+                    <i class="fa-solid fa-book-bookmark mr-1"></i> Class 6 Science • Chapter 2
+                </span>
+                <h1 class="text-3xl md:text-5xl font-extrabold tracking-wide text-emerald-900 font-['Kalam']">
+                    🌿 DIVERSITY IN THE LIVING WORLD 🐾
+                </h1>
+                <span class="doodle-badge bg-amber-300 text-slate-900 font-bold px-3 py-1 rounded-lg text-sm">
+                    <i class="fa-solid fa-bolt mr-1"></i> Quick Revision Sheet
+                </span>
+            </div>
+            <p class="text-slate-700 font-semibold text-lg max-w-4xl mx-auto">
+                "Trees stand in the Sun and give shade to others... Likewise, good people bear all hardships and bring welfare to others." 
+                <span class="italic text-emerald-700">(Subhashita)</span>
+            </p>
+        </header>
+
+        <!-- DENSE GRID LAYOUT -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+            <!-- CARD 1: WHAT IS BIODIVERSITY? -->
+            <div class="doodle-card p-4 bg-emerald-50/60 transform rotate-[0.3deg] relative">
+                <div class="flex items-center gap-2 border-b-2 border-slate-800 pb-2 mb-3">
+                    <i class="fa-solid fa-globe text-emerald-600 text-2xl"></i>
+                    <h2 class="text-2xl font-bold text-slate-800">1. Biodiversity & Grouping</h2>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-slate-800">
+                        <strong class="highlight-yellow">Biodiversity:</strong> The variety of plants and animals found in a particular region.
+                    </p>
+                    <div class="p-2.5 bg-white rounded-lg border border-slate-800">
+                        <p class="font-bold text-emerald-800"><i class="fa-solid fa-boxes-stacked mr-1"></i> Why Group Organisms?</p>
+                        <p class="text-sm text-slate-700">Grouping makes it easier to study plants & animals based on their <strong class="text-emerald-700">similarities</strong> and <strong class="text-rose-600">differences</strong>.</p>
+                    </div>
+                    <ul class="list-disc list-inside text-sm space-y-1 font-semibold text-slate-700">
+                        <li>Plants & animals depend on each other for food, shelter, seed dispersal & survival!</li>
+                        <li>Criteria for grouping: Height, stem, leaves, flowers, seeds, habitat, movement.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CARD 2: PLANT CLASSIFICATION (STEM & HEIGHT) -->
+            <div class="doodle-card p-4 bg-amber-50/60 transform rotate-[-0.4deg]">
+                <div class="flex items-center gap-2 border-b-2 border-slate-800 pb-2 mb-3">
+                    <i class="fa-solid fa-tree text-amber-700 text-2xl"></i>
+                    <h2 class="text-2xl font-bold text-slate-800">2. Plant Types (Stem & Height)</h2>
+                </div>
+                <div class="space-y-2 text-sm">
+                    <div class="p-2 bg-emerald-100 rounded-lg border border-slate-800">
+                        <div class="flex justify-between items-center"><strong class="text-base text-emerald-900">🌿 Herbs</strong> <span class="text-xs bg-emerald-300 px-2 py-0.5 rounded border border-slate-800">Short</span></div>
+                        <p>Soft & tender green stem; thin & easy to bend.</p>
+                        <p class="text-xs font-bold text-slate-600">e.g., Tomato, Grass, Mustard</p>
+                    </div>
+                    <div class="p-2 bg-rose-100 rounded-lg border border-slate-800">
+                        <div class="flex justify-between items-center"><strong class="text-base text-rose-900">🪴 Shrubs</strong> <span class="text-xs bg-rose-300 px-2 py-0.5 rounded border border-slate-800">Medium</span></div>
+                        <p>Hard, thin woody stem; branches arise close to ground.</p>
+                        <p class="text-xs font-bold text-slate-600">e.g., Rose, Hibiscus, Tulsi</p>
+                    </div>
+                    <div class="p-2 bg-amber-100 rounded-lg border border-slate-800">
+                        <div class="flex justify-between items-center"><strong class="text-base text-amber-900">🌳 Trees</strong> <span class="text-xs bg-amber-300 px-2 py-0.5 rounded border border-slate-800">Tall</span></div>
+                        <p>Hard, thick & brown woody stem (trunk); branches start high up.</p>
+                        <p class="text-xs font-bold text-slate-600">e.g., Mango, Neem, Deodar</p>
+                    </div>
+                    <div class="p-2 bg-blue-50 rounded-lg border border-slate-800 flex justify-between gap-2 text-xs">
+                        <div><strong>Climbers:</strong> Weak stem, needs support to climb (e.g., Pea).</div>
+                        <div><strong>Creepers:</strong> Spread horizontally on ground (e.g., Pumpkin).</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3: THE GOLDEN DICOT VS MONOCOT RULE -->
+            <div class="doodle-card p-4 bg-sky-50/70 md:col-span-2 lg:col-span-1 transform rotate-[0.5deg]">
+                <div class="flex items-center gap-2 border-b-2 border-slate-800 pb-2 mb-3">
+                    <i class="fa-solid fa-leaf text-sky-600 text-2xl"></i>
+                    <h2 class="text-2xl font-bold text-slate-800">3. Leaf Venation & Roots</h2>
+                </div>
+                <div class="space-y-3">
+                    <p class="text-xs text-slate-600 font-bold uppercase tracking-wider">Pattern of veins = Venation</p>
+                    
+                    <!-- Reticulate vs Parallel -->
+                    <div class="grid grid-cols-2 gap-2 text-xs">
+                        <div class="p-2 bg-white rounded-lg border border-slate-800">
+                            <strong class="text-sm text-rose-700 block mb-1">🕸️ Reticulate Venation</strong>
+                            <p>Net-like vein pattern on both sides of main vein.</p>
+                            <p class="mt-1 font-bold text-slate-700">Leaves: Hibiscus, Rose, Sadabahar</p>
+                        </div>
+                        <div class="p-2 bg-white rounded-lg border border-slate-800">
+                            <strong class="text-sm text-sky-700 block mb-1">║ Parallel Venation</strong>
+                            <p>Veins run parallel to each other.</p>
+                            <p class="mt-1 font-bold text-slate-700">Leaves: Banana, Grass, Lemongrass</p>
+                        </div>
+                    </div>
+
+                    <!-- Taproot vs Fibrous -->
+                    <div class="grid grid-cols-2 gap-2 text-xs">
+                        <div class="p-2 bg-white rounded-lg border border-slate-800">
+                            <strong class="text-sm text-amber-800 block mb-1">🥕 Taproot System</strong>
+                            <p>1 main primary root with smaller lateral side roots.</p>
+                            <p class="mt-1 font-bold text-slate-700">Roots: Mustard, Chickpea (Chana)</p>
+                        </div>
+                        <div class="p-2 bg-white rounded-lg border border-slate-800">
+                            <strong class="text-sm text-emerald-800 block mb-1">🌾 Fibrous Root System</strong>
+                            <p>Bunch of thin, equal-sized roots from stem base.</p>
+                            <p class="mt-1 font-bold text-slate-700">Roots: Grass, Wheat, Maize</p>
+                        </div>
+                    </div>
+
+                    <!-- GOLDEN LINK BOX -->
+                    <div class="p-2.5 bg-yellow-200/90 rounded-lg border-2 border-slate-900 font-bold text-xs text-center">
+                        🔥 THE ULTIMATE PLANT MATCHING RULE 🔥
+                        <div class="grid grid-cols-2 gap-1 mt-1 text-slate-900 font-black">
+                            <div class="bg-white p-1 rounded border border-slate-800">
+                                DICOT = 2 Cotyledons<br>&rarr; Reticulate + Taproot
+                            </div>
+                            <div class="bg-white p-1 rounded border border-slate-800">
+                                MONOCOT = 1 Cotyledon<br>&rarr; Parallel + Fibrous Root
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4: ANIMAL GROUPS & MOVEMENTS -->
+            <div class="doodle-card p-4 bg-orange-50/60 transform rotate-[-0.3deg]">
+                <div class="flex items-center gap-2 border-b-2 border-slate-800 pb-2 mb-3">
+                    <i class="fa-solid fa-paw text-orange-600 text-2xl"></i>
+                    <h2 class="text-2xl font-bold text-slate-800">4. Animal Grouping & Movements</h2>
+                </div>
+                <div class="space-y-2 text-sm">
+                    <p class="text-slate-800">Animals are grouped based on <strong class="highlight-pink">movement type</strong>, body parts used, habitat & eating habits.</p>
+                    
+                    <table class="w-full text-xs text-left border-collapse border border-slate-800 bg-white">
+                        <thead>
+                            <tr class="bg-orange-200 text-slate-900 font-bold border-b border-slate-800">
+                                <th class="p-1 border.r border-slate-800">Animal</th>
+                                <th class="p-1 border-r border-slate-800">Movement</th>
+                                <th class="p-1">Body Parts Used</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800">
+                            <tr>
+                                <td class="p-1 font-bold">Fish</td>
+                                <td class="p-1">Swims</td>
+                                <td class="p-1">Fins & Streamlined body</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 font-bold">Goat / Cow</td>
+                                <td class="p-1">Walks / Runs</td>
+                                <td class="p-1">Legs & Hooves</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 font-bold">Pigeon / Bird</td>
+                                <td class="p-1">Flies / Walks</td>
+                                <td class="p-1">Wings & Legs</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 font-bold">Frog</td>
+                                <td class="p-1">Jumps / Swims</td>
+                                <td class="p-1">Hind legs (Amphibian!)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="p-2 bg-emerald-100 rounded-lg border border-slate-800 text-xs">
+                        <strong>🐸 Amphibians:</strong> Animals that can live comfortably both in water and on land (e.g., Frogs).
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5: ADAPTATIONS: HOT VS COLD DESERT CAMELS -->
+            <div class="doodle-card p-4 bg-yellow-50/70 md:col-span-2 lg:col-span-2 transform rotate-[0.2deg]">
+                <div class="flex items-center gap-2 border-b-2 border-slate-800 pb-2 mb-2">
+                    <i class="fa-solid fa-mountain-sun text-amber-600 text-2xl"></i>
+                    <h2 class="text-2xl font-bold text-slate-800">5. Habitat & Adaptations (Desert vs Mountain)</h2>
+                </div>
+                <p class="text-sm text-slate-800 mb-2">
+                    <strong class="highlight-yellow">Habitat:</strong> The place where plants/animals live (provides food, water, air, shelter).<br>
+                    <strong class="highlight-green">Adaptations:</strong> Special features that enable organisms to survive in their surroundings.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                    <!-- HOT DESERT -->
+                    <div class="p-2.5 bg-amber-100/80 rounded-lg border border-slate-800">
+                        <h3 class="font-bold text-sm text-amber-900 flex items-center gap-1 mb-1">
+                            <i class="fa-solid fa-sun text-amber-600"></i> Hot Desert Camel (Rajasthan)
+                        </h3>
+                        <ul class="list-disc list-inside space-y-1 text-slate-800">
+                            <li><strong class="text-amber-900">Long legs & wide hooves:</strong> Walk on hot sand without sinking or gaining ground heat.</li>
+                            <li><strong class="text-amber-900">1 Hump:</strong> Stores fat for food scarcity.</li>
+                            <li><strong class="text-amber-900">Water Conservation:</strong> Excretes tiny urine, dry dung, does NOT sweat!</li>
+                        </ul>
+                    </div>
+
+                    <!-- COLD DESERT -->
+                    <div class="p-2.5 bg-sky-100/80 rounded-lg border border-slate-800">
+                        <h3 class="font-bold text-sm text-sky-900 flex items-center gap-1 mb-1">
+                            <i class="fa-solid fa-snowflake text-sky-600"></i> Cold Desert Camel (Ladakh)
+                        </h3>
+                        <ul class="list-disc list-inside space-y-1 text-slate-800">
+                            <li><strong class="text-sky-900">Shorter legs:</strong> Walk easily in rocky/mountainous terrain.</li>
+                            <li><strong class="text-sky-900">2 Humps:</strong> Shrink in late winter as stored fat is consumed.</li>
+                            <li><strong class="text-sky-900">Long hair/fur:</strong> Thick coat protects from extreme cold.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 mt-2 text-xs">
+                    <div class="p-2 bg-white rounded border border-slate-800">
+                        <strong class="text-emerald-800">🌵 Cactus (Desert Plant):</strong> Thick fleshy stems store water; green stem does photosynthesis.
+                    </div>
+                    <div class="p-2 bg-white rounded border border-slate-800">
+                        <strong class="text-emerald-800">🌲 Deodar Tree (Mountains):</strong> Conical shape + sloping branches let heavy snow slide off easily.
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 6: SCIENTISTS & BIODIVERSITY HEROES -->
+            <div class="doodle-card p-4 bg-purple-50/60 transform rotate-[-0.4deg]">
+                <div class="flex items-center gap-2 border-b-2 border-slate-800 pb-2 mb-3">
+                    <i class="fa-solid fa-user-ninja text-purple-700 text-2xl"></i>
+                    <h2 class="text-2xl font-bold text-slate-800">6. Famous Indian Scientists</h2>
+                </div>
+                <div class="space-y-3 text-xs">
+                    <!-- JANAKI AMMAL -->
+                    <div class="p-2.5 bg-white rounded-lg border border-slate-800">
+                        <div class="flex items-center justify-between font-bold text-sm text-purple-900 mb-1">
+                            <span>👩‍🔬 Dr. E.K. Janaki Ammal</span>
+                            <span class="text-[10px] bg-purple-200 px-1.5 py-0.5 rounded">Botanist</span>
+                        </div>
+                        <ul class="list-disc list-inside space-y-0.5 text-slate-700">
+                            <li>Documented & preserved India's rich plant biodiversity.</li>
+                            <li>Key leader in <strong class="text-purple-800">'Save Silent Valley'</strong> movement.</li>
+                            <li>Head of the Botanical Survey of India (BSI).</li>
+                        </ul>
+                    </div>
+
+                    <!-- SALIM ALI -->
+                    <div class="p-2.5 bg-white rounded-lg border border-slate-800">
+                        <div class="flex items-center justify-between font-bold text-sm text-emerald-900 mb-1">
+                            <span>🦅 Dr. Salim Ali</span>
+                            <span class="text-[10px] bg-emerald-200 px-1.5 py-0.5 rounded">'Birdman of India'</span>
+                        </div>
+                        <ul class="list-disc list-inside space-y-0.5 text-slate-700">
+                            <li>Documented bird species, habitats & travel routes across India.</li>
+                            <li>Saved <strong class="text-emerald-800">Keoladeo National Park</strong> (Bharatpur) & <strong class="text-emerald-800">Ranganathittu Sanctuary</strong>.</li>
+                            <li>Awarded Padma Vibhushan (1976).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 7: CONSERVATION & SACRED GROVES -->
+            <div class="doodle-card p-4 bg-teal-50/60 transform rotate-[0.3deg]">
+                <div class="flex items-center gap-2 border-b-2 border-slate-800 pb-2 mb-3">
+                    <i class="fa-solid fa-shield-halved text-teal-700 text-2xl"></i>
+                    <h2 class="text-2xl font-bold text-slate-800">7. Conservation Efforts</h2>
+                </div>
+                <div class="space-y-2 text-xs">
+                    <div class="p-2 bg-emerald-100 rounded-lg border border-slate-800">
+                        <strong class="text-sm text-emerald-900 block">🌳 Sacred Groves:</strong>
+                        Undisturbed forest patches protected traditionally by local communities. Home to rare & medicinal plants! No harm is allowed.
+                    </div>
+
+                    <div class="p-2 bg-teal-100 rounded-lg border border-slate-800">
+                        <strong class="text-sm text-teal-900 block">🏞️ Save Silent Valley Movement:</strong>
+                        10-year people's battle in Palakkad, Kerala to save a pristine moist evergreen forest from a hydroelectric dam project.
+                    </div>
+
+                    <div class="p-2 bg-amber-100 rounded-lg border border-slate-800">
+                        <strong class="text-sm text-amber-900 block"><i class="fa-solid fa-paw mr-1"></i> Key Government Projects:</strong>
+                        <ul class="list-disc list-inside space-y-0.5 mt-1">
+                            <li><strong>Project Tiger (1973):</strong> Protect declining Bengal Tigers.</li>
+                            <li><strong>Cheetah Reintroduction (2022):</strong> Restore Cheetahs in India.</li>
+                            <li><strong>Great Indian Bustard:</strong> Declared protected areas in GJ, RJ, MH.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 8: QUICK KEYWORDS & REVISION CHEAT SHEET -->
+            <div class="doodle-card p-4 bg-rose-50/60 transform rotate-[-0.2deg]">
+                <div class="flex items-center gap-2 border-b-2 border-slate-800 pb-2 mb-2">
+                    <i class="fa-solid fa-key text-rose-600 text-2xl"></i>
+                    <h2 class="text-2xl font-bold text-slate-800">8. Quick Revision Formula</h2>
+                </div>
+                <div class="space-y-2 text-xs">
+                    <div class="p-2 bg-white rounded border border-slate-800">
+                        <span class="font-bold text-slate-900">Habitat = </span> Food + Water + Air + Shelter
+                    </div>
+
+                    <div class="p-2 bg-white rounded border border-slate-800">
+                        <span class="font-bold text-slate-900">Habitat Types:</span>
+                        <ul class="list-disc list-inside text-slate-700 font-semibold mt-0.5">
+                            <li><strong class="text-emerald-700">Terrestrial:</strong> Land (Forest, Desert, Mountain)</li>
+                            <li><strong class="text-blue-700">Aquatic:</strong> Water (Pond, Lake, River, Ocean)</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-2 bg-rose-200/80 rounded border border-slate-900 font-bold text-slate-900 text-center">
+                        ⚠️ WARNING: Habitat Loss = Loss of Biodiversity!
+                    </div>
+
+                    <!-- KEYWORDS BUBBLES -->
+                    <div class="pt-1">
+                        <span class="font-bold text-slate-800 block mb-1">Essential Key Terms:</span>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="doodle-badge bg-yellow-200 px-1.5 py-0.5 rounded text-[11px]">Adaptation</span>
+                            <span class="doodle-badge bg-green-200 px-1.5 py-0.5 rounded text-[11px]">Cotyledon</span>
+                            <span class="doodle-badge bg-blue-200 px-1.5 py-0.5 rounded text-[11px]">Venation</span>
+                            <span class="doodle-badge bg-pink-200 px-1.5 py-0.5 rounded text-[11px]">Taproot</span>
+                            <span class="doodle-badge bg-purple-200 px-1.5 py-0.5 rounded text-[11px]">Fibrous Root</span>
+                            <span class="doodle-badge bg-amber-200 px-1.5 py-0.5 rounded text-[11px]">Monocot</span>
+                            <span class="doodle-badge bg-teal-200 px-1.5 py-0.5 rounded text-[11px]">Dicot</span>
+                            <span class="doodle-badge bg-rose-200 px-1.5 py-0.5 rounded text-[11px]">Amphibian</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FOOTER BAR -->
+        <footer class="mt-6 text-center text-xs font-bold text-slate-600 border-t-2 border-dashed border-slate-400 pt-3 mb-10">
+            🌱 "Protect biodiversity to keep our planet full of life, helping all plants and animals thrive!" 🐾
+        </footer>
+
+    </div>
+
+    <!-- DYNAMIC EXPORT BUTTON SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '2._Diversity_in_the_Living_World.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>
