@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploring Magnets - Mind Map Cheat Sheet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Patrick Hand', 'Kalam', cursive;
+      background-color: #fefce8;
+      background-image: 
+        linear-gradient(#e2e8f0 1.5px, transparent 1.5px),
+        linear-gradient(90deg, #e2e8f0 1.5px, transparent 1.5px);
+      background-size: 24px 24px;
+      color: #0f172a;
+    }
+    .doodle-card {
+      background-color: #ffffff;
+      border: 2.5px solid #0f172a;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      box-shadow: 4px 5px 0px 0px #0f172a;
+      transition: all 0.2s ease;
+    }
+    .doodle-card:hover {
+      transform: scale(1.01) rotate(0deg) !important;
+      box-shadow: 6px 8px 0px 0px #0f172a;
+    }
+    .tape {
+      background-color: rgba(254, 240, 138, 0.7);
+      border: 1px dashed #94a3b8;
+    }
+    .magnet-bar {
+      display: inline-flex;
+      font-weight: bold;
+      border: 2px solid #0f172a;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 2px 2px 0px #0f172a;
+    }
+    .pole-n { background: #ef4444; color: white; padding: 2px 8px; text-shadow: 1px 1px 0px #000; }
+    .pole-s { background: #3b82f6; color: white; padding: 2px 8px; text-shadow: 1px 1px 0px #000; }
+  </style>
+</head>
+<body class="p-4 md:p-8 min-h-screen">
+
+  <!-- MAIN WRAPPER -->
+  <div class="max-w-7xl mx-auto">
+
+    <!-- HEADER BANNER -->
+    <div class="doodle-card bg-amber-100 p-6 mb-8 text-center relative rotate-[-0.5deg]">
+      <div class="tape absolute -top-3 left-1/2 -translate-x-1/2 w-40 h-8 rotate-[1deg]"></div>
+      <div class="flex items-center justify-center gap-3 mb-2">
+        <i class="fa-solid fa-magnet text-4xl text-red-600 animate-bounce"></i>
+        <h1 class="text-4xl md:text-5xl font-bold tracking-wide text-slate-900">CHAPTER 4: EXPLORING MAGNETS</h1>
+        <i class="fa-solid fa-compass text-4xl text-blue-600"></i>
+      </div>
+      <p class="text-xl text-slate-700 font-semibold">Grade 6 Science • Visual Revision & Exam Cheat Sheet</p>
+      <div class="mt-3 flex flex-wrap justify-center gap-2 text-sm">
+        <span class="bg-white border border-slate-800 px-3 py-1 rounded-full font-bold shadow-sm"><i class="fa-solid fa-bolt text-yellow-500"></i> Quick Facts</span>
+        <span class="bg-white border border-slate-800 px-3 py-1 rounded-full font-bold shadow-sm"><i class="fa-solid fa-vial text-emerald-500"></i> Activities Included</span>
+        <span class="bg-white border border-slate-800 px-3 py-1 rounded-full font-bold shadow-sm"><i class="fa-solid fa-shield-halved text-indigo-500"></i> Safety Rules</span>
+      </div>
+    </div>
+
+    <!-- DENSE GRID LAYOUT -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- CARD 1: WHAT IS A MAGNET & SHAPES -->
+      <div class="doodle-card p-5 bg-red-50/40 rotate-[-1deg]">
+        <div class="flex items-center justify-between border-b-2 border-slate-800 pb-2 mb-3">
+          <h2 class="text-2xl font-bold text-red-700"><i class="fa-solid fa-magnet mr-2"></i>1. Magnets & Shapes</h2>
+          <span class="bg-red-200 text-red-900 text-xs px-2 py-1 rounded border border-slate-800 font-bold">Basics</span>
+        </div>
+        
+        <p class="mb-3 text-lg"><strong>Magnet:</strong> An object that attracts materials like iron, nickel, and cobalt.</p>
+        
+        <div class="bg-white p-3 rounded-lg border-2 border-slate-800 mb-3 shadow-sm">
+          <p class="font-bold text-slate-800 mb-1"><i class="fa-solid fa-gem text-amber-600 mr-1"></i> History & Natural Magnets:</p>
+          <ul class="list-disc list-inside text-base text-slate-700 space-y-1">
+            <li><strong>Lodestone:</strong> Naturally occurring magnetic rock discovered in ancient times.</li>
+            <li>Sailors used lodestones to navigate at sea during storms.</li>
+          </ul>
+        </div>
+
+        <p class="font-bold mb-2 text-lg"><i class="fa-solid fa-shapes text-purple-600 mr-1"></i> Common Shapes of Artificial Magnets:</p>
+        <div class="grid grid-cols-3 gap-2 text-center text-sm font-bold">
+          <div class="p-2 border border-slate-800 rounded bg-white shadow-sm">
+            <div class="magnet-bar text-xs mb-1"><span class="pole-n">N</span><span class="pole-s">S</span></div>
+            <div>Bar Magnet</div>
+          </div>
+          <div class="p-2 border border-slate-800 rounded bg-white shadow-sm">
+            <div class="text-red-600 text-lg mb-1"><i class="fa-solid fa-magnet"></i></div>
+            <div>U-Shaped</div>
+          </div>
+          <div class="p-2 border border-slate-800 rounded bg-white shadow-sm">
+            <div class="text-slate-700 text-lg mb-1"><i class="fa-regular fa-circle-dot"></i></div>
+            <div>Ring Magnet</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: MAGNETIC VS NON-MAGNETIC -->
+      <div class="doodle-card p-5 bg-emerald-50/40 rotate-[1deg]">
+        <div class="flex items-center justify-between border-b-2 border-slate-800 pb-2 mb-3">
+          <h2 class="text-2xl font-bold text-emerald-800"><i class="fa-solid fa-filter mr-2"></i>2. Material Types</h2>
+          <span class="bg-emerald-200 text-emerald-900 text-xs px-2 py-1 rounded border border-slate-800 font-bold">Classification</span>
+        </div>
+
+        <div class="space-y-3">
+          <div class="p-3 bg-white border-2 border-emerald-800 rounded-lg shadow-sm">
+            <h3 class="font-bold text-emerald-900 text-lg"><i class="fa-solid fa-circle-check text-emerald-600 mr-1"></i> Magnetic Materials</h3>
+            <p class="text-slate-700">Attracted towards a magnet.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded border border-emerald-600">Iron (Fe)</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded border border-emerald-600">Nickel (Ni)</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded border border-emerald-600">Cobalt (Co)</span>
+              <span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded border border-emerald-600">Steel Pins</span>
+            </div>
+          </div>
+
+          <div class="p-3 bg-white border-2 border-rose-800 rounded-lg shadow-sm">
+            <h3 class="font-bold text-rose-900 text-lg"><i class="fa-solid fa-circle-xmark text-rose-600 mr-1"></i> Non-Magnetic Materials</h3>
+            <p class="text-slate-700">NOT attracted towards a magnet.</p>
+            <div class="mt-2 flex flex-wrap gap-1">
+              <span class="bg-rose-100 text-rose-800 text-xs px-2 py-0.5 rounded border border-rose-600">Wood</span>
+              <span class="bg-rose-100 text-rose-800 text-xs px-2 py-0.5 rounded border border-rose-600">Plastic</span>
+              <span class="bg-rose-100 text-rose-800 text-xs px-2 py-0.5 rounded border border-rose-600">Glass</span>
+              <span class="bg-rose-100 text-rose-800 text-xs px-2 py-0.5 rounded border border-rose-600">Rubber</span>
+              <span class="bg-rose-100 text-rose-800 text-xs px-2 py-0.5 rounded border border-rose-600">Cloth</span>
+            </div>
+          </div>
+
+          <div class="p-2.5 bg-amber-100 border-2 border-amber-800 rounded-lg text-sm">
+            <p class="font-bold text-amber-900"><i class="fa-solid fa-eye mr-1"></i> Key Discovery (Activity 4.7):</p>
+            <p class="text-slate-800">Magnetic force <strong>ACTS THROUGH</strong> non-magnetic barriers (wood, cardboard, plastic, glass, water)!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: POLES OF A MAGNET -->
+      <div class="doodle-card p-5 bg-blue-50/40 rotate-[-0.5deg]">
+        <div class="flex items-center justify-between border-b-2 border-slate-800 pb-2 mb-3">
+          <h2 class="text-2xl font-bold text-blue-800"><i class="fa-solid fa-map-pin mr-2"></i>3. Poles of a Magnet</h2>
+          <span class="bg-blue-200 text-blue-900 text-xs px-2 py-1 rounded border border-slate-800 font-bold">Poles</span>
+        </div>
+
+        <ul class="space-y-2 text-base">
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-star text-amber-500 mt-1"></i>
+            <span>Every magnet has <strong>TWO poles</strong>: <strong>North Pole (N)</strong> and <strong>South Pole (S)</strong>.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-location-crosshairs text-red-500 mt-1"></i>
+            <span><strong>Max Magnetic Strength:</strong> Most iron filings stick near the <em>ends (poles)</em> of the magnet!</span>
+          </li>
+        </ul>
+
+        <!-- Visual Monopoles Box -->
+        <div class="mt-4 p-3 bg-white border-2 border-slate-800 rounded-lg">
+          <p class="font-bold text-slate-900 text-center mb-1 text-lg">⚠️ Monopoles Do NOT Exist!</p>
+          <p class="text-sm text-slate-700 text-center mb-2">If you break a magnet in half, each piece gets its OWN North & South poles!</p>
+          
+          <div class="flex items-center justify-center gap-2">
+            <div class="magnet-bar"><span class="pole-n">N</span><span class="pole-s">S</span></div>
+            <i class="fa-solid fa-scissors text-slate-600"></i>
+            <div class="flex gap-1">
+              <div class="magnet-bar text-xs"><span class="pole-n">N</span><span class="pole-s">S</span></div>
+              <div class="magnet-bar text-xs"><span class="pole-n">N</span><span class="pole-s">S</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4: FINDING DIRECTIONS & COMPASS -->
+      <div class="doodle-card p-5 bg-amber-50/40 rotate-[0.8deg]">
+        <div class="flex items-center justify-between border-b-2 border-slate-800 pb-2 mb-3">
+          <h2 class="text-2xl font-bold text-amber-800"><i class="fa-solid fa-compass mr-2"></i>4. Finding Directions</h2>
+          <span class="bg-amber-200 text-amber-900 text-xs px-2 py-1 rounded border border-slate-800 font-bold">Navigation</span>
+        </div>
+
+        <div class="space-y-3">
+          <div class="p-2.5 bg-white border-2 border-slate-800 rounded-lg">
+            <p class="font-bold text-slate-800"><i class="fa-solid fa-location-arrow text-blue-600 mr-1"></i> Freely Suspended Magnet:</p>
+            <p class="text-slate-700 text-sm">Always comes to rest along the <strong>North-South (N-S)</strong> direction.</p>
+            <p class="text-xs text-slate-500 mt-1">* Reason: Earth itself behaves like a giant magnet!</p>
+          </div>
+
+          <div class="p-3 bg-amber-100/60 border-2 border-amber-800 rounded-lg">
+            <h3 class="font-bold text-amber-950 text-base"><i class="fa-regular fa-compass mr-1"></i> The Magnetic Compass</h3>
+            <ul class="list-disc list-inside text-sm text-slate-800 mt-1 space-y-1">
+              <li>Small circular box with transparent glass cover.</li>
+              <li>Magnetized needle balanced on a central pin (rotates freely).</li>
+              <li><strong>North end</strong> of the needle is usually painted <strong>RED</strong>.</li>
+            </ul>
+          </div>
+
+          <div class="p-2 bg-white border border-slate-800 rounded text-xs flex items-center justify-between">
+            <span class="font-bold text-indigo-900"><i class="fa-solid fa-anchor mr-1"></i> Ancient Indian Compass:</span>
+            <span class="bg-indigo-100 text-indigo-900 px-2 py-0.5 rounded border border-indigo-300 font-bold">Matsya-yantra</span>
+          </div>
+          <p class="text-xs text-slate-600 italic px-1">Magnetised fish-shaped iron piece floating in oil used for sea navigation!</p>
+        </div>
+      </div>
+
+      <!-- CARD 5: ATTRACTION VS REPULSION -->
+      <div class="doodle-card p-5 bg-purple-50/40 rotate-[-1deg]">
+        <div class="flex items-center justify-between border-b-2 border-slate-800 pb-2 mb-3">
+          <h2 class="text-2xl font-bold text-purple-900"><i class="fa-solid fa-arrows-left-right mr-2"></i>5. Attraction & Repulsion</h2>
+          <span class="bg-purple-200 text-purple-900 text-xs px-2 py-1 rounded border border-slate-800 font-bold">Golden Rule</span>
+        </div>
+
+        <div class="space-y-3">
+          <!-- Unlike Poles -->
+          <div class="p-3 bg-white border-2 border-emerald-600 rounded-lg">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-bold text-emerald-700 text-base">UNLIKE Poles ATTRACT</span>
+              <i class="fa-solid fa-heart text-red-500"></i>
+            </div>
+            <div class="flex items-center justify-center gap-2 my-1">
+              <div class="magnet-bar"><span class="pole-n">N</span><span class="pole-s">S</span></div>
+              <span class="text-xl font-bold text-emerald-600">&rarr; &larr;</span>
+              <div class="magnet-bar"><span class="pole-n">N</span><span class="pole-s">S</span></div>
+            </div>
+            <p class="text-xs text-center text-slate-600">North & South pull towards each other</p>
+          </div>
+
+          <!-- Like Poles -->
+          <div class="p-3 bg-white border-2 border-rose-600 rounded-lg">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-bold text-rose-700 text-base">LIKE Poles REPEL</span>
+              <i class="fa-solid fa-ban text-rose-500"></i>
+            </div>
+            <div class="flex items-center justify-center gap-2 my-1">
+              <div class="magnet-bar"><span class="pole-s">S</span><span class="pole-n">N</span></div>
+              <span class="text-xl font-bold text-rose-600">&larr; &rarr;</span>
+              <div class="magnet-bar"><span class="pole-n">N</span><span class="pole-s">S</span></div>
+            </div>
+            <p class="text-xs text-center text-slate-600">N-N or S-S push away from each other</p>
+          </div>
+
+          <!-- Sure Test Box -->
+          <div class="p-2.5 bg-yellow-200 border-2 border-slate-800 rounded-lg text-center">
+            <p class="font-bold text-slate-900 text-sm"><i class="fa-solid fa-lightbulb text-amber-600 mr-1"></i> SURE TEST OF MAGNETISM:</p>
+            <p class="text-xs font-bold text-red-700 uppercase mt-0.5">REPULSION is the only sure test!</p>
+            <p class="text-xs text-slate-700">An iron bar is attracted by BOTH poles, but ONLY a magnet repels another magnet!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6: DIY MAGNET CRAFT -->
+      <div class="doodle-card p-5 bg-sky-50/40 rotate-[0.5deg]">
+        <div class="flex items-center justify-between border-b-2 border-slate-800 pb-2 mb-3">
+          <h2 class="text-2xl font-bold text-sky-900"><i class="fa-solid fa-screwdriver-wrench mr-2"></i>6. Make Your Own Magnet</h2>
+          <span class="bg-sky-200 text-sky-900 text-xs px-2 py-1 rounded border border-slate-800 font-bold">Activity 4.4</span>
+        </div>
+
+        <p class="font-bold text-slate-800 text-base mb-2">Single-Touch Method (Iron Needle):</p>
+        <ol class="list-decimal list-inside space-y-1.5 text-sm text-slate-700">
+          <li>Place iron sewing needle on a table.</li>
+          <li>Place one pole of a bar magnet at one end of needle.</li>
+          <li>Move magnet along needle to the other end.</li>
+          <li>Lift magnet high, bring back to starting end.</li>
+          <li><strong>Repeat 30–40 times</strong> in the SAME direction! 🔁</li>
+        </ol>
+
+        <div class="mt-3 p-2 bg-white border border-slate-800 rounded flex items-center gap-3">
+          <i class="fa-solid fa-water text-blue-500 text-2xl"></i>
+          <p class="text-xs text-slate-700"><strong>DIY Floating Compass:</strong> Insert magnetised needle horizontally through a cork floating in water! It turns N-S!</p>
+        </div>
+      </div>
+
+      <!-- CARD 7: CARE & STORAGE OF MAGNETS -->
+      <div class="doodle-card p-5 bg-rose-50/40 rotate-[-0.8deg] md:col-span-2 lg:col-span-2">
+        <div class="flex items-center justify-between border-b-2 border-slate-800 pb-2 mb-3">
+          <h2 class="text-2xl font-bold text-rose-900"><i class="fa-solid fa-triangle-exclamation mr-2"></i>7. Care & Proper Storage of Magnets</h2>
+          <span class="bg-rose-200 text-rose-900 text-xs px-2 py-1 rounded border border-slate-800 font-bold">Important!</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- DO'S STORAGE -->
+          <div class="bg-white p-3 border-2 border-emerald-700 rounded-lg shadow-sm">
+            <h3 class="font-bold text-emerald-800 text-base mb-2"><i class="fa-solid fa-circle-check mr-1"></i> HOW TO STORE PROPERLY:</h3>
+            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
+              <li>Store bar magnets in <strong>PAIRS</strong> with <strong>UNLIKE poles on the same side</strong>.</li>
+              <li>Keep a <strong>piece of wood</strong> between the two magnets.</li>
+              <li>Place two <strong>pieces of soft iron (keepers)</strong> across the ends.</li>
+            </ul>
+          </div>
+
+          <!-- DONT'S DEMAGNETIZATION -->
+          <div class="bg-white p-3 border-2 border-rose-700 rounded-lg shadow-sm">
+            <h3 class="font-bold text-rose-800 text-base mb-2"><i class="fa-solid fa-circle-xmark mr-1"></i> PREVENT DEMAGNETIZATION:</h3>
+            <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
+              <li><strong>Do NOT heat</strong>, drop, or hammer magnets!</li>
+              <li>Keep away from <strong>mobiles, TV remotes, computers & CD cards</strong>.</li>
+              <li>Handle with care to retain magnetic strength long term!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 8: QUICK KEYWORDS & SUMMARY -->
+      <div class="doodle-card p-5 bg-teal-50/40 rotate-[1deg]">
+        <div class="flex items-center justify-between border-b-2 border-slate-800 pb-2 mb-3">
+          <h2 class="text-2xl font-bold text-teal-900"><i class="fa-solid fa-key mr-2"></i>8. Keywords Flash Cards</h2>
+          <span class="bg-teal-200 text-teal-900 text-xs px-2 py-1 rounded border border-slate-800 font-bold">Exam Vocab</span>
+        </div>
+
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="bg-amber-100 border border-slate-800 px-2.5 py-1 rounded-md font-bold text-amber-900">Lodestone</span>
+          <span class="bg-blue-100 border border-slate-800 px-2.5 py-1 rounded-md font-bold text-blue-900">Bar Magnet</span>
+          <span class="bg-red-100 border border-slate-800 px-2.5 py-1 rounded-md font-bold text-red-900">North Pole</span>
+          <span class="bg-indigo-100 border border-slate-800 px-2.5 py-1 rounded-md font-bold text-indigo-900">South Pole</span>
+          <span class="bg-emerald-100 border border-slate-800 px-2.5 py-1 rounded-md font-bold text-emerald-900">Magnetic Material</span>
+          <span class="bg-rose-100 border border-slate-800 px-2.5 py-1 rounded-md font-bold text-rose-900">Repulsion</span>
+          <span class="bg-purple-100 border border-slate-800 px-2.5 py-1 rounded-md font-bold text-purple-900">Compass</span>
+          <span class="bg-sky-100 border border-slate-800 px-2.5 py-1 rounded-md font-bold text-sky-900">Matsya-yantra</span>
+        </div>
+
+        <div class="mt-4 p-2.5 bg-white border-2 border-slate-800 rounded-lg text-center">
+          <p class="font-bold text-slate-800 text-sm">🎯 Ultimate Formula to Remember:</p>
+          <p class="text-base font-bold text-indigo-700 mt-1">LIKE = REPEL 🚫 | UNLIKE = ATTRACT ❤️</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="mt-8 text-center text-slate-600 text-base font-semibold pb-12">
+      <p>Made for Class 6 Curiosity Science • Visual Learning Made Easy 🚀</p>
+    </div>
+
+  </div>
+
+  <!-- DYNAMIC EXPORT BUTTON -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '4._Exploring_Magnets.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+</body>
+</html>

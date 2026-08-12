@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Eating - Chapter 3 Infographic Cheat Sheet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Short+Stack&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Patrick Hand', 'Short Stack', cursive, sans-serif;
+            background-color: #f7f4eb;
+            background-image: 
+                linear-gradient(#e2ddcf 1px, transparent 1px),
+                linear-gradient(90deg, #e2ddcf 1px, transparent 1px);
+            background-size: 24px 24px;
+            color: #1e293b;
+        }
+
+        .doodle-box {
+            border: 2px solid #2d3748;
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            box-shadow: 3px 4px 0px #2d3748;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .doodle-box:hover {
+            transform: translateY(-2px) scale(1.005) !important;
+            box-shadow: 5px 6px 0px #2d3748;
+        }
+
+        .doodle-badge {
+            border: 1.5px solid #2d3748;
+            border-radius: 12px 3px 15px 5px/4px 14px 3px 10px;
+        }
+
+        .doodle-underline {
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: #f59e0b;
+        }
+
+        .tape-effect {
+            position: relative;
+        }
+        .tape-effect::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-2deg);
+            width: 80px;
+            height: 20px;
+            background-color: rgba(243, 244, 246, 0.7);
+            border: 1px dashed #cbd5e1;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+
+        /* Custom Scrollbar for dense tables */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<p class="p-2 sm:p-4 md:p-6 max-w-[1600px] mx-auto">
+
+    <!-- HEADER / TITLE BANNER -->
+    <header class="doodle-box bg-amber-100 p-4 mb-6 text-center relative tape-effect transform -rotate-1">
+        <div class="flex flex-wrap justify-between items-center gap-2">
+            <div class="text-left">
+                <span class="bg-amber-300 text-amber-900 font-bold px-3 py-1 rounded-full text-sm doodle-badge inline-block mb-1">
+                    <i class="fa-solid fa-book-open mr-1"></i> Class 6 Science &bull; Chapter 3
+                </span>
+                <h1 class="text-3xl md:text-5xl font-black text-slate-800 tracking-wide">
+                    <i class="fa-solid fa-utensils text-amber-600 mr-2"></i>MINDFUL EATING: A Path to a Healthy Body
+                </h1>
+            </div>
+            
+            <!-- Ancient Wisdom Note -->
+            <div class="doodle-box bg-white p-3 text-xs md:text-sm max-w-md text-left transform rotate-1 bg-yellow-50">
+                <p class="font-bold text-amber-800"><i class="fa-solid fa-quote-left mr-1"></i> Ancient Wisdom (Subhashita):</p>
+                <p class="italic text-slate-700">"Hitabhuk, Mitabhuk, Ritabhuk" &rarr; One who eats wholesome food, in moderate quantities, appropriate to season, time, and place.</p>
+                <p class="text-xs text-amber-700 font-semibold mt-1">&bull; Taittir&#299;ya Upanishad: <i>'annena j&#257;t&#257;ni j&#299;vanti'</i> (Food gives life to living beings)</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CHEAT SHEET MASONRY GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- CARD 1: FOOD DIVERSITY & CULINARY EVOLUTION -->
+        <div class="doodle-box bg-emerald-50 p-4 transform rotate-1 flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-center border-b-2 border-slate-700 pb-2 mb-3">
+                    <h2 class="text-2xl font-bold text-emerald-900">
+                        <i class="fa-solid fa-earth-asia text-emerald-600 mr-2"></i>1. Diversity & Culinary Change
+                    </h2>
+                    <span class="bg-emerald-200 text-emerald-800 text-xs px-2 py-0.5 rounded doodle-badge font-bold">Sec 3.1</span>
+                </div>
+
+                <p class="text-sm mb-3">Food choices vary across states depending on local soil, climate, crops, and culture.</p>
+
+                <!-- Traditional Food Table Summary -->
+                <div class="overflow-x-auto mb-4">
+                    <table class="w-full text-xs text-left border-collapse">
+                        <thead>
+                            <tr class="bg-emerald-200 border-b border-slate-700 text-emerald-900">
+                                <th class="p-1">State</th>
+                                <th class="p-1">Crops</th>
+                                <th class="p-1">Traditional Dishes</th>
+                                <th class="p-1">Beverage</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-emerald-200">
+                            <tr>
+                                <td class="p-1 font-bold">Punjab</td>
+                                <td class="p-1">Wheat, Maize</td>
+                                <td class="p-1">Makki roti, Sarson saag</td>
+                                <td class="p-1">Lassi, Chhach</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 font-bold">Karnataka</td>
+                                <td class="p-1">Rice, Ragi, Urad</td>
+                                <td class="p-1">Idli, Dosa, Ragi mudde</td>
+                                <td class="p-1">Coffee, Buttermilk</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 font-bold">Manipur</td>
+                                <td class="p-1">Rice, Bamboo</td>
+                                <td class="p-1">Eromba, Utti, Kangsoi</td>
+                                <td class="p-1">Black Tea</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="font-bold text-slate-800 text-sm mb-1 doodle-underline">Culinary Practices: Old vs Modern</h3>
+                <div class="grid grid-cols-2 gap-2 text-xs mb-2">
+                    <div class="bg-white p-2 rounded doodle-badge">
+                        <p class="font-bold text-amber-800 mb-1"><i class="fa-solid fa-fire text-orange-500 mr-1"></i> Traditional</p>
+                        <ul class="list-disc list-inside space-y-1 text-slate-700">
+                            <li><b>Chulha</b> (Wood stove)</li>
+                            <li><b>Sil-batta</b> (Stone grinder)</li>
+                            <li>Slow, manual cooking</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-2 rounded doodle-badge">
+                        <p class="font-bold text-blue-800 mb-1"><i class="fa-solid fa-bolt text-yellow-500 mr-1"></i> Modern</p>
+                        <ul class="list-disc list-inside space-y-1 text-slate-700">
+                            <li><b>Gas Stove / Induction</b></li>
+                            <li><b>Electric Grinder</b></li>
+                            <li>Fast, automated prep</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="text-xs italic text-slate-600 bg-emerald-100 p-1.5 rounded text-center border border-emerald-300">
+                <i class="fa-solid fa-lightbulb text-amber-500"></i> Drivers of change: Technology, faster transport, communication.
+            </p>
+        </div>
+
+        <!-- CARD 2: MACRONUTRIENTS (CARBS, FATS, PROTEINS) -->
+        <div class="doodle-box bg-orange-50 p-4 transform -rotate-1 flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-center border-b-2 border-slate-700 pb-2 mb-3">
+                    <h2 class="text-2xl font-bold text-orange-900">
+                        <i class="fa-solid fa-bolt-lightning text-orange-600 mr-2"></i>2. Energy & Body Building
+                    </h2>
+                    <span class="bg-orange-200 text-orange-800 text-xs px-2 py-0.5 rounded doodle-badge font-bold">Sec 3.2</span>
+                </div>
+
+                <!-- Carbohydrates -->
+                <div class="bg-white p-2.5 rounded-lg doodle-badge mb-3">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-bold text-amber-800 text-base">
+                            <i class="fa-solid fa-wheat-awn text-amber-600 mr-1"></i> Carbohydrates
+                        </h3>
+                        <span class="text-xs bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold">Energy-Giving</span>
+                    </div>
+                    <p class="text-xs text-slate-700 mt-1">Primary source of immediate energy (e.g., Glucose for runners).</p>
+                    <div class="text-xs mt-1 bg-amber-50 p-1 rounded border border-amber-200">
+                        <b>Sources:</b> Rice, Wheat, Potato, Sweet Potato, Banana, Maize, Sugarcane.
+                    </div>
+                </div>
+
+                <!-- Fats -->
+                <div class="bg-white p-2.5 rounded-lg doodle-badge mb-3">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-bold text-yellow-800 text-base">
+                            <i class="fa-solid fa-oil-can text-yellow-600 mr-1"></i> Fats
+                        </h3>
+                        <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded-full font-bold">Stored Energy</span>
+                    </div>
+                    <p class="text-xs text-slate-700 mt-1">Provides reserve energy & keeps body warm (e.g. Laddoos in winter).</p>
+                    <div class="text-xs mt-1 bg-yellow-50 p-1 rounded border border-yellow-200">
+                        <b>Sources:</b> Ghee, Butter, Nuts (Almonds, Walnuts), Seeds, Oils, Cream.
+                    </div>
+                    <div class="text-[11px] text-slate-600 mt-1 italic bg-amber-100/50 p-1 rounded">
+                        <i class="fa-solid fa-paw text-amber-700 mr-1"></i><b>Polar Bears:</b> Store thick fat layer under skin for months-long winter hibernation!
+                    </div>
+                </div>
+
+                <!-- Proteins -->
+                <div class="bg-white p-2.5 rounded-lg doodle-badge">
+                    <div class="flex items-center justify-between">
+                        <h3 class="font-bold text-red-800 text-base">
+                            <i class="fa-solid fa-dumbbell text-red-600 mr-1"></i> Proteins
+                        </h3>
+                        <span class="text-xs bg-red-100 text-red-800 px-2 py-0.5 rounded-full font-bold">Body-Building</span>
+                    </div>
+                    <p class="text-xs text-slate-700 mt-1">Essential for growth, muscle repair & tissue development.</p>
+                    <div class="grid grid-cols-2 gap-1 text-xs mt-1">
+                        <div class="bg-emerald-50 p-1 rounded border border-emerald-200">
+                            <b>Plant:</b> Pulses, Beans, Peas, Soya bean, Mushrooms.
+                        </div>
+                        <div class="bg-red-50 p-1 rounded border border-red-200">
+                            <b>Animal:</b> Milk, Paneer, Fish, Eggs, Meat.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3: PROTECTIVE NUTRIENTS (VITAMINS & MINERALS) -->
+        <div class="doodle-box bg-blue-50 p-4 transform rotate-1 flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-center border-b-2 border-slate-700 pb-2 mb-3">
+                    <h2 class="text-2xl font-bold text-blue-900">
+                        <i class="fa-solid fa-shield-halved text-blue-600 mr-2"></i>3. Protective Nutrients
+                    </h2>
+                    <span class="bg-blue-200 text-blue-800 text-xs px-2 py-0.5 rounded doodle-badge font-bold">Sec 3.2</span>
+                </div>
+
+                <p class="text-xs text-slate-700 mb-2">Required in small amounts to protect body against diseases and maintain health.</p>
+
+                <!-- Micro-nutrients cheat table -->
+                <div class="overflow-x-auto">
+                    <table class="w-full text-xs text-left border-collapse">
+                        <thead>
+                            <tr class="bg-blue-200 border-b border-slate-700 text-blue-900">
+                                <th class="p-1">Nutrient</th>
+                                <th class="p-1">Main Function</th>
+                                <th class="p-1">Deficiency</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-blue-200 text-[11px]">
+                            <tr>
+                                <td class="p-1 font-bold text-amber-700">Vit A</td>
+                                <td class="p-1">Healthy eyes & skin</td>
+                                <td class="p-1 text-red-600 font-bold">Night Blindness</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 font-bold text-pink-700">Vit B1</td>
+                                <td class="p-1">Heart & muscle support</td>
+                                <td class="p-1 text-red-600 font-bold">Beriberi</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 font-bold text-orange-700">Vit C</td>
+                                <td class="p-1">Fights diseases, wound healing</td>
+                                <td class="p-1 text-red-600 font-bold">Scurvy (Bleeding gums)</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 font-bold text-yellow-700">Vit D</td>
+                                <td class="p-1">Calcium absorption for bones</td>
+                                <td class="p-1 text-red-600 font-bold">Rickets (Soft bones)</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 font-bold text-emerald-700">Calcium</td>
+                                <td class="p-1">Strong bones & teeth</td>
+                                <td class="p-1 text-red-600 font-bold">Bone/Tooth decay</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 font-bold text-purple-700">Iodine</td>
+                                <td class="p-1">Physical/mental growth</td>
+                                <td class="p-1 text-red-600 font-bold">Goitre (Neck swelling)</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 font-bold text-red-700">Iron</td>
+                                <td class="p-1">Blood component (Haemoglobin)</td>
+                                <td class="p-1 text-red-600 font-bold">Anaemia (Weakness)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Historical/Case Study Notes -->
+                <div class="mt-3 space-y-1 text-xs">
+                    <div class="bg-white p-1.5 rounded doodle-badge border-l-4 border-l-orange-500">
+                        <b>Case 1 (1746):</b> James Lind found citrus fruits (lemons/oranges) cured sailors' <b>Scurvy</b>.
+                    </div>
+                    <div class="bg-white p-1.5 rounded doodle-badge border-l-4 border-l-purple-500">
+                        <b>Case 2 (1960s):</b> Himalayan neck swelling cured by fortifying salt with iodine &rarr; <b>Iodised Salt</b>.
+                    </div>
+                </div>
+            </div>
+            <p class="text-[11px] text-blue-900 bg-blue-100 p-1 rounded text-center mt-2 border border-blue-300">
+                <i class="fa-solid fa-sun text-yellow-500"></i> Vit D made naturally in body via sunlight!
+            </p>
+        </div>
+
+        <!-- CARD 4: LAB TESTS FOR NUTRIENTS (HANDS-ON SCIENCE) -->
+        <div class="doodle-box bg-purple-50 p-4 transform -rotate-1 flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-center border-b-2 border-slate-700 pb-2 mb-3">
+                    <h2 class="text-2xl font-bold text-purple-900">
+                        <i class="fa-solid fa-vial-circle-check text-purple-600 mr-2"></i>4. Food Testing Lab Cheat
+                    </h2>
+                    <span class="bg-purple-200 text-purple-800 text-xs px-2 py-0.5 rounded doodle-badge font-bold">Sec 3.3</span>
+                </div>
+
+                <div class="space-y-2 text-xs">
+                    <!-- Starch Test -->
+                    <div class="bg-white p-2 rounded-lg doodle-badge">
+                        <div class="flex justify-between font-bold text-indigo-900">
+                            <span><i class="fa-solid fa-flask text-indigo-600 mr-1"></i> 1. Starch Test</span>
+                            <span class="text-indigo-600">Dilute Iodine Solution</span>
+                        </div>
+                        <p class="text-slate-600 mt-0.5">Food + 2-3 drops Dilute Iodine Solution</p>
+                        <div class="bg-indigo-900 text-white font-bold p-1 rounded mt-1 text-center">
+                            Positive Result &rarr; Turns BLUE-BLACK
+                        </div>
+                    </div>
+
+                    <!-- Fat Test -->
+                    <div class="bg-white p-2 rounded-lg doodle-badge">
+                        <div class="flex justify-between font-bold text-amber-900">
+                            <span><i class="fa-solid fa-paperclip text-amber-600 mr-1"></i> 2. Fat Test</span>
+                            <span class="text-amber-600">Paper Press</span>
+                        </div>
+                        <p class="text-slate-600 mt-0.5">Wrap food in paper & crush gently (dry if wet).</p>
+                        <div class="bg-amber-200 text-amber-900 font-bold p-1 rounded mt-1 text-center border border-amber-400">
+                            Positive Result &rarr; OILY TRANSLUCENT PATCH
+                        </div>
+                    </div>
+
+                    <!-- Protein Test -->
+                    <div class="bg-white p-2 rounded-lg doodle-badge">
+                        <div class="flex justify-between font-bold text-purple-900">
+                            <span><i class="fa-solid fa-vial text-purple-600 mr-1"></i> 3. Protein Test</span>
+                            <span class="text-purple-600">CuSO4 + Caustic Soda</span>
+                        </div>
+                        <p class="text-slate-600 mt-0.5">Food Paste + 2 drops Copper Sulphate + 10 drops Caustic Soda</p>
+                        <div class="bg-purple-700 text-white font-bold p-1 rounded mt-1 text-center">
+                            Positive Result &rarr; Turns VIOLET / PURPLE
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Precautions -->
+                <div class="mt-3 bg-red-100 border border-red-400 text-red-900 p-2 rounded text-xs">
+                    <i class="fa-solid fa-triangle-exclamation text-red-600 mr-1"></i><b>Safety Precaution:</b> Chemicals are harmful! Do not touch skin, taste or smell reagents. Wash immediately if spilled.
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 5: FIBRE, WATER & BALANCED DIET vs JUNK FOOD -->
+        <div class="doodle-box bg-teal-50 p-4 transform rotate-1 flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-center border-b-2 border-slate-700 pb-2 mb-3">
+                    <h2 class="text-2xl font-bold text-teal-900">
+                        <i class="fa-solid fa-apple-whole text-teal-600 mr-2"></i>5. Roughage, Water & Diet
+                    </h2>
+                    <span class="bg-teal-200 text-teal-800 text-xs px-2 py-0.5 rounded doodle-badge font-bold">Sec 3.4</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 text-xs mb-3">
+                    <!-- Dietary Fibre -->
+                    <div class="bg-white p-2 rounded doodle-badge">
+                        <p class="font-bold text-emerald-800"><i class="fa-solid fa-wheat-awn-circle-exclamation mr-1"></i> Roughage (Fibre)</p>
+                        <ul class="list-disc list-inside text-slate-700 space-y-1 mt-1">
+                            <li>No nutrients directly</li>
+                            <li>Helps bowel movement & prevents constipation</li>
+                            <li>Sources: Fruits, veggies, whole grains, pulses</li>
+                        </ul>
+                    </div>
+
+                    <!-- Water -->
+                    <div class="bg-white p-2 rounded doodle-badge">
+                        <p class="font-bold text-cyan-800"><i class="fa-solid fa-glass-water mr-1"></i> Water</p>
+                        <ul class="list-disc list-inside text-slate-700 space-y-1 mt-1">
+                            <li>Absorbs nutrients</li>
+                            <li>Flushes waste via sweat & urine</li>
+                            <li>Essential for body balance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Balanced Diet Definition -->
+                <div class="bg-teal-100 p-2 rounded-lg border border-teal-300 text-xs mb-3">
+                    <p class="font-bold text-teal-900 text-sm"><i class="fa-solid fa-scale-balanced mr-1"></i> What is a Balanced Diet?</p>
+                    <p class="text-teal-800">A diet containing <b>ALL essential nutrients</b> (carbs, fats, proteins, vitamins, minerals) in the right proportion, along with <b>roughage & water</b>.</p>
+                </div>
+
+                <!-- Healthy vs Junk Food Comparison -->
+                <h3 class="font-bold text-slate-800 text-xs mb-1">Nutritional Comparison (Per 100g):</h3>
+                <div class="grid grid-cols-2 gap-2 text-[11px] text-center">
+                    <div class="bg-red-100 p-1.5 rounded doodle-badge border-red-300">
+                        <p class="font-bold text-red-800"><i class="fa-solid fa-ban mr-1"></i> Potato Chips (Junk)</p>
+                        <p>Calories: <b>536 kcal</b></p>
+                        <p>Fats: <span class="text-red-600 font-bold">35.0g</span> | Fibre: 4.8g</p>
+                        <p class="text-[10px] text-red-700 mt-0.5">High calories/fat, leads to obesity.</p>
+                    </div>
+                    <div class="bg-emerald-100 p-1.5 rounded doodle-badge border-emerald-300">
+                        <p class="font-bold text-emerald-800"><i class="fa-solid fa-circle-check mr-1"></i> Roasted Chana</p>
+                        <p>Calories: <b>355 kcal</b></p>
+                        <p>Fats: <span class="text-emerald-700 font-bold">6.26g</span> | Fibre: <span class="text-emerald-700 font-bold">16.8g</span></p>
+                        <p class="text-[10px] text-emerald-700 mt-0.5">High protein & fibre!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-2 text-[11px] bg-white p-1.5 rounded doodle-badge flex justify-between items-center">
+                <span><i class="fa-solid fa-certificate text-blue-600 mr-1"></i><b>FSSAI:</b> Regulates food safety & fortification in India.</span>
+            </div>
+        </div>
+
+        <!-- CARD 6: MILLETS, FOOD MILES & SCIENTIST SPOTLIGHT -->
+        <div class="doodle-box bg-yellow-50 p-4 transform -rotate-1 flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-center border-b-2 border-slate-700 pb-2 mb-3">
+                    <h2 class="text-2xl font-bold text-amber-900">
+                        <i class="fa-solid fa-seedling text-amber-600 mr-2"></i>6. Millets & Food Miles
+                    </h2>
+                    <span class="bg-amber-200 text-amber-800 text-xs px-2 py-0.5 rounded doodle-badge font-bold">Sec 3.5 - 3.6</span>
+                </div>
+
+                <!-- Millets / Nutri-cereals -->
+                <div class="bg-white p-2.5 rounded-lg doodle-badge mb-3">
+                    <h3 class="font-bold text-amber-900 text-sm mb-1">
+                        <i class="fa-solid fa-wheat-awn text-amber-600 mr-1"></i> Millets (Nutri-Cereals)
+                    </h3>
+                    <p class="text-xs text-slate-700 mb-1.5">Indigenous small grains, easy to cultivate in diverse climates, highly nutritious!</p>
+                    <div class="flex flex-wrap gap-1 text-xs">
+                        <span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded doodle-badge">Jowar</span>
+                        <span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded doodle-badge">Bajra</span>
+                        <span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded doodle-badge">Ragi</span>
+                        <span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded doodle-badge">Sanwa (Barnyard)</span>
+                    </div>
+                </div>
+
+                <!-- Food Miles Circle/Flow -->
+                <div class="bg-white p-2.5 rounded-lg doodle-badge mb-3">
+                    <h3 class="font-bold text-slate-800 text-sm mb-1">
+                        <i class="fa-solid fa-truck-ramp-box text-blue-600 mr-1"></i> Food Miles: Farm to Plate
+                    </h3>
+                    <p class="text-xs text-slate-600 mb-2">Distance food travels from producer to consumer.</p>
+                    
+                    <div class="text-[11px] text-slate-800 font-semibold space-y-1">
+                        <div class="flex items-center gap-1">
+                            <span class="bg-emerald-200 px-1.5 py-0.5 rounded">1. Farm Growth</span> &rarr; 
+                            <span class="bg-emerald-200 px-1.5 py-0.5 rounded">2. Threshing/Winnowing</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            &rarr; <span class="bg-emerald-200 px-1.5 py-0.5 rounded">3. Storage & Grinding</span> &rarr; 
+                            <span class="bg-emerald-200 px-1.5 py-0.5 rounded">4. Transport to Market</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-2 text-xs bg-amber-100 p-1.5 rounded text-amber-900">
+                        <b>Why reduce food miles?</b> Reduces transport cost & pollution, supports local farmers, keeps food fresh & healthy!
+                    </div>
+                </div>
+
+                <!-- Scientist Spotlight -->
+                <div class="bg-indigo-900 text-white p-2.5 rounded-lg doodle-badge">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-user-graduate text-2xl text-yellow-400"></i>
+                        <div>
+                            <h4 class="font-bold text-sm text-yellow-300">Dr. Coluthur Gopalan (1918–2019)</h4>
+                            <p class="text-[11px] text-slate-200">Pioneer of nutrition research in India. Tested 500+ Indian foods & laid groundwork for <b>Mid-Day Meal Scheme (PM POSHAN)</b>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SUMMARY FOOTER BANNER -->
+    <footer class="doodle-box bg-slate-800 text-white p-4 mt-6 text-center transform rotate-0">
+        <div class="flex flex-wrap justify-between items-center gap-4 text-xs md:text-sm">
+            <div class="text-left">
+                <p class="font-bold text-amber-400 text-base"><i class="fa-solid fa-heart-pulse mr-1"></i> Key Takeaways for Mindful Eating:</p>
+                <p class="text-slate-300">1. Eat local & seasonal &bull; 2. Include all nutrient groups &bull; 3. Reduce food miles & waste &bull; 4. Avoid excess junk food!</p>
+            </div>
+            <div class="bg-slate-700 px-3 py-2 rounded-lg doodle-badge text-amber-300 font-bold">
+                "Health is the Ultimate Wealth!" &bull; Dr. Poshita
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<!-- DYNAMIC EXPORT BUTTON -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '3._Mindful_Eating.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>
