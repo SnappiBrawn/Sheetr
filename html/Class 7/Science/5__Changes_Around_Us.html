@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changes Around Us - Interactive Study Guide</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome for Doodles & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Kalam for Handwritten Aesthetic -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Hand-drawn globally-applied font */
+    body {
+      font-family: 'Kalam', cursive;
+      background-color: #faf6ee;
+      /* Grid paper effect */
+      background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+      background-size: 20px 20px;
+      color: #1e293b;
+    }
+
+    /* Hand-drawn card borders using border-radius magic */
+    .hand-drawn-card {
+      border: 3px solid #1e293b;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      box-shadow: 6px 6px 0px #1e293b;
+      transition: all 0.2s ease-in-out;
+      background-color: #ffffff;
+    }
+
+    .hand-drawn-card:hover {
+      transform: translateY(-2px) rotate(0deg) !important;
+      box-shadow: 8px 8px 0px #1e293b;
+    }
+
+    /* Custom highlighters */
+    .highlight-yellow {
+      background: linear-gradient(104deg, rgba(254, 240, 138, 0) 0.9%, rgba(254, 240, 138, 0.85) 2.4%, rgba(254, 240, 138, 0.6) 92%, rgba(254, 240, 138, 0.1) 99%);
+    }
+    
+    .highlight-green {
+      background: linear-gradient(104deg, rgba(187, 247, 208, 0) 0.9%, rgba(187, 247, 208, 0.85) 2.4%, rgba(187, 247, 208, 0.6) 92%, rgba(187, 247, 208, 0.1) 99%);
+    }
+
+    .highlight-blue {
+      background: linear-gradient(104deg, rgba(191, 219, 254, 0) 0.9%, rgba(191, 219, 254, 0.85) 2.4%, rgba(191, 219, 254, 0.6) 92%, rgba(191, 219, 254, 0.1) 99%);
+    }
+
+    /* Sketch Tape effect */
+    .tape {
+      background-color: rgba(253, 224, 71, 0.4);
+      box-shadow: inset 0 0 4px rgba(0,0,0,0.05);
+      transform: rotate(-2deg);
+    }
+  </style>
+</head>
+<body class="p-4 md:p-8 min-h-screen">
+
+  <div class="max-w-7xl mx-auto">
+    
+    <!-- HEADER BAR -->
+    <header class="relative mb-10 mt-6 text-center transform -rotate-1">
+      <!-- Tape Graphics -->
+      <div class="absolute -top-6 left-12 w-28 h-8 tape border-l-2 border-r-2 border-dashed border-yellow-500/30"></div>
+      <div class="absolute -top-6 right-12 w-28 h-8 tape border-l-2 border-r-2 border-dashed border-yellow-500/30"></div>
+      
+      <div class="inline-block bg-emerald-100 border-4 border-slate-800 p-6 rounded-3xl shadow-[8px_8px_0px_#1e293b]">
+        <div class="flex items-center justify-center gap-3 mb-1">
+          <span class="text-4xl">🧪</span>
+          <h1 class="text-4xl md:text-5xl font-bold text-slate-800 tracking-wide">Changes Around Us</h1>
+          <span class="text-4xl">🔥</span>
+        </div>
+        <p class="text-xl md:text-2xl text-emerald-800 font-semibold italic">Physical & Chemical Changes • Grade 7 Quick Reference</p>
+      </div>
+    </header>
+
+    <!-- MAIN STUDY GUIDE GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+
+      <!-- 1. PHYSICAL CHANGES CARD -->
+      <div class="hand-drawn-card p-6 bg-amber-50/50 transform -rotate-1">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-bold text-amber-900 border-b-2 border-dashed border-amber-900 pb-1">
+            <i class="fa-solid fa-shapes mr-1"></i> 1. Physical Changes
+          </h2>
+          <span class="text-xs bg-amber-200 text-amber-800 px-2 py-1 rounded-full font-bold border border-amber-900">REVERSIBLE? SOMETIMES!</span>
+        </div>
+        
+        <p class="text-lg leading-relaxed mb-4">
+          Changes in which <span class="highlight-yellow px-1 font-bold">only physical properties</span> (like shape, size, state, or color) change, and <strong class="text-rose-600">NO NEW substance</strong> is formed!
+        </p>
+
+        <div class="border-t border-dashed border-slate-700 pt-3">
+          <h3 class="font-bold text-slate-800 mb-2">⚡ Key Characteristics:</h3>
+          <ul class="space-y-1 text-md">
+            <li><i class="fa-solid fa-check text-emerald-600"></i> No alteration to chemical makeup.</li>
+            <li><i class="fa-solid fa-check text-emerald-600"></i> Easily reversed in many cases (e.g., Ice &rarr; Water).</li>
+            <li><i class="fa-solid fa-circle-info text-amber-700"></i> Can sometimes be irreversible (e.g., Chopping wood).</li>
+          </ul>
+        </div>
+
+        <div class="mt-4 bg-white/80 p-3 rounded-xl border-2 border-slate-700 shadow-inner">
+          <h4 class="font-bold text-sm text-slate-500 uppercase tracking-wider mb-2">Class Examples:</h4>
+          <div class="grid grid-cols-2 gap-2 text-sm font-semibold">
+            <div class="flex items-center gap-1"><span class="text-xl">🧊</span> Melting Ice</div>
+            <div class="flex items-center gap-1"><span class="text-xl">🎈</span> Inflating Balloon</div>
+            <div class="flex items-center gap-1"><span class="text-xl">✂️</span> Paper Origami</div>
+            <div class="flex items-center gap-1"><span class="text-xl">🪵</span> Chopping Veggies</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. CHEMICAL CHANGES CARD -->
+      <div class="hand-drawn-card p-6 bg-rose-50/50 transform rotate-1">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-bold text-rose-950 border-b-2 border-dashed border-rose-950 pb-1">
+            <i class="fa-solid fa-flask mr-1"></i> 2. Chemical Changes
+          </h2>
+          <span class="text-xs bg-rose-200 text-rose-800 px-2 py-1 rounded-full font-bold border border-rose-950">IRREVERSIBLE</span>
+        </div>
+        
+        <p class="text-lg leading-relaxed mb-4">
+          A change in which <span class="highlight-green px-1 font-bold">one or more NEW substances</span> are formed through chemical reactions. Composition changes entirely!
+        </p>
+
+        <div class="border-t border-dashed border-slate-700 pt-3">
+          <h3 class="font-bold text-slate-800 mb-2">✨ Signs of a Chemical Change:</h3>
+          <ul class="grid grid-cols-2 gap-2 text-sm">
+            <li class="bg-white p-1 rounded border border-rose-200"><i class="fa-solid fa-temperature-arrow-up text-rose-600 mr-1"></i> Heat/Light</li>
+            <li class="bg-white p-1 rounded border border-rose-200"><i class="fa-solid fa-wind text-rose-600 mr-1"></i> Gas/Bubbles</li>
+            <li class="bg-white p-1 rounded border border-rose-200"><i class="fa-solid fa-palette text-rose-600 mr-1"></i> Color Shift</li>
+            <li class="bg-white p-1 rounded border border-rose-200"><i class="fa-solid fa-nose-cough text-rose-600 mr-1"></i> New Smell</li>
+          </ul>
+        </div>
+
+        <div class="mt-4 bg-rose-900 text-rose-50 p-3 rounded-xl border border-rose-950">
+          <p class="text-xs uppercase font-mono tracking-wider opacity-75">Classic Reaction</p>
+          <p class="text-md font-bold mt-1">
+            Vinegar + Baking Soda &rarr; Carbon Dioxide &uarr; + Other Products
+          </p>
+          <p class="text-xs mt-1 italic text-rose-200">*Produces rapid fizzing sound &amp; bubbling!</p>
+        </div>
+      </div>
+
+      <!-- 3. LIME WATER TEST (CRUCIAL EXPERIMENT) -->
+      <div class="hand-drawn-card p-6 bg-emerald-50/50 transform -rotate-1 md:col-span-2 lg:col-span-1">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-bold text-emerald-950 border-b-2 border-dashed border-emerald-950 pb-1">
+            <i class="fa-solid fa-vial mr-1"></i> 3. The Lime Water Test
+          </h2>
+          <span class="text-xs bg-emerald-200 text-emerald-800 px-2 py-1 rounded-full font-bold border border-emerald-900">LAB ESSENTIAL</span>
+        </div>
+
+        <p class="text-sm mb-4">
+          How do we verify if a gas is <strong>Carbon Dioxide (CO<sub>2</sub>)</strong>? We bubble it through freshly prepared lime water!
+        </p>
+
+        <div class="bg-white p-3 rounded-xl border-2 border-emerald-900 space-y-3 shadow-inner">
+          <div class="flex items-center gap-3">
+            <div class="text-2xl">🥛</div>
+            <div>
+              <p class="text-xs text-slate-500 font-bold uppercase">Observation</p>
+              <p class="text-sm font-bold text-emerald-900">Lime water turns <span class="highlight-yellow px-1">milky / cloudy</span>.</p>
+            </div>
+          </div>
+
+          <div class="text-xs font-mono bg-slate-900 text-slate-100 p-2 rounded-lg leading-relaxed">
+            <span class="text-emerald-400">Calcium hydroxide</span> [Lime water] <br>
+            + <span class="text-sky-300">Carbon dioxide</span> [CO<sub>2</sub>] <br>
+            &rarr; <span class="text-amber-300">Calcium carbonate</span> [Insoluble Precipitate] <br>
+            + <span class="text-blue-300">Water</span> [H<sub>2</sub>O]
+          </div>
+        </div>
+        
+        <p class="text-xs text-emerald-800 mt-2 text-center italic font-bold">
+          *The milkiness is due to insoluble Calcium Carbonate particles!
+        </p>
+      </div>
+
+      <!-- 4. COMBUSTION & FIRE TRIANGLE -->
+      <div class="hand-drawn-card p-6 bg-orange-50/50 transform rotate-1 md:col-span-1">
+        <h2 class="text-2xl font-bold text-orange-950 border-b-2 border-dashed border-orange-950 pb-1 mb-4">
+          <i class="fa-solid fa-fire mr-1"></i> 4. Combustion &amp; Fire
+        </h2>
+
+        <p class="text-md mb-3">
+          <strong>Combustion:</strong> A chemical reaction in which a substance reacts with oxygen to release heat and light.
+        </p>
+
+        <!-- Dynamic Fire Triangle visualization using pure HTML/CSS styling -->
+        <div class="my-4 flex flex-col items-center">
+          <div class="relative w-40 h-32 flex items-center justify-center">
+            <!-- Triangle CSS Shape -->
+            <div class="absolute bottom-0 w-0 h-0 border-l-[80px] border-l-transparent border-r-[80px] border-r-transparent border-b-[110px] border-b-orange-600/20"></div>
+            <!-- Triangle Outlines & Texts -->
+            <span class="absolute top-4 text-xs font-black text-rose-700 uppercase">Heat</span>
+            <span class="absolute bottom-2 left-2 text-xs font-black text-sky-700 uppercase">Oxygen</span>
+            <span class="absolute bottom-2 right-2 text-xs font-black text-amber-800 uppercase">Fuel</span>
+            <!-- Center Flame icon -->
+            <span class="absolute text-3xl bottom-4 animate-pulse">🔥</span>
+          </div>
+          <span class="text-xs font-bold text-slate-500 mt-1 uppercase tracking-wider">The Fire Triangle (Must meet all 3!)</span>
+        </div>
+
+        <div class="bg-white p-3 rounded-xl border border-orange-900/40 text-sm">
+          <span class="font-bold text-orange-800"><i class="fa-solid fa-circle-exclamation mr-1"></i> Ignition Temp:</span> The minimum temperature required for a substance to catch fire.
+        </div>
+      </div>
+
+      <!-- 5. CANDLE PARADOX & SCIENTIST CORNER -->
+      <div class="hand-drawn-card p-6 bg-cyan-50/50 transform -rotate-1">
+        <h2 class="text-2xl font-bold text-cyan-950 border-b-2 border-dashed border-cyan-950 pb-1 mb-4">
+          <i class="fa-solid fa-lightbulb mr-1"></i> 5. The Candle Paradox
+        </h2>
+
+        <p class="text-sm mb-3">
+          Does a burning candle undergo a <strong>Physical</strong> or <strong>Chemical</strong> change? 
+          <span class="highlight-yellow font-bold px-1">It undergoes BOTH simultaneously!</span>
+        </p>
+
+        <div class="space-y-3 text-sm">
+          <div class="bg-white p-2 rounded-lg border border-cyan-200">
+            <span class="text-emerald-700 font-bold"><i class="fa-solid fa-arrows-spin mr-1"></i> Physical Change:</span> 
+            Wax melts from solid to liquid, flows down, and solidifies back into solid wax. No new substance created!
+          </div>
+
+          <div class="bg-white p-2 rounded-lg border border-cyan-200">
+            <span class="text-rose-700 font-bold"><i class="fa-solid fa-bolt mr-1"></i> Chemical Change:</span> 
+            The liquid wax is drawn up the wick, vaporizes, and burns in oxygen to form Carbon Dioxide, water vapor, soot, and light/heat.
+          </div>
+        </div>
+
+        <div class="mt-4 p-3 bg-cyan-900 text-cyan-50 rounded-xl border border-cyan-950">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-xl">👴</span>
+            <h4 class="font-bold text-xs uppercase tracking-wider">Michael Faraday (19th Century)</h4>
+          </div>
+          <p class="text-xs italic leading-relaxed">
+            Delivered famous lectures on <span class="underline">"Chemical History of a Candle"</span>, proving candles are the ultimate objects to study physical &amp; chemical processes!
+          </p>
+        </div>
+      </div>
+
+      <!-- 6. RUSTING, NATURAL CHANGES & MORE -->
+      <div class="hand-drawn-card p-6 bg-yellow-50/50 transform rotate-1">
+        <h2 class="text-2xl font-bold text-yellow-950 border-b-2 border-dashed border-yellow-950 pb-1 mb-4">
+          <i class="fa-solid fa-mountain-sun mr-1"></i> 6. Slow &amp; Natural Changes
+        </h2>
+
+        <div class="space-y-4">
+          <!-- Rusting block -->
+          <div class="bg-orange-100 p-3 rounded-xl border-2 border-amber-900/30">
+            <div class="flex items-center justify-between mb-1">
+              <span class="font-bold text-orange-950 text-sm uppercase"><i class="fa-solid fa-screwdriver-wrench mr-1"></i> Rusting of Iron</span>
+              <span class="text-xs bg-red-200 text-red-950 px-2 py-0.5 rounded-full font-bold">Chemical</span>
+            </div>
+            <p class="text-xs mb-2">A slow chemical change forming a new reddish-brown coating (Iron Oxide).</p>
+            <p class="text-xs font-mono bg-white p-1 rounded text-center border border-orange-200">
+              Iron + Oxygen (Air) + Water &rarr; Rust
+            </p>
+          </div>
+
+          <!-- Weathering & Erosion -->
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="bg-white p-2 rounded-lg border border-yellow-300">
+              <span class="font-bold text-yellow-900"><i class="fa-solid fa-wind mr-1"></i> Weathering</span>
+              <p class="mt-1">Breaking of rocks due to climate, water &amp; chemicals. Basalt changes chemically into red soil.</p>
+            </div>
+            <div class="bg-white p-2 rounded-lg border border-yellow-300">
+              <span class="font-bold text-yellow-900"><i class="fa-solid fa-water mr-1"></i> Erosion</span>
+              <p class="mt-1">Pebbles/soil moved by wind or water. 100% physical change that takes thousands of years!</p>
+            </div>
+          </div>
+
+          <!-- Desirable / Undesirable -->
+          <div class="bg-white p-3 rounded-lg border border-dashed border-slate-400">
+            <span class="font-bold text-slate-800 text-sm">💡 Nature's Spotlight: Bioluminescence</span>
+            <p class="text-xs text-slate-600 mt-1">
+              Fireflies produce light without heat through a chemical change inside their bodies. True biological magic!
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- QUICK SUMMARY FOOTER BAR -->
+    <div class="mt-10 mb-20 text-center transform rotate-0.5">
+      <div class="inline-block bg-slate-900 text-slate-100 border-2 border-slate-800 p-4 rounded-2xl shadow-[4px_4px_0px_#94a3b8] max-w-2xl mx-auto">
+        <h3 class="font-bold text-lg mb-1"><i class="fa-solid fa-circle-check text-emerald-400 mr-2"></i>In a Nutshell Summary</h3>
+        <p class="text-sm text-slate-300 leading-relaxed font-sans">
+          Physical changes change outer appearances (shape, size, state) without new substances. Chemical changes yield entirely new substances through reactions. Nature balances both to continuously shape our world!
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DYNAMIC EXPORT BUTTON -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '5._Changes_Around_Us.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

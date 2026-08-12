@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earth, Moon and the Sun - Study Guide</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Kalam for handwritten aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Kalam', cursive;
+      background-color: #faf9f5;
+      /* Grid paper background pattern */
+      background-image: 
+        linear-gradient(to right, rgba(148, 163, 184, 0.12) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    .doodle-card {
+      background: #ffffff;
+      border: 3px solid #1e293b;
+      box-shadow: 6px 6px 0px #1e293b;
+      border-radius: 12px 24px 16px 20px / 20px 16px 24px 12px;
+      transition: all 0.2s ease-in-out;
+    }
+    .doodle-card:hover {
+      transform: translate(-2px, -2px) rotate(0.5deg);
+      box-shadow: 8px 8px 0px #1e293b;
+    }
+    .highlight-yellow {
+      background: linear-gradient(120deg, #fef08a 0%, #fef08a 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 80%;
+      background-position: 0 80%;
+    }
+    .highlight-pink {
+      background: linear-gradient(120deg, #fecdd3 0%, #fecdd3 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 80%;
+      background-position: 0 80%;
+    }
+    .highlight-blue {
+      background: linear-gradient(120deg, #bae6fd 0%, #bae6fd 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 80%;
+      background-position: 0 80%;
+    }
+    .tape {
+      background-color: rgba(254, 240, 138, 0.65);
+      box-shadow: inset 0 0 4px rgba(0,0,0,0.05);
+      transform: rotate(-2deg);
+    }
+  </style>
+</head>
+<body class="p-4 md:p-8 text-slate-800">
+
+  <!-- Main Container -->
+  <div class="max-w-7xl mx-auto space-y-8">
+    
+    <!-- HEADER SECTION -->
+    <header class="relative p-6 bg-amber-50 doodle-card text-center overflow-hidden" style="transform: rotate(-0.5deg);">
+      <div class="absolute top-2 left-4 text-3xl opacity-30"><i class="fa-solid fa-cloud"></i></div>
+      <div class="absolute top-4 right-8 text-4xl opacity-30"><i class="fa-solid fa-moon"></i></div>
+      <div class="absolute bottom-2 left-10 text-3xl opacity-30"><i class="fa-solid fa-star"></i></div>
+      
+      <div class="tape absolute -top-2 left-1/2 -translate-x-1/2 w-40 h-8 border border-dashed border-amber-300"></div>
+      
+      <h1 class="text-4xl md:text-6xl font-bold text-slate-800 tracking-tight">
+        <i class="fa-solid fa-sun text-amber-500 animate-spin" style="animation-duration: 20s;"></i> 
+        12. Earth, Moon and the Sun
+        <i class="fa-solid fa-earth-asia text-blue-500"></i>
+      </h1>
+      <p class="text-lg md:text-2xl mt-3 text-slate-600 max-w-2xl mx-auto">
+        Interactive Study Guide &bull; Essential concepts, motions, seasons, and cosmic alignments visualised!
+      </p>
+    </header>
+
+    <!-- CONTENT GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- CARD 1: ROTATION -->
+      <div class="doodle-card p-6 bg-sky-50 relative" style="transform: rotate(0.5deg);">
+        <span class="absolute -top-3 -left-3 bg-blue-500 text-white font-bold px-3 py-1 rounded-full border-2 border-slate-800">12.1</span>
+        <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-800 pb-2 mb-4 text-blue-900">
+          <i class="fa-solid fa-arrows-spin mr-2"></i> Earth's Rotation
+        </h2>
+        
+        <p class="mb-4">
+          The motion of the Earth spinning on its <span class="highlight-yellow font-bold">own axis</span> in space from <span class="highlight-blue font-bold">West to East</span> (anti-clockwise when viewed from the North Pole).
+        </p>
+
+        <div class="bg-white p-3 rounded-lg border-2 border-slate-800 mb-4 shadow-sm">
+          <div class="flex items-center justify-between text-sm font-bold mb-1">
+            <span>Rotation Period:</span>
+            <span class="text-blue-600">~ 24 Hours</span>
+          </div>
+          <div class="text-xs text-slate-500 border-t border-slate-200 pt-1">
+            Aryabhata's highly accurate 5th-century estimate: <br>
+            <span class="font-bold text-slate-700">23 Hours, 56 Minutes, 4.1 Seconds</span>
+          </div>
+        </div>
+
+        <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-circle-info text-blue-500"></i> Key Consequences:</h3>
+        <ul class="list-none space-y-2 text-sm pl-2">
+          <li><i class="fa-solid fa-circle text-xs text-blue-400 mr-2"></i><strong>Day &amp; Night Cycle:</strong> The half facing the Sun experiences day; the other half is in dark night.</li>
+          <li><i class="fa-solid fa-circle text-xs text-blue-400 mr-2"></i><strong>Apparent Motion:</strong> The Sun, Moon, and stars appear to rise in the <span class="font-bold">East</span> and set in the <span class="font-bold">West</span>.</li>
+        </ul>
+      </div>
+
+      <!-- CARD 2: REVOLUTION -->
+      <div class="doodle-card p-6 bg-yellow-50 relative" style="transform: rotate(-0.5deg);">
+        <span class="absolute -top-3 -left-3 bg-amber-500 text-white font-bold px-3 py-1 rounded-full border-2 border-slate-800">12.2</span>
+        <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-800 pb-2 mb-4 text-amber-900">
+          <i class="fa-solid fa-orbit mr-2"></i> Earth's Revolution
+        </h2>
+
+        <p class="mb-4">
+          The movement of the Earth in a nearly circular path called an <span class="highlight-yellow font-bold">orbit</span> around the Sun.
+        </p>
+
+        <div class="bg-white p-3 rounded-lg border-2 border-slate-800 mb-4 shadow-sm">
+          <div class="flex items-center justify-between text-sm font-bold">
+            <span>Revolution Period:</span>
+            <span class="text-amber-600">365 Days &amp; 6 Hours</span>
+          </div>
+          <div class="text-xs text-slate-500 mt-1 border-t border-slate-200 pt-1">
+            The extra 6 hours accumulate over 4 years to create a <span class="font-bold">Leap Year (366 days)</span>!
+          </div>
+        </div>
+
+        <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-star-and-crescent text-amber-500"></i> Changing Night Sky:</h3>
+        <p class="text-sm">
+          As Earth moves along its orbit, we look out in different directions into space at night. This changes the constellations visible in the sky month-by-month.
+        </p>
+        <div class="mt-3 text-xs bg-amber-100 p-2 rounded border border-amber-300">
+          <i class="fa-solid fa-seedling mr-1"></i> <strong>Tribal Knowledge:</strong> The <em>Bhil</em> and <em>Pawara</em> communities use specific star positions as natural indicators for seasonal monsoon rains!
+        </div>
+      </div>
+
+      <!-- CARD 3: SEASONS FORMULA -->
+      <div class="doodle-card p-6 bg-emerald-50 relative lg:col-span-1 md:col-span-2" style="transform: rotate(0.8deg);">
+        <span class="absolute -top-3 -left-3 bg-emerald-600 text-white font-bold px-3 py-1 rounded-full border-2 border-slate-800">12.2.2</span>
+        <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-800 pb-2 mb-4 text-emerald-900">
+          <i class="fa-solid fa-umbrella-beach mr-2"></i> Seasons Explained
+        </h2>
+
+        <div class="p-3 bg-white border-2 border-slate-800 rounded-lg mb-4 text-center">
+          <div class="text-xs uppercase font-bold text-slate-400">The Secret Recipe</div>
+          <div class="text-lg font-bold text-slate-800">
+            Tilted Axis + Spherical Shape + Revolution = <span class="text-emerald-600">Seasons!</span>
+          </div>
+        </div>
+
+        <p class="text-sm mb-3">
+          The Earth's axis of rotation is <strong>tilted</strong> (not straight up and down). As it orbits the Sun, different hemispheres get varying sunlight:
+        </p>
+
+        <ul class="space-y-3 text-xs">
+          <li class="bg-white p-2 rounded border border-emerald-200">
+            <span class="font-bold text-emerald-700">Hemisphere Tilted TOWARDS the Sun:</span><br>
+            Direct, concentrated sunrays + longer daylight (>12 hrs) &rarr; <span class="font-bold text-red-500">Summer Season</span>
+          </li>
+          <li class="bg-white p-2 rounded border border-emerald-200">
+            <span class="font-bold text-slate-600">Hemisphere Tilted AWAY from the Sun:</span><br>
+            Slanted, spread-out sunrays + shorter daylight (<12 hrs) &rarr; <span class="font-bold text-blue-500">Winter Season</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CARD 4: THE BIG MYTH BUSTER (SPAN 2 COLUMNS ON MD/LG) -->
+      <div class="doodle-card p-6 bg-rose-50 relative md:col-span-2" style="transform: rotate(-0.3deg);">
+        <div class="absolute -top-3 right-4 bg-rose-500 text-white font-bold px-3 py-1 rounded border-2 border-slate-800 text-xs uppercase tracking-wider">
+          <i class="fa-solid fa-triangle-exclamation mr-1"></i> Concept Warning!
+        </div>
+        <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-800 pb-2 mb-4 text-rose-900">
+          <i class="fa-solid fa-circle-question mr-2"></i> What NOT to Say in Your Exams!
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-3 bg-red-100 rounded-lg border-2 border-red-300">
+            <h3 class="font-bold text-red-800 text-lg"><i class="fa-solid fa-circle-xmark"></i> Common Misconception</h3>
+            <p class="text-sm text-slate-700 mt-1">
+              "Seasons happen because Earth is closer to the Sun in summer and further away in winter."
+            </p>
+          </div>
+          <div class="p-3 bg-emerald-100 rounded-lg border-2 border-emerald-300">
+            <h3 class="font-bold text-emerald-800 text-lg"><i class="fa-solid fa-circle-check"></i> The Real Science</h3>
+            <p class="text-sm text-slate-700 mt-1">
+              Earth's orbit is nearly circular! The distance difference is tiny. In fact, Earth is actually <strong>closest</strong> to the sun in January! Tilt is the 100% true driver.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5: SOLSTICES & EQUINOXES -->
+      <div class="doodle-card p-6 bg-purple-50 relative" style="transform: rotate(0.4deg);">
+        <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-800 pb-2 mb-4 text-purple-900">
+          <i class="fa-solid fa-calendar-days mr-2"></i> Key Astronomical Dates
+        </h2>
+
+        <div class="space-y-3 text-sm">
+          <div class="flex items-start gap-2 bg-white p-2 rounded border border-purple-200">
+            <span class="text-xl">☀️</span>
+            <div>
+              <strong class="text-purple-800">Summer Solstice (June 21):</strong><br>
+              Longest day in Northern Hemisphere. North Pole gets continuous 24-hour sunlight!
+            </div>
+          </div>
+
+          <div class="flex items-start gap-2 bg-white p-2 rounded border border-purple-200">
+            <span class="text-xl">❄️</span>
+            <div>
+              <strong class="text-purple-800">Winter Solstice (December 22):</strong><br>
+              Shortest day in Northern Hemisphere. North Pole remains in complete dark.
+            </div>
+          </div>
+
+          <div class="flex items-start gap-2 bg-white p-2 rounded border border-purple-200">
+            <span class="text-xl">⚖️</span>
+            <div>
+              <strong class="text-purple-800">Equinoxes (March 21 &amp; Sept 23):</strong><br>
+              Sun is directly over the Equator. <span class="highlight-pink">Equal 12 hours of day</span> and 12 hours of night everywhere on Earth!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6: SOLAR ECLIPSE -->
+      <div class="doodle-card p-6 bg-amber-50 relative" style="transform: rotate(-0.5deg);">
+        <span class="absolute -top-3 -left-3 bg-slate-800 text-white font-bold px-3 py-1 rounded-full border-2 border-slate-800">12.3.1</span>
+        <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-800 pb-2 mb-4 text-slate-900">
+          <i class="fa-solid fa-circle-dot mr-2"></i> Solar Eclipse
+        </h2>
+        
+        <div class="p-2 bg-slate-800 text-amber-300 text-center rounded font-bold mb-3 text-sm">
+          Alignment: SUN &rarr; MOON &rarr; EARTH
+        </div>
+
+        <p class="text-sm mb-4">
+          The <span class="font-bold">Moon</span> passes directly between the Sun and Earth, casting its shadow onto Earth and temporarily blocking sunlight.
+        </p>
+
+        <div class="space-y-2 text-xs">
+          <div class="p-2 bg-white rounded border border-amber-200">
+            <strong>Total Solar Eclipse:</strong> Occurs in the small region of complete shadow (Umbra). Total darkness for a few minutes.
+          </div>
+          <div class="p-2 bg-white rounded border border-amber-200">
+            <strong>Partial Solar Eclipse:</strong> Occurs in the outer shadow region (Penumbra). Only a part of the sun is blocked.
+          </div>
+        </div>
+
+        <div class="mt-4 p-2 bg-red-100 text-red-800 rounded border border-red-300 text-xs font-bold">
+          <i class="fa-solid fa-eye-slash mr-1"></i> Safety Warning: Never look directly at a solar eclipse! Use pinhole projectors or specialized solar filters.
+        </div>
+      </div>
+
+      <!-- CARD 7: LUNAR ECLIPSE -->
+      <div class="doodle-card p-6 bg-red-50 relative" style="transform: rotate(0.3deg);">
+        <span class="absolute -top-3 -left-3 bg-red-600 text-white font-bold px-3 py-1 rounded-full border-2 border-slate-800">12.3.2</span>
+        <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-800 pb-2 mb-4 text-red-900">
+          <i class="fa-solid fa-moon mr-2"></i> Lunar Eclipse
+        </h2>
+
+        <div class="p-2 bg-red-900 text-red-100 text-center rounded font-bold mb-3 text-sm">
+          Alignment: SUN &rarr; EARTH &rarr; MOON
+        </div>
+
+        <p class="text-sm mb-4">
+          The <span class="font-bold">Earth</span> passes directly between the Sun and the Moon, blocking sunlight from reaching the Moon. The Moon enters Earth's shadow.
+        </p>
+
+        <div class="space-y-2 text-xs">
+          <div class="p-2 bg-white rounded border border-red-200">
+            <strong>Total Lunar Eclipse:</strong> Moon goes completely into Earth's shadow. It appears a deep <span class="text-red-600 font-bold">coppery red</span> because Earth's atmosphere filters and bends red sunlight onto the Moon.
+          </div>
+          <div class="p-2 bg-white rounded border border-red-200">
+            <strong>Partial Lunar Eclipse:</strong> Only a part of the Moon passes through the dark central shadow of Earth.
+          </div>
+        </div>
+
+        <div class="mt-4 p-2 bg-green-100 text-green-800 rounded border border-green-300 text-xs font-bold">
+          <i class="fa-solid fa-face-smile mr-1"></i> Unlike solar eclipses, Lunar Eclipses are completely safe to view directly with your naked eyes!
+        </div>
+      </div>
+
+      <!-- CARD 8: HISTORICAL CORNER (SPAN FULL WIDTH) -->
+      <div class="doodle-card p-6 bg-indigo-50 relative md:col-span-2 lg:col-span-3" style="transform: rotate(-0.2deg);">
+        <div class="absolute -top-3 left-4 bg-indigo-600 text-white font-bold px-3 py-1 rounded border-2 border-slate-800 text-xs uppercase tracking-wider">
+          <i class="fa-solid fa-graduation-cap mr-1"></i> Pioneers of Astronomy
+        </div>
+        
+        <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-800 pb-2 mb-4 text-indigo-900">
+          <i class="fa-solid fa-user-astronaut mr-2"></i> Historic Milestones &amp; Cool Facts
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+          <!-- Aryabhata -->
+          <div class="p-3 bg-white rounded-lg border-2 border-slate-800 shadow-sm">
+            <h3 class="font-bold text-indigo-800 text-base"><i class="fa-solid fa-feather"></i> Aryabhata (5th Century CE)</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Ancient Indian master who proposed that the Earth rotates on its own axis, causing the stars to appear to move. He used the perfect analogy of a passenger in a moving boat seeing stationary trees on the bank move backwards.
+            </p>
+          </div>
+
+          <!-- Leon Foucault -->
+          <div class="p-3 bg-white rounded-lg border-2 border-slate-800 shadow-sm">
+            <h3 class="font-bold text-indigo-800 text-base"><i class="fa-solid fa-clock"></i> Foucault Pendulum</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              A physical experiment demonstrating rotation. A giant 22m long pendulum is suspended in the Constitution Hall of the Parliament Building in New Delhi, continuously tracing out paths that show our planet's rotation below it!
+            </p>
+          </div>
+
+          <!-- MK Vainu Bappu -->
+          <div class="p-3 bg-white rounded-lg border-2 border-slate-800 shadow-sm">
+            <h3 class="font-bold text-indigo-800 text-base"><i class="fa-solid fa-telescope"></i> M.K. Vainu Bappu</h3>
+            <p class="text-xs text-slate-600 mt-1">
+              Known as the father of modern Indian astronomy. He discovered a comet, established key observatories in India (including Kavalur), and dedicated his life to researching celestial movements.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER / SOURCE SIGN-OFF -->
+    <footer class="text-center py-6 text-xs text-slate-500 border-t-2 border-dashed border-slate-300">
+      <p>&bull; Earth, Moon, and Sun Study Guide &bull; Designed for Grade 7 General Science Classes &bull;</p>
+    </footer>
+
+  </div>
+
+  <!-- DYNAMIC EXPORT BUTTON -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '12._Earth,_Moon_and_the_Sun.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

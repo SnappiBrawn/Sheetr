@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The World of Metals and Non-Metals - Visual Reference Guide</title>
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Handwriting Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            hand: ['Patrick Hand', 'cursive'],
+            kalam: ['Kalam', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Notebook Lined Paper Background Effect */
+    body {
+      background-color: #f7f5f0;
+      background-image: 
+        linear-gradient(#e1dcd3 1px, transparent 1px),
+        linear-gradient(90deg, rgba(239, 68, 68, 0.15) 2px, transparent 2px);
+      background-size: 100% 2rem, 6rem 100%;
+      background-attachment: local;
+    }
+
+    /* Hand-Drawn Custom Border Tricks */
+    .doodle-card {
+      border: 3px solid #1e293b;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      box-shadow: 6px 6px 0px #1e293b;
+      background-color: rgba(255, 255, 255, 0.95);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .doodle-card:hover {
+      transform: scale(1.01) rotate(0deg) !important;
+      box-shadow: 8px 8px 0px #0f172a;
+    }
+
+    /* Highlighter Marker Highlights */
+    .highlight-yellow {
+      background: linear-gradient(104deg, rgba(254, 240, 138, 0.85) 0%, rgba(254, 240, 138, 0.35) 100%);
+      border-radius: 4px;
+      padding: 0 4px;
+    }
+
+    .highlight-cyan {
+      background: linear-gradient(104deg, rgba(165, 243, 252, 0.8) 0%, rgba(165, 243, 252, 0.3) 100%);
+      border-radius: 4px;
+      padding: 0 4px;
+    }
+
+    .highlight-pink {
+      background: linear-gradient(104deg, rgba(251, 207, 232, 0.8) 0%, rgba(251, 207, 232, 0.3) 100%);
+      border-radius: 4px;
+      padding: 0 4px;
+    }
+
+    /* Custom scrollbar to match doodle theme */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body class="font-hand text-slate-800 text-lg md:text-xl p-4 md:p-8 pl-8 md:pl-28 min-h-screen">
+
+  <!-- Header Section -->
+  <header class="mb-10 text-center relative max-w-6xl mx-auto">
+    <div class="inline-block transform -rotate-1 bg-yellow-100 border-4 border-slate-800 px-6 py-4 rounded-3xl shadow-[5px_5px_0px_#1e293b]">
+      <h1 class="font-kalam text-3xl md:text-5xl font-bold text-slate-900 flex items-center justify-center gap-3">
+        <i class="fa-solid fa-flask text-emerald-600 animate-bounce"></i> 
+        4. The World of Metals & Non-metals 
+        <i class="fa-solid fa-atom text-blue-600"></i>
+      </h1>
+      <p class="text-md md:text-lg text-slate-600 mt-2 font-hand tracking-wider">
+        <span class="border-b-2 border-red-400">Interactive Science Reference & Lab Study Guide</span> • Grade 7 Curriculum
+      </p>
+    </div>
+    
+    <!-- Cute doodle arrow -->
+    <div class="absolute right-10 top-1/2 hidden lg:block text-slate-500 transform rotate-12">
+      <i class="fa-solid fa-arrow-pointer text-2xl mr-2"></i>
+      <span class="text-sm">Quick Navigation Guide!</span>
+    </div>
+  </header>
+
+  <!-- Masonry Grid Container -->
+  <main class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Card 1: Physical Properties of Metals -->
+    <section class="doodle-card p-6 transform -rotate-[0.5deg]">
+      <div class="flex items-center gap-2 mb-4 border-b-2 border-dashed border-slate-300 pb-2">
+        <span class="bg-amber-400 text-slate-900 w-8 h-8 rounded-full flex items-center justify-center font-bold">1</span>
+        <h2 class="font-kalam font-bold text-2xl text-slate-900">Physical Properties of Metals</h2>
+      </div>
+      
+      <ul class="space-y-4">
+        <li class="flex items-start gap-3">
+          <i class="fa-solid fa-hammer text-slate-700 mt-1"></i>
+          <div>
+            <strong class="highlight-yellow">Malleability:</strong> Can be beaten into thin sheets with a hammer. 
+            <div class="text-sm text-slate-600 mt-1 italic">
+              <i class="fa-solid fa-star text-amber-500"></i> Gold & Silver are the most malleable! Aluminium foil is used for packing food.
+            </div>
+          </div>
+        </li>
+
+        <li class="flex items-start gap-3">
+          <i class="fa-solid fa-circle-nodes text-slate-700 mt-1"></i>
+          <div>
+            <strong class="highlight-cyan">Ductility:</strong> Can be drawn into thin, long wires.
+            <div class="text-sm text-slate-600 mt-1 italic">
+              <i class="fa-solid fa-circle-info text-blue-500"></i> 1 gram of Gold can be drawn into a 2 kilometer-long wire!
+            </div>
+          </div>
+        </li>
+
+        <li class="flex items-start gap-3">
+          <i class="fa-solid fa-bell text-slate-700 mt-1"></i>
+          <div>
+            <strong class="highlight-pink">Sonority:</strong> Produces a clear, ringing sound when struck. (e.g., Temple bells, school bells, instruments like Sitars).
+          </div>
+        </li>
+
+        <li class="flex items-start gap-3">
+          <i class="fa-solid fa-temperature-arrow-up text-slate-700 mt-1"></i>
+          <div>
+            <strong class="highlight-yellow">Heat Conduction:</strong> Metals are <span class="underline decoration-wavy decoration-red-500">Good Conductors of Heat</span>. 
+            <div class="text-sm text-slate-600 mt-1">
+              * Hot Water Experiment: Metal spoon gets hot instantly, wooden spoon remains cold.
+            </div>
+          </div>
+        </li>
+
+        <li class="flex items-start gap-3">
+          <i class="fa-solid fa-bolt text-slate-700 mt-1"></i>
+          <div>
+            <strong class="highlight-cyan">Electrical Conduction:</strong> Metals are <span class="underline decoration-wavy decoration-blue-500">Good Conductors of Electricity</span>. 
+            <div class="text-sm text-slate-600 mt-1">
+              * Tester Experiment: Copper wire and Aluminium foil make the bulb glow; Sulfur & Carbon do not.
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Sticky Note inside Card -->
+      <div class="mt-6 p-3 bg-red-50 border-2 border-red-400 rounded-lg transform rotate-1">
+        <h4 class="font-bold text-red-700 text-sm"><i class="fa-solid fa-triangle-exclamation"></i> CRITICAL EXCEPTIONS:</h4>
+        <p class="text-sm text-slate-700">
+          - <strong>Mercury (Hg):</strong> The only metal found as a <strong>liquid</strong> at room temperature. <br>
+          - <strong>Sodium (Na) & Potassium (K):</strong> Super soft metals; can be easily cut with a kitchen knife!
+        </p>
+      </div>
+    </section>
+
+    <!-- Card 2: Rusting & Corrosion Lab -->
+    <section class="doodle-card p-6 transform rotate-[0.5deg]">
+      <div class="flex items-center gap-2 mb-4 border-b-2 border-dashed border-slate-300 pb-2">
+        <span class="bg-red-400 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</span>
+        <h2 class="font-kalam font-bold text-2xl text-slate-900">Rusting & Corrosion</h2>
+      </div>
+
+      <p class="mb-3">
+        When <strong class="text-amber-700">Iron</strong> objects are left exposed to moist air, they develop a brown flaky deposit called <strong class="text-red-600">Rust</strong>.
+      </p>
+
+      <div class="bg-amber-50 p-3 rounded-lg border border-amber-300 text-sm mb-4">
+        <span class="font-bold text-amber-800">The Formula:</span><br>
+        Iron (Fe) + Oxygen (O2) + Water (H2O) &rarr; Hydrated Iron Oxide (Rust)
+      </div>
+
+      <h3 class="font-bold text-slate-800 text-lg mb-2 underline decoration-indigo-400">Experiment (Activity 4.5):</h3>
+      <div class="grid grid-cols-3 gap-2 text-center text-xs mb-4">
+        <div class="p-2 border border-slate-300 rounded bg-blue-50">
+          <span class="font-bold">Tube A</span><br>
+          Silica Gel (Dry Air)<br>
+          <span class="text-emerald-600 font-bold">No Rust</span>
+        </div>
+        <div class="p-2 border border-slate-300 rounded bg-blue-50">
+          <span class="font-bold">Tube B</span><br>
+          Boiled Water + Oil<br>
+          <span class="text-emerald-600 font-bold">No Rust</span>
+        </div>
+        <div class="p-2 border border-slate-300 rounded bg-red-100 font-bold">
+          <span class="font-bold text-slate-900">Tube C</span><br>
+          Water + Air<br>
+          <span class="text-red-600">RUSTS!</span>
+        </div>
+      </div>
+
+      <div class="space-y-2 text-sm text-slate-700 border-t border-slate-200 pt-2">
+        <p><strong><i class="fa-solid fa-shield-halved text-emerald-600"></i> Rust Prevention:</strong> Painting, oiling, greasing, or applying a protective layer of Zinc metal (<span class="highlight-yellow">Galvanisation</span>).</p>
+        <p><strong><i class="fa-solid fa-circle-exclamation text-amber-600"></i> Copper Corrosion:</strong> Copper forms a dull green coating when exposed to moisture.</p>
+        <p><strong><i class="fa-solid fa-moon text-slate-400"></i> Silver Corrosion:</strong> Silver gets a black coat over time due to sulfur gases.</p>
+      </div>
+
+      <!-- History Nugget -->
+      <div class="mt-4 p-3 bg-yellow-50 border border-yellow-300 rounded text-xs italic">
+        <strong class="text-yellow-800 font-bold"><i class="fa-solid fa-landmark"></i> Ancient Indian Metallurgy:</strong><br>
+        The Iron Pillar of Delhi (Chandragupta II, ~1600 years old, 8m tall, 6000kg+) stands outdoors and has barely rusted!
+      </div>
+    </section>
+
+    <!-- Card 3: Metal vs Non-Metal Oxides (Chemical Reactions) -->
+    <section class="doodle-card p-6 transform -rotate-[0.5deg]">
+      <div class="flex items-center gap-2 mb-4 border-b-2 border-dashed border-slate-300 pb-2">
+        <span class="bg-blue-400 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</span>
+        <h2 class="font-kalam font-bold text-2xl text-slate-900">Oxide Chemistry Battle</h2>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Magnesium Burning -->
+        <div class="p-3 border-2 border-dashed border-emerald-300 rounded-xl bg-emerald-50/50">
+          <h3 class="font-bold text-emerald-800 flex items-center gap-2">
+            <i class="fa-solid fa-fire-burner text-emerald-600"></i> 1. Metals form Basic Oxides
+          </h3>
+          <p class="text-sm mt-1">
+            <strong>Magnesium Ribbon</strong> burns with a dazzling white flame to form Magnesium Oxide (<strong class="text-slate-700">MgO</strong>) white powder.
+          </p>
+          <div class="text-xs bg-white p-1 rounded mt-2 border border-slate-200">
+            Mg + O2 --(Burn)&rarr; MgO <br>
+            MgO + H2O &rarr; Mg(OH)2 (Magnesium Hydroxide)
+          </div>
+          <p class="text-sm text-red-600 font-bold mt-1">
+            <i class="fa-solid fa-vial"></i> Litmus Test: Turns Red Litmus BLUE (Basic!).
+          </p>
+        </div>
+
+        <!-- Sulfur Burning -->
+        <div class="p-3 border-2 border-dashed border-pink-300 rounded-xl bg-pink-50/50">
+          <h3 class="font-bold text-pink-800 flex items-center gap-2">
+            <i class="fa-solid fa-skull-crossbones text-pink-600"></i> 2. Non-Metals form Acidic Oxides
+          </h3>
+          <p class="text-sm mt-1">
+            Burning <strong>Sulfur Powder</strong> in a deflagrating spoon produces Sulfur Dioxide (<strong class="text-slate-700">SO2</strong>) gas.
+          </p>
+          <div class="text-xs bg-white p-1 rounded mt-2 border border-slate-200">
+            S + O2 &rarr; SO2 <br>
+            SO2 + H2O &rarr; H2SO3 (Sulfurous Acid)
+          </div>
+          <p class="text-sm text-blue-600 font-bold mt-1">
+            <i class="fa-solid fa-vial"></i> Litmus Test: Turns Blue Litmus RED (Acidic!).
+          </p>
+        </div>
+
+        <!-- Super Reactive Storage Warnings -->
+        <div class="bg-amber-100 p-3 rounded-lg text-xs space-y-1 border border-amber-400">
+          <p><strong><i class="fa-solid fa-droplet text-blue-600"></i> Sodium (Na):</strong> Reacts violently with water/air. Stored in <strong>Kerosene</strong>.</p>
+          <p><strong><i class="fa-solid fa-fire text-red-600"></i> Phosphorus (P):</strong> Catches fire easily in air. Stored safely in <strong>Water</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 4: Essential Non-Metals in Everyday Life -->
+    <section class="doodle-card p-6 transform rotate-[0.5deg]">
+      <div class="flex items-center gap-2 mb-4 border-b-2 border-dashed border-slate-300 pb-2">
+        <span class="bg-purple-400 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">4</span>
+        <h2 class="font-kalam font-bold text-2xl text-slate-900">Non-Metals in Action!</h2>
+      </div>
+
+      <p class="mb-4 text-slate-700">
+        Non-metals are not just "un-metals"—they are absolutely vital for life and technology!
+      </p>
+
+      <div class="space-y-3">
+        <div class="flex items-center gap-3 bg-emerald-50 p-2 rounded border border-emerald-200">
+          <i class="fa-solid fa-lungs text-emerald-600 text-2xl"></i>
+          <div>
+            <strong class="text-sm block">OXYGEN (O2)</strong>
+            <span class="text-xs text-slate-600">Essential for respiration of all living organisms.</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 bg-slate-100 p-2 rounded border border-slate-200">
+          <i class="fa-solid fa-dna text-slate-700 text-2xl"></i>
+          <div>
+            <strong class="text-sm block">CARBON (C)</strong>
+            <span class="text-xs text-slate-600">The key component of proteins, fats, carbs, and all life forms.</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 bg-blue-50 p-2 rounded border border-blue-200">
+          <i class="fa-solid fa-seedling text-blue-600 text-2xl"></i>
+          <div>
+            <strong class="text-sm block">NITROGEN (N)</strong>
+            <span class="text-xs text-slate-600">Used in chemical fertilizers to boost agricultural growth.</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 bg-cyan-50 p-2 rounded border border-cyan-200">
+          <i class="fa-solid fa-faucet-drip text-cyan-600 text-2xl"></i>
+          <div>
+            <strong class="text-sm block">CHLORINE (Cl)</strong>
+            <span class="text-xs text-slate-600">Crucial for water purification (killing harmful microbes).</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 bg-red-50 p-2 rounded border border-red-200">
+          <i class="fa-solid fa-band-aid text-red-600 text-2xl"></i>
+          <div>
+            <strong class="text-sm block">IODINE (I)</strong>
+            <span class="text-xs text-slate-600">Applied on wounds as an antiseptic solution (Tincture of Iodine).</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4 p-3 bg-purple-50 rounded border border-purple-300 text-xs">
+        <strong><i class="fa-solid fa-cubes"></i> What are Alloys?</strong> Homogeneous mixtures of metals (or metals + non-metals) engineered for higher strength and resistance to corrosion (e.g., Stainless steel, brass).
+      </div>
+    </section>
+
+    <!-- Card 5: Core Chemistry Glossary -->
+    <section class="doodle-card p-6 transform -rotate-[0.5deg]">
+      <div class="flex items-center gap-2 mb-4 border-b-2 border-dashed border-slate-300 pb-2">
+        <span class="bg-indigo-400 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">5</span>
+        <h2 class="font-kalam font-bold text-2xl text-slate-900">Quick Glossary & Concepts</h2>
+      </div>
+
+      <div class="space-y-4 text-sm">
+        <div>
+          <h4 class="font-bold text-slate-900"><i class="fa-solid fa-circle-dot text-indigo-500"></i> Elements</h4>
+          <p class="text-slate-600 text-xs">
+            Basic building blocks of matter that cannot be broken down chemically. There are currently <strong class="text-slate-900">118 elements</strong> known to science.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900"><i class="fa-solid fa-circle-dot text-indigo-500"></i> Corrosion</h4>
+          <p class="text-slate-600 text-xs">
+            The slow eating-away of metals due to interaction with environmental gases, moisture, and chemical pollutants.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900"><i class="fa-solid fa-circle-dot text-indigo-500"></i> Brittleness</h4>
+          <p class="text-slate-600 text-xs">
+            The tendency of materials to shatter into small fragments upon impacts (e.g., Coal and Sulfur break instantly when hit with a hammer).
+          </p>
+        </div>
+
+        <div class="p-3 bg-indigo-50 rounded-lg border border-indigo-200">
+          <h4 class="font-bold text-indigo-900 mb-1"><i class="fa-solid fa-lightbulb text-amber-500 animate-pulse"></i> Did You Know?</h4>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            Steel cables (which support heavy loads in giant suspension bridges and construction cranes) are made of a strong mixture of Iron (metal) and Carbon (non-metal)!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 6: Comparison Dashboard (Table) -->
+    <section class="doodle-card p-6 transform rotate-[0.5deg] lg:col-span-1 md:col-span-2">
+      <div class="flex items-center gap-2 mb-4 border-b-2 border-dashed border-slate-300 pb-2">
+        <span class="bg-teal-400 text-slate-900 w-8 h-8 rounded-full flex items-center justify-center font-bold">6</span>
+        <h2 class="font-kalam font-bold text-2xl text-slate-900">Comparison Matrix</h2>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead>
+            <tr class="bg-slate-800 text-white font-kalam text-sm">
+              <th class="p-2 border border-slate-700">Property</th>
+              <th class="p-2 border border-slate-700">Metals</th>
+              <th class="p-2 border border-slate-700">Non-metals</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-slate-50">
+              <td class="p-2 border border-slate-300 font-bold">Appearance</td>
+              <td class="p-2 border border-slate-300">Lustrous (Shiny)</td>
+              <td class="p-2 border border-slate-300">Dull (Non-lustrous)</td>
+            </tr>
+            <tr class="bg-teal-50/30 hover:bg-slate-50">
+              <td class="p-2 border border-slate-300 font-bold">State</td>
+              <td class="p-2 border border-slate-300">Hard Solids <br>(Except Hg)</td>
+              <td class="p-2 border border-slate-300">Solids, Liquids, Gases <br>(Soft/Brittle)</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-2 border border-slate-300 font-bold">Malleable?</td>
+              <td class="p-2 border border-slate-300 text-emerald-600 font-bold"><i class="fa-solid fa-circle-check"></i> Yes</td>
+              <td class="p-2 border border-slate-300 text-red-500 font-bold"><i class="fa-solid fa-circle-xmark"></i> No (Brittle)</td>
+            </tr>
+            <tr class="bg-teal-50/30 hover:bg-slate-50">
+              <td class="p-2 border border-slate-300 font-bold">Ductile?</td>
+              <td class="p-2 border border-slate-300 text-emerald-600 font-bold"><i class="fa-solid fa-circle-check"></i> Yes</td>
+              <td class="p-2 border border-slate-300 text-red-500 font-bold"><i class="fa-solid fa-circle-xmark"></i> No</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-2 border border-slate-300 font-bold">Conductors</td>
+              <td class="p-2 border border-slate-300">Excellent (Heat & Electricity)</td>
+              <td class="p-2 border border-slate-300">Very Poor (Insulators)</td>
+            </tr>
+            <tr class="bg-teal-50/30 hover:bg-slate-50">
+              <td class="p-2 border border-slate-300 font-bold">Oxide Nature</td>
+              <td class="p-2 border border-slate-300 font-bold text-emerald-700">Basic <br>(Red litmus &rarr; Blue)</td>
+              <td class="p-2 border border-slate-300 font-bold text-red-700">Acidic <br>(Blue litmus &rarr; Red)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-4 text-center">
+        <span class="text-xs text-slate-500 italic">"Study systematically and master your exams!"</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="mt-16 text-center text-slate-500 text-sm pb-12">
+    <p>© Grade 7 Science Quick Study Guide • Curated from Curiosity Textbook Chapters</p>
+  </footer>
+
+  <!-- Dynamic Export Button Code Injection -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '4._The_World_of_Metals_and_Non-metals.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

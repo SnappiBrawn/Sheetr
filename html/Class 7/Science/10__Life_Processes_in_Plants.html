@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Processes in Plants - Study Guide</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font: Patrick Hand -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    body {
+      font-family: 'Patrick Hand', cursive;
+      background-color: #faf9f0;
+      /* Grid paper effect */
+      background-image: 
+        linear-gradient(#e5e5d8 1.5px, transparent 1.5px),
+        linear-gradient(90deg, #e5e5d8 1.5px, transparent 1.5px);
+      background-size: 24px 24px;
+      color: #1e293b;
+    }
+    
+    /* Hand-drawn sketchy border effect */
+    .sketch-card {
+      border: 3px solid #1e293b;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      box-shadow: 4px 4px 0px #1e293b;
+      background-color: #ffffff;
+      transition: transform 0.2s ease;
+    }
+    
+    .sketch-card:hover {
+      transform: scale(1.01) rotate(0deg) !important;
+    }
+
+    /* Tape effect for decoration */
+    .tape {
+      background-color: rgba(254, 240, 138, 0.75);
+      transform: rotate(-3deg);
+      box-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+    }
+
+    /* Hand-drawn badge */
+    .sketch-badge {
+      border: 2px solid #1e293b;
+      border-radius: 120px 10px 100px 10px/10px 100px 10px 120px;
+    }
+
+    /* Sticky note */
+    .sticky-note {
+      background-color: #fef08a;
+      border: 2px solid #eab308;
+      border-radius: 5px 5px 40px 5px/5px 5px 5px 40px;
+    }
+  </style>
+</head>
+<body class="p-4 md:p-8 min-h-screen">
+
+  <!-- Main Container -->
+  <div class="max-w-7xl mx-auto">
+    
+    <!-- HEADER CARD -->
+    <div class="sketch-card p-6 mb-8 text-center bg-emerald-50 relative transform -rotate-1">
+      <!-- Tape decorations -->
+      <div class="absolute -top-3 left-10 w-28 h-8 tape border-l border-r border-dashed border-yellow-400"></div>
+      <div class="absolute -top-3 right-10 w-28 h-8 tape border-l border-r border-dashed border-yellow-400"></div>
+      
+      <div class="flex justify-center items-center gap-4 mb-2">
+        <span class="bg-emerald-500 text-white text-3xl font-bold w-14 h-14 rounded-full flex items-center justify-center border-4 border-slate-800 shadow-md">10</span>
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-wide text-emerald-800">Life Processes in Plants</h1>
+      </div>
+      <p class="text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto">
+        A Visual Quick Reference Guide to Growth, Photosynthesis, Transpiration, and Plant Respiration.
+      </p>
+    </div>
+
+    <!-- MASONRY GRID / DENSE CSS GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- CARD 1: HOW DO PLANTS GROW? (10.1) -->
+      <div class="sketch-card p-5 bg-sky-50 transform rotate-1 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center mb-3">
+            <h2 class="text-2xl font-bold text-sky-800"><i class="fa-solid fa-seedling mr-2 text-emerald-600"></i>10.1 Plant Growth Requirements</h2>
+            <span class="text-xs font-bold px-2 py-1 bg-sky-200 text-sky-800 sketch-badge">Observations</span>
+          </div>
+          <p class="text-lg leading-relaxed mb-4">
+            Plants increase in size, height, and weight throughout their life span. Growth relies heavily on environmental inputs tested across pots:
+          </p>
+          
+          <!-- Pot Experiment Results -->
+          <div class="space-y-3">
+            <div class="bg-white p-3 rounded-md border-2 border-slate-700 flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-green-500 text-white font-bold flex items-center justify-center border-2 border-slate-800">A</span>
+              <div>
+                <p class="font-bold text-md text-slate-800">Direct Sunlight + Regular Water</p>
+                <p class="text-sm text-green-700 font-bold">&rarr; Healthy growth, lush green leaves.</p>
+              </div>
+            </div>
+            <div class="bg-white p-3 rounded-md border-2 border-slate-700 flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-amber-500 text-white font-bold flex items-center justify-center border-2 border-slate-800">B</span>
+              <div>
+                <p class="font-bold text-md text-slate-800">Direct Sunlight + No Water</p>
+                <p class="text-sm text-amber-700 font-bold">&rarr; Plant wilts and dies rapidly.</p>
+              </div>
+            </div>
+            <div class="bg-white p-3 rounded-md border-2 border-slate-700 flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-slate-500 text-white font-bold flex items-center justify-center border-2 border-slate-800">C</span>
+              <div>
+                <p class="font-bold text-md text-slate-800">Dark Room + Regular Water</p>
+                <p class="text-sm text-slate-600 font-bold">&rarr; Poor, pale, stunted growth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 pt-3 border-t-2 border-dashed border-sky-300">
+          <p class="text-md text-sky-950 font-bold"><i class="fa-solid fa-lightbulb text-yellow-500 mr-1"></i> Inference:</p>
+          <p class="text-sm italic">"Plants require both sunlight and water to synthesize food and sustain cell division."</p>
+        </div>
+      </div>
+
+      <!-- CARD 2: PHOTOSYNTHESIS EXPLAINED (10.2) -->
+      <div class="sketch-card p-5 bg-emerald-50 transform -rotate-1 md:col-span-2 lg:col-span-1">
+        <div class="flex justify-between items-center mb-3">
+          <h2 class="text-2xl font-bold text-emerald-800"><i class="fa-solid fa-leaf mr-2 text-emerald-600"></i>10.2 Photosynthesis</h2>
+          <span class="text-xs font-bold px-2 py-1 bg-emerald-200 text-emerald-800 sketch-badge">Food Factory</span>
+        </div>
+        
+        <p class="text-lg mb-3">
+          Leaves are the <strong>"food factories"</strong> of plants. They contain <strong>chlorophyll</strong>, a green pigment that traps sunlight energy to convert simple compounds into chemical energy.
+        </p>
+
+        <!-- Dynamic Equation block -->
+        <div class="bg-yellow-50 p-4 rounded-lg border-2 border-emerald-600 my-4 shadow-sm">
+          <p class="text-xs text-center font-bold text-emerald-700 tracking-wider uppercase mb-1">The Word Equation</p>
+          <p class="text-md font-bold text-center text-slate-800">
+            Carbon Dioxide + Water <br>
+            <span class="text-emerald-600">&mdash;(Sunlight / Chlorophyll)&rarr;</span><br>
+            Glucose + Oxygen
+          </p>
+        </div>
+
+        <h3 class="font-bold text-lg text-emerald-900 mb-2">Four Essential Pillars:</h3>
+        <ul class="grid grid-cols-2 gap-2 text-sm">
+          <li class="bg-white p-2 rounded border border-slate-300 flex items-center gap-1">
+            <i class="fa-solid fa-sun text-yellow-500"></i> <strong>Sunlight</strong>
+          </li>
+          <li class="bg-white p-2 rounded border border-slate-300 flex items-center gap-1">
+            <i class="fa-solid fa-tint text-blue-500"></i> <strong>Water</strong>
+          </li>
+          <li class="bg-white p-2 rounded border border-slate-300 flex items-center gap-1">
+            <i class="fa-solid fa-wind text-sky-500"></i> <strong>Carbon Dioxide</strong>
+          </li>
+          <li class="bg-white p-2 rounded border border-slate-300 flex items-center gap-1">
+            <i class="fa-solid fa-circle text-green-600 animate-pulse"></i> <strong>Chlorophyll</strong>
+          </li>
+        </ul>
+
+        <div class="mt-4 bg-emerald-100 p-2.5 rounded border border-emerald-300 text-sm">
+          <i class="fa-solid fa-info-circle mr-1 text-emerald-700"></i>
+          <strong>Starch:</strong> Glucose synthesized during photosynthesis is stored as insoluble starch for conservation.
+        </div>
+      </div>
+
+      <!-- CARD 3: KEY LAB EXPERIMENTS -->
+      <div class="sketch-card p-5 bg-amber-50 transform rotate-1">
+        <div class="flex justify-between items-center mb-3">
+          <h2 class="text-2xl font-bold text-amber-800"><i class="fa-solid fa-vial mr-2 text-amber-600"></i>Crucial Experiments</h2>
+          <span class="text-xs font-bold px-2 py-1 bg-amber-200 text-amber-800 sketch-badge">Lab Tests</span>
+        </div>
+
+        <div class="space-y-4">
+          <!-- Starch Test -->
+          <div class="border-b-2 border-dashed border-amber-300 pb-3">
+            <h3 class="font-bold text-md text-amber-900 mb-1"><i class="fa-solid fa-droplet text-indigo-600 mr-1"></i>1. The Iodine Starch Test</h3>
+            <ol class="list-decimal list-inside text-sm text-slate-700 space-y-1">
+              <li>Boil leaf in water to soften.</li>
+              <li>Dip in <strong>alcohol</strong> to decolorize (removes green chlorophyll).</li>
+              <li>Add diluted <strong>Iodine solution</strong>.</li>
+              <li><strong>Result:</strong> Green areas turn <span class="bg-indigo-900 text-white px-1.5 py-0.5 rounded font-bold">Blue-Black</span> (starch present). Non-green areas show no change.</li>
+            </ol>
+          </div>
+
+          <!-- CO2 Test -->
+          <div>
+            <h3 class="font-bold text-md text-amber-900 mb-1"><i class="fa-solid fa-flask text-teal-600 mr-1"></i>2. Is CO2 Needed? (Moll's Half-Leaf)</h3>
+            <ol class="list-decimal list-inside text-sm text-slate-700 space-y-1">
+              <li>Place half a destarched leaf inside a bottle with <strong>caustic soda (KOH)</strong>.</li>
+              <li>Caustic soda absorbs all carbon dioxide in the bottle.</li>
+              <li>Expose to sunlight, then run Iodine test.</li>
+              <li><strong>Result:</strong> Inner half (no $CO_2$) does not turn blue-black; outer half turns blue-black.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4: STOMATA & GAS EXCHANGE -->
+      <div class="sketch-card p-5 bg-rose-50 transform -rotate-1">
+        <div class="flex justify-between items-center mb-3">
+          <h2 class="text-2xl font-bold text-rose-800"><i class="fa-solid fa-braille mr-2 text-rose-600"></i>Gas Exchange</h2>
+          <span class="text-xs font-bold px-2 py-1 bg-rose-200 text-rose-800 sketch-badge">Stomata</span>
+        </div>
+
+        <p class="text-md mb-3">
+          How do plants breathe and exchange gases like $CO_2$ and $O_2$? They use microscopic pores called <strong>Stomata</strong>.
+        </p>
+
+        <div class="bg-white p-3 rounded border-2 border-slate-700 mb-4">
+          <h3 class="font-bold text-rose-950 text-sm mb-1 text-center">Structure & Location</h3>
+          <p class="text-xs text-slate-600 text-center">
+            Mainly found on the <strong>lower surface of leaves</strong> to reduce excessive water loss.
+          </p>
+          <div class="flex justify-center my-2">
+            <!-- Simulated hand-drawn stomata diagram -->
+            <div class="border-2 border-emerald-500 rounded-full w-24 h-12 flex items-center justify-around px-2 bg-emerald-100">
+              <div class="w-6 h-8 bg-emerald-300 rounded-full border border-emerald-600 flex items-center justify-center text-[8px] font-bold">Guard</div>
+              <div class="w-3 h-6 bg-slate-800 rounded-full"></div> <!-- Pore -->
+              <div class="w-6 h-8 bg-emerald-300 rounded-full border border-emerald-600 flex items-center justify-center text-[8px] font-bold">Guard</div>
+            </div>
+          </div>
+          <p class="text-center text-xs font-bold text-slate-700">Guard Cells regulate opening and closing.</p>
+        </div>
+
+        <div class="sticky-note p-3 text-sm text-slate-800">
+          <p class="font-bold mb-1"><i class="fa-solid fa-circle-exclamation text-amber-600 mr-1"></i>Photosynthesis Output:</p>
+          <p>An experiment using a water plant in a funnel shows <strong>Oxygen gas bubbles</strong> accumulating in an inverted test tube when exposed to light. This gas intensifies an active flame!</p>
+        </div>
+      </div>
+
+      <!-- CARD 5: TRANSPORT IN PLANTS (10.3) -->
+      <div class="sketch-card p-5 bg-indigo-50 transform rotate-1 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center mb-3">
+            <h2 class="text-2xl font-bold text-indigo-800"><i class="fa-solid fa-right-left mr-2 text-indigo-600"></i>10.3 Vascular Transport</h2>
+            <span class="text-xs font-bold px-2 py-1 bg-indigo-200 text-indigo-800 sketch-badge">Xylem & Phloem</span>
+          </div>
+
+          <p class="text-md mb-3 text-slate-700">
+            Plants contain specialized tube-like tissues to transport materials horizontally and vertically:
+          </p>
+
+          <!-- Simple structural table -->
+          <table class="w-full text-xs text-left border-collapse border-2 border-slate-800 bg-white">
+            <thead>
+              <tr class="bg-indigo-200 border-b-2 border-slate-800">
+                <th class="p-2 border-r-2 border-slate-800 font-bold text-indigo-900">Feature</th>
+                <th class="p-2 border-r-2 border-slate-800 font-bold text-indigo-900">Xylem</th>
+                <th class="p-2 font-bold text-indigo-900">Phloem</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b-2 border-slate-800">
+                <td class="p-2 border-r-2 border-slate-800 font-bold">Transports</td>
+                <td class="p-2 border-r-2 border-slate-800">Water & Minerals</td>
+                <td class="p-2">Prepared Food</td>
+              </tr>
+              <tr class="border-b-2 border-slate-800">
+                <td class="p-2 border-r-2 border-slate-800 font-bold">Direction</td>
+                <td class="p-2 border-r-2 border-slate-800 text-blue-600 font-bold">Upward (&uarr;) only</td>
+                <td class="p-2 text-amber-600 font-bold">Bi-directional (&uarr; &amp; &darr;)</td>
+              </tr>
+              <tr>
+                <td class="p-2 border-r-2 border-slate-800 font-bold">Source</td>
+                <td class="p-2 border-r-2 border-slate-800">Roots</td>
+                <td class="p-2">Leaves (food factory)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-4 bg-indigo-100 p-2 rounded text-xs border border-indigo-300">
+          <strong>Red Ink Experiment:</strong> Placing a white flower stem in red ink turns the leaves and petals red, confirming upwards mineral/water transport in <strong>Xylem</strong>.
+        </div>
+      </div>
+
+      <!-- CARD 6: PLANT RESPIRATION (10.4) -->
+      <div class="sketch-card p-5 bg-teal-50 transform -rotate-1">
+        <div class="flex justify-between items-center mb-3">
+          <h2 class="text-2xl font-bold text-teal-800"><i class="fa-solid fa-wind mr-2 text-teal-600"></i>10.4 Plant Respiration</h2>
+          <span class="text-xs font-bold px-2 py-1 bg-teal-200 text-teal-800 sketch-badge">Energy Release</span>
+        </div>
+
+        <p class="text-md mb-3">
+          Do plants breathe? <strong>Yes!</strong> Respiration occurs in <strong>all living cells</strong> (green and non-green) continuously, day and night.
+        </p>
+
+        <!-- Equation block -->
+        <div class="bg-emerald-100 p-3 rounded border-2 border-teal-600 my-3">
+          <p class="text-xs text-center font-bold text-teal-800 tracking-wider uppercase mb-1">Respiration Equation</p>
+          <p class="text-sm font-bold text-center text-slate-800">
+            Glucose + Oxygen &rarr; <br>
+            Carbon Dioxide + Water + Energy
+          </p>
+        </div>
+
+        <p class="text-sm text-slate-700 mb-3">
+          The energy released is crucial for cellular repair, active transport, and metabolic growth processes.
+        </p>
+
+        <!-- Germinating Seeds Experiment -->
+        <div class="bg-white p-3 rounded-md border-2 border-slate-700 text-xs">
+          <p class="font-bold text-teal-900 mb-1 text-center"><i class="fa-solid fa-vials text-teal-600 mr-1"></i>Germinating Seeds Experiment</p>
+          <p class="text-slate-600">
+            Germinating moong seeds kept in a sealed flask produce excess $CO_2$. When routed to a tube filled with <strong>lime water</strong>, it turns <strong class="text-teal-700">milky</strong>, proving carbon dioxide is released during active plant respiration.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- METADATA & FACTS BOTTOM FOOTER SECTION -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+      
+      <!-- FASCINATING FACTS -->
+      <div class="sketch-card p-5 bg-pink-50 transform rotate-0.5">
+        <h3 class="text-xl font-bold text-pink-800 mb-2"><i class="fa-solid fa-star text-pink-600 mr-2 animate-bounce"></i>Fascinating Facts</h3>
+        <ul class="list-disc list-inside text-sm text-slate-700 space-y-2">
+          <li>
+            <strong>Non-Green Leaves:</strong> Plants with red, purple, or brown leaves (like Crotons) still photosynthesize! Their rich alternative pigments simply mask the green chlorophyll.
+          </li>
+          <li>
+            <strong>Ancient Botany:</strong> The ancient Indian text <span class="italic font-bold">Vrikshayurveda</span> states: <em>"Trees do not produce fruits and flowers merely because they are planted,"</em> documenting detailed organic manure practices used centuries ago.
+          </li>
+        </ul>
+      </div>
+
+      <!-- SCIENTIST CORNER -->
+      <div class="sketch-card p-5 bg-yellow-50 transform -rotate-0.5">
+        <h3 class="text-xl font-bold text-yellow-800 mb-2"><i class="fa-solid fa-user-tie text-yellow-600 mr-2"></i>Know Your Scientist</h3>
+        <p class="text-sm text-slate-700 mb-2">
+          <strong>Rustom Hormusji Dastur (1896-1961)</strong>
+        </p>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          An eminent Indian plant physiologist and head of Botany at the Royal Institute of Science. He pioneered critical studies on how light intensity, atmospheric temperature, and leaf color variation influence the rate of photosynthesis in local crop varieties.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- FOOTER SIGN-OFF -->
+    <div class="text-center mt-12 mb-8 text-slate-500 text-sm border-t border-slate-300 pt-4">
+      <p>&copy; Secondary Education Biology - Study Guide Series. Handcrafted visually with tailwind & cursive typography.</p>
+    </div>
+
+  </div>
+
+  <!-- DYNAMIC EXPORT BUTTON -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '10._Life_Processes_in_Plants.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

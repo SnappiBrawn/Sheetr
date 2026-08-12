@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ever-Evolving World of Science - Quick Reference</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font: Patrick Hand & Kalam -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+        /* Global Handwritten Aesthetic */
+        body {
+            font-family: 'Patrick Hand', cursive;
+            background-color: #faf6eb;
+            /* Lined notebook grid paper effect */
+            background-image: 
+                linear-gradient(#e1dcd0 1px, transparent 1px),
+                linear-gradient(90deg, #e1dcd0 1px, transparent 1px);
+            background-size: 22px 22px;
+            color: #1e293b;
+            letter-spacing: 0.5px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Kalam', cursive;
+        }
+
+        /* Hand-drawn sketchy border tricks */
+        .sketchy-card {
+            border: 3px solid #1e293b;
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            background: #ffffff;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 4px 5px 0px #1e293b;
+        }
+
+        .sketchy-card:hover {
+            transform: scale(1.02) rotate(0deg) !important;
+            box-shadow: 6px 8px 0px #1e293b;
+        }
+
+        /* Custom Tape Effect */
+        .tape {
+            background-color: rgba(253, 224, 71, 0.7);
+            transform: rotate(-3deg);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+            border-left: 2px dashed rgba(0,0,0,0.1);
+            border-right: 2px dashed rgba(0,0,0,0.1);
+        }
+
+        /* Paper ring holes for spiral notebook look */
+        .spiral-bind {
+            background: radial-gradient(circle, #e2e8f0 30%, transparent 35%);
+            background-size: 20px 20px;
+        }
+
+        /* Highlight effects */
+        .marker-yellow { background: linear-gradient(120deg, #fef08a 0%, #fef08a 100%); }
+        .marker-pink { background: linear-gradient(120deg, #fbcfe8 0%, #fbcfe8 100%); }
+        .marker-green { background: linear-gradient(120deg, #bbf7d0 0%, #bbf7d0 100%); }
+        .marker-blue { background: linear-gradient(120deg, #bfdbfe 0%, #bfdbfe 100%); }
+        .marker-orange { background: linear-gradient(120deg, #fed7aa 0%, #fed7aa 100%); }
+
+        /* Custom scrollbar for classic notebook look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 min-h-screen flex flex-col justify-between">
+
+    <!-- Top Navigation Banner (Notebook Header) -->
+    <header class="w-full max-w-7xl mx-auto mb-8 relative">
+        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 tape px-8 py-1 text-xs uppercase font-bold tracking-widest text-slate-700 z-10 border border-amber-300">
+            Grade 7 Science &bull; Unit 1
+        </div>
+        <div class="w-full bg-[#fefefe] border-4 border-slate-800 rounded-3xl p-6 flex flex-col md:flex-row items-center justify-between shadow-[8px_8px_0px_#1e293b] relative overflow-hidden">
+            <div class="absolute left-0 top-0 bottom-0 w-4 bg-red-400 opacity-60 border-r-2 border-dashed border-red-500"></div>
+            
+            <div class="pl-6 flex items-center space-x-4">
+                <div class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center border-4 border-slate-800 shadow-md transform -rotate-12">
+                    <span class="text-3xl font-bold">1</span>
+                </div>
+                <div>
+                    <h1 class="text-3xl md:text-5xl font-bold text-slate-800 tracking-tight">The Ever-Evolving World of Science</h1>
+                    <p class="text-lg md:text-xl text-slate-600 italic mt-1"><i class="fa-solid fa-compass text-amber-500"></i> An Invitation to Observe, Question, &amp; Experiment!</p>
+                </div>
+            </div>
+
+            <div class="mt-4 md:mt-0 flex flex-wrap gap-2 justify-center">
+                <span class="px-3 py-1 bg-yellow-100 border-2 border-slate-800 rounded-full text-xs font-bold shadow-sm transform rotate-1"><i class="fa-solid fa-lightbulb text-yellow-500"></i> Curiosity</span>
+                <span class="px-3 py-1 bg-green-100 border-2 border-slate-800 rounded-full text-xs font-bold shadow-sm transform -rotate-2"><i class="fa-solid fa-seedling text-green-600"></i> Discovery</span>
+                <span class="px-3 py-1 bg-purple-100 border-2 border-slate-800 rounded-full text-xs font-bold shadow-sm transform rotate-3"><i class="fa-solid fa-gears text-purple-600"></i> Connections</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Study Guide Grid -->
+    <main class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+
+        <!-- Card 1: Core Scientific Philosophy -->
+        <div class="sketchy-card p-6 bg-amber-50 transform -rotate-1 relative overflow-hidden">
+            <div class="absolute top-2 right-2 text-slate-300 text-5xl opacity-20"><i class="fa-solid fa-brain"></i></div>
+            <div class="w-12 h-4 tape absolute -top-1 left-12"></div>
+            <h2 class="text-2xl font-bold border-b-2 border-slate-800 pb-2 mb-4 text-amber-900">
+                <i class="fa-solid fa-graduation-cap text-amber-600"></i> The Scientific Mindset
+            </h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Science is not just a heavy textbook filled with dusty facts! It is a <span class="marker-yellow px-1">dynamic process of thinking</span> that welcomes curiosity, asks deeper questions, and explores the unknown.
+            </p>
+            <div class="bg-white p-3 rounded-lg border-2 border-dashed border-amber-300">
+                <h3 class="font-bold text-slate-800 text-md uppercase"><i class="fa-solid fa-circle-question text-red-500"></i> 3 Core Questions to Live By:</h3>
+                <ul class="list-disc list-inside space-y-1 text-slate-700 pl-1 mt-2 text-md">
+                    <li><strong class="text-amber-800">How</strong> do things around us work?</li>
+                    <li><strong class="text-amber-800">Why</strong> do natural events happen?</li>
+                    <li><strong class="text-amber-800">What</strong> patterns can we find in nature?</li>
+                </ul>
+            </div>
+            <div class="mt-4 text-center py-2 px-4 bg-orange-100 border border-orange-400 rounded-lg text-sm text-orange-950 font-bold">
+                💡 <span class="underline">Rule #1</span>: To be a wise person, you must be a <strong class="text-red-600">"whys person"</strong>!
+            </div>
+        </div>
+
+        <!-- Card 2: Nature's Chemistry & Materials -->
+        <div class="sketchy-card p-6 bg-emerald-50 transform rotate-1 relative">
+            <div class="w-12 h-4 tape absolute -top-1 right-12"></div>
+            <h2 class="text-2xl font-bold border-b-2 border-slate-800 pb-2 mb-4 text-emerald-900">
+                <i class="fa-solid fa-flask text-emerald-600"></i> Materials &amp; Chemistry
+            </h2>
+            <p class="mb-4">Everything around us is made of different materials that we can test and classify based on their behaviors.</p>
+            
+            <div class="space-y-3">
+                <!-- Subpoint 1 -->
+                <div class="flex items-start space-x-3 bg-white p-2.5 rounded-lg border border-slate-200">
+                    <span class="text-2xl mt-1">🍋</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Chemical Indicators in Action</h4>
+                        <p class="text-sm text-slate-600">Why are some fruits sour? What happens when a bright yellow <strong class="text-yellow-600">haldi (turmeric)</strong> stain on your school uniform hits alkaline soap?</p>
+                    </div>
+                </div>
+
+                <!-- Subpoint 2 -->
+                <div class="flex items-start space-x-3 bg-white p-2.5 rounded-lg border border-slate-200">
+                    <span class="text-2xl mt-1">🔌</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Electrical Testing</h4>
+                        <p class="text-sm text-slate-600">Classifying metals vs. non-metals. Use a cell battery, wires, and lightbulbs to discover what makes a circuit glow!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Understanding Changes -->
+        <div class="sketchy-card p-6 bg-blue-50 transform -rotate-1 relative">
+            <div class="absolute -top-3 left-1/3 tape w-16 h-5"></div>
+            <h2 class="text-2xl font-bold border-b-2 border-slate-800 pb-2 mb-4 text-blue-900">
+                <i class="fa-solid fa-arrows-spin text-blue-600"></i> Reversible vs. Irreversible
+            </h2>
+            <p class="mb-3">Changes are happening all around us. We can split them into two fundamental groups:</p>
+            
+            <div class="grid grid-cols-2 gap-3 mb-4">
+                <div class="p-3 bg-green-100 rounded-lg border border-green-300 text-center">
+                    <h4 class="font-bold text-green-800"><i class="fa-solid fa-rotate-left"></i> Reversible</h4>
+                    <p class="text-xs text-slate-600 mt-1">Can be undone back to the start.</p>
+                    <div class="mt-2 text-xs bg-white py-1 px-2 rounded-full font-bold border border-green-200">Ice Melting &harr; Water</div>
+                </div>
+                <div class="p-3 bg-red-100 rounded-lg border border-red-300 text-center">
+                    <h4 class="font-bold text-red-800"><i class="fa-solid fa-ban"></i> Irreversible</h4>
+                    <p class="text-xs text-slate-600 mt-1">Permanent shift. No turning back!</p>
+                    <div class="mt-2 text-xs bg-white py-1 px-2 rounded-full font-bold border border-red-200">Ripening Fruit</div>
+                </div>
+            </div>
+
+            <div class="bg-white p-3 rounded-lg border border-slate-200">
+                <span class="font-bold text-slate-800 text-sm block mb-1"><i class="fa-solid fa-fire-flame-curved text-orange-500"></i> The Catalyst of Heat:</span>
+                <p class="text-xs text-slate-600">Heat speeds up changes dramatically, from melting massive mountain glaciers to evaporating seas to fall back as refreshing rain.</p>
+            </div>
+        </div>
+
+        <!-- Card 4: Life & Survival Processes -->
+        <div class="sketchy-card p-6 bg-pink-50 transform rotate-2 relative">
+            <h2 class="text-2xl font-bold border-b-2 border-slate-800 pb-2 mb-4 text-pink-950">
+                <i class="fa-solid fa-heart-pulse text-pink-600"></i> Life Processes
+            </h2>
+            <p class="mb-4">Living organisms have complex, beautifully balanced systems designed for absolute survival.</p>
+            
+            <div class="space-y-3">
+                <div class="flex items-center space-x-3 bg-white p-2.5 rounded-lg border border-pink-200">
+                    <span class="text-xl">🫁</span>
+                    <span class="text-sm font-semibold text-slate-700">Breathing &amp; Gas Exchange</span>
+                </div>
+                <div class="flex items-center space-x-3 bg-white p-2.5 rounded-lg border border-pink-200">
+                    <span class="text-xl">🥗</span>
+                    <span class="text-sm font-semibold text-slate-700">Nutrition (Eating &amp; Plant Photosynthesis)</span>
+                </div>
+                <div class="flex items-center space-x-3 bg-white p-2.5 rounded-lg border border-pink-200">
+                    <span class="text-xl">🩸</span>
+                    <span class="text-sm font-semibold text-slate-700">Circulation of crucial life fluids &amp; nutrients</span>
+                </div>
+            </div>
+
+            <div class="mt-4 p-3 bg-yellow-50 border border-yellow-300 rounded-lg text-xs italic text-slate-700">
+                🌿 <strong class="text-slate-800">Did you know?</strong> Just like us, plants need to find/make food and breathe to survive. Our planet evolved to balance these processes flawlessly!
+            </div>
+        </div>
+
+        <!-- Card 5: Tracking Time -->
+        <div class="sketchy-card p-6 bg-purple-50 transform -rotate-2 relative">
+            <div class="w-16 h-5 tape absolute -top-2 left-1/4 bg-purple-200"></div>
+            <h2 class="text-2xl font-bold border-b-2 border-slate-800 pb-2 mb-4 text-purple-950">
+                <i class="fa-solid fa-stopwatch text-purple-600"></i> How We Measure Time
+            </h2>
+            <p class="mb-4">Time tells us when to wake up, go to school, and sleep. But how did humans measure speed and time before digital wristwatches existed?</p>
+
+            <div class="relative pl-6 border-l-2 border-purple-300 space-y-4 text-sm text-slate-700">
+                <div>
+                    <span class="absolute -left-[9px] bg-purple-600 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">1</span>
+                    <h4 class="font-bold text-slate-800">The Shadow Age</h4>
+                    <p class="text-xs">Early humans watched shadows move with the Sun. Shorter/longer shadows dictated the hourly flow.</p>
+                </div>
+                <div>
+                    <span class="absolute -left-[9px] bg-purple-600 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+                    <h4 class="font-bold text-slate-800">The Sundial Evolution</h4>
+                    <p class="text-xs">Precision plates marked with hour lines, relying entirely on direct sun angles.</p>
+                </div>
+                <div>
+                    <span class="absolute -left-[9px] bg-purple-600 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span>
+                    <h4 class="font-bold text-slate-800">Modern Mechanics</h4>
+                    <p class="text-xs">Pendulum clocks, spring-loaded gear watches, and ultra-precise digital quartz oscillators.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6: Cosmic Shadows & Eclipses -->
+        <div class="sketchy-card p-6 bg-slate-900 text-slate-100 transform rotate-1 relative">
+            <div class="absolute -top-3 right-6 tape w-12 h-4 bg-yellow-400/80"></div>
+            <h2 class="text-2xl font-bold border-b-2 border-slate-700 pb-2 mb-4 text-yellow-400">
+                <i class="fa-solid fa-moon"></i> Light, Shadows, &amp; Eclipses
+            </h2>
+            <p class="text-sm text-slate-300 mb-4">Shadows aren't just cool silhouettes on the wall—they shape our entire planetary cosmic calendar!</p>
+
+            <div class="bg-slate-800 p-3 rounded-lg border border-slate-700 mb-3 space-y-2">
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-yellow-300 font-bold">Earth Rotates on Axis</span>
+                    <span>&rarr; Day &amp; Night ☀️🌙</span>
+                </div>
+                <div class="flex justify-between items-center text-xs border-t border-slate-700 pt-2">
+                    <span class="text-yellow-300 font-bold">Moon Orbits Earth</span>
+                    <span>&rarr; Dynamic Shadows &amp; Eclipses 🌑</span>
+                </div>
+            </div>
+
+            <p class="text-xs italic text-slate-400">
+                💡 <strong class="text-slate-200">Fact:</strong> Eclipses happen when cosmic bodies perfectly align and cast massive, sweeping shadows across space!
+            </p>
+        </div>
+
+        <!-- Card 7: The 'Question the Answer' Challenge -->
+        <div class="sketchy-card p-6 bg-amber-100/60 md:col-span-2 lg:col-span-3 transform rotate-1 relative">
+            <h2 class="text-2xl font-bold border-b-2 border-slate-800 pb-2 mb-4 text-amber-900 flex items-center justify-between">
+                <span><i class="fa-solid fa-comments text-amber-700"></i> Active Activity: "Question the Answer"</span>
+                <span class="text-xs bg-amber-200 border-2 border-slate-800 px-3 py-1 rounded-full uppercase tracking-wider font-extrabold text-amber-800">Try This!</span>
+            </h2>
+            <p class="mb-4 text-lg">In exams, you are usually given questions and expected to find the answers. Let's flip that on its head! Here are the answers. Can you think of creative, curious, and fun questions that would lead to them?</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Challenge 1 -->
+                <div class="bg-white p-3.5 rounded-lg border-2 border-slate-800 relative shadow-sm">
+                    <span class="absolute top-1 right-2 text-slate-200 text-xl font-bold">#1</span>
+                    <div class="text-xs text-amber-700 font-extrabold uppercase tracking-wide">The Answer Is:</div>
+                    <p class="font-bold text-slate-800 text-md mt-1 italic">"Just add some milk."</p>
+                    <div class="mt-3 pt-2 border-t border-dashed border-slate-200">
+                        <span class="text-xs text-slate-400 block font-semibold">Your Question:</span>
+                        <div class="h-6 border-b border-amber-300 mt-1"></div>
+                    </div>
+                </div>
+
+                <!-- Challenge 2 -->
+                <div class="bg-white p-3.5 rounded-lg border-2 border-slate-800 relative shadow-sm">
+                    <span class="absolute top-1 right-2 text-slate-200 text-xl font-bold">#2</span>
+                    <div class="text-xs text-amber-700 font-extrabold uppercase tracking-wide">The Answer Is:</div>
+                    <p class="font-bold text-slate-800 text-md mt-1 italic">"Because the cat's teeth were crooked."</p>
+                    <div class="mt-3 pt-2 border-t border-dashed border-slate-200">
+                        <span class="text-xs text-slate-400 block font-semibold">Your Question:</span>
+                        <div class="h-6 border-b border-amber-300 mt-1"></div>
+                    </div>
+                </div>
+
+                <!-- Challenge 3 -->
+                <div class="bg-white p-3.5 rounded-lg border-2 border-slate-800 relative shadow-sm">
+                    <span class="absolute top-1 right-2 text-slate-200 text-xl font-bold">#3</span>
+                    <div class="text-xs text-amber-700 font-extrabold uppercase tracking-wide">The Answer Is:</div>
+                    <p class="font-bold text-slate-800 text-md mt-1 italic">"Don't panic, I have my towel."</p>
+                    <div class="mt-3 pt-2 border-t border-dashed border-slate-200">
+                        <span class="text-xs text-slate-400 block font-semibold">Your Question:</span>
+                        <div class="h-6 border-b border-amber-300 mt-1"></div>
+                    </div>
+                </div>
+
+                <!-- Challenge 4 -->
+                <div class="bg-white p-3.5 rounded-lg border-2 border-slate-800 relative shadow-sm">
+                    <span class="absolute top-1 right-2 text-slate-200 text-xl font-bold">#4</span>
+                    <div class="text-xs text-amber-700 font-extrabold uppercase tracking-wide">The Answer Is:</div>
+                    <p class="font-bold text-slate-800 text-md mt-1 italic">"42."</p>
+                    <div class="mt-3 pt-2 border-t border-dashed border-slate-200">
+                        <span class="text-xs text-slate-400 block font-semibold">Your Question:</span>
+                        <div class="h-6 border-b border-amber-300 mt-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Visual Footer -->
+    <footer class="w-full max-w-7xl mx-auto mt-8 border-t-2 border-dashed border-slate-400 pt-6 pb-20 flex flex-col md:flex-row items-center justify-between text-slate-600">
+        <p class="text-md text-center md:text-left font-bold italic"><i class="fa-solid fa-feather-pointed"></i> Hand-sketched Quick Reference | Always explore, ask, and learn!</p>
+        <div class="flex space-x-6 mt-4 md:mt-0 text-sm">
+            <span><i class="fa-solid fa-dna text-red-500"></i> Biology</span>
+            <span><i class="fa-solid fa-atom text-blue-500"></i> Physics</span>
+            <span><i class="fa-solid fa-flask text-emerald-500"></i> Chemistry</span>
+        </div>
+    </footer>
+
+    <!-- Dynamic Export Button (Direct DOM Injection) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '1._The_Ever-Evolving_World_of_Science.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

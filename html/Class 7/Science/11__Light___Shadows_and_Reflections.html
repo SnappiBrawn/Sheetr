@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light: Shadows & Reflections - Study Guide</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Doodles/Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Kalam for hand-written feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom Lined Notebook Paper Background & Doodly Styles */
+        body {
+            font-family: 'Kalam', 'Patrick Hand', cursive;
+            background-color: #faf6eb;
+            background-image: 
+                linear-gradient(90deg, transparent 79px, #e9969a 79px, #e9969a 81px, transparent 81px),
+                linear-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 100% 100%, 100% 26px;
+            padding-left: 20px;
+        }
+
+        /* Hand-drawn sketchy border effect */
+        .sketch-box {
+            border: 3px solid #1e293b;
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            box-shadow: 4px 4px 0px #1e293b;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .sketch-box:hover {
+            transform: scale(1.02) rotate(0deg) !important;
+        }
+
+        .sketch-border-thin {
+            border: 2px dashed #475569;
+            border-radius: 20px 10px 20px 10px/10px 20px 10px 20px;
+        }
+
+        /* Highlight markers */
+        .highlight-yellow {
+            background: linear-gradient(120deg, #fef08a 0%, #fef08a 100%);
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+
+        .highlight-cyan {
+            background: linear-gradient(120deg, #a5f3fc 0%, #a5f3fc 100%);
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+
+        .highlight-pink {
+            background: linear-gradient(120deg, #fbcfe8 0%, #fbcfe8 100%);
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+
+        /* Paper tape effect */
+        .tape {
+            position: absolute;
+            top: -12px;
+            left: 35%;
+            width: 30%;
+            height: 24px;
+            background-color: rgba(254, 240, 138, 0.7);
+            border-left: 1px dashed rgba(0,0,0,0.1);
+            border-right: 1px dashed rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* Paper clip doodle */
+        .paperclip {
+            position: absolute;
+            top: -15px;
+            right: 15px;
+            font-size: 1.5rem;
+            color: #64748b;
+            transform: rotate(15deg);
+        }
+    </style>
+</head>
+<body class="min-h-screen py-8 px-4 md:px-12 lg:px-24 text-slate-800">
+
+    <!-- Header Section -->
+    <header class="relative max-w-6xl mx-auto mb-10 text-center">
+        <!-- Fun Notebook Ring Doodles -->
+        <div class="flex justify-center space-x-12 -mb-4">
+            <div class="w-4 h-10 bg-slate-400 rounded-full border-2 border-slate-700 shadow-sm"></div>
+            <div class="w-4 h-10 bg-slate-400 rounded-full border-2 border-slate-700 shadow-sm"></div>
+            <div class="w-4 h-10 bg-slate-400 rounded-full border-2 border-slate-700 shadow-sm"></div>
+        </div>
+        
+        <div class="bg-white sketch-box p-6 md:p-8 relative inline-block w-full bg-amber-50/50">
+            <div class="absolute -top-3 left-4 text-xs bg-red-400 text-white px-2 py-0.5 rounded rotate-[-2deg]">CLASS 7 SCIENCE</div>
+            <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 mt-2">
+                ⚡ LIGHT: SHADOWS &amp; REFLECTIONS <span class="text-xl font-normal block md:inline text-indigo-600 md:ml-2">Quick Reference Summary</span>
+            </h1>
+            <p class="text-lg text-slate-600 mt-2 max-w-2xl mx-auto">
+                All the essential concepts, visual diagrams, and fun facts curated in an ultimate high-density student revision canvas!
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Board / Grid Layout -->
+    <main class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-24">
+
+        <!-- CARD 1: Sources of Light -->
+        <section class="bg-[#fefce8] sketch-box p-6 relative transform rotate-[0.5deg]">
+            <div class="tape"></div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-lightbulb text-amber-500"></i> 1. Sources of Light
+            </h2>
+            <p class="mb-4 text-sm leading-relaxed">
+                Light is a form of energy that makes things visible to us. Things that produce light are divided into two clear categories:
+            </p>
+
+            <div class="space-y-4">
+                <div class="sketch-border-thin p-3 bg-white">
+                    <h3 class="font-bold text-amber-700 text-lg flex items-center gap-2">
+                        <span class="highlight-yellow">Luminous Objects</span>
+                    </h3>
+                    <p class="text-xs text-slate-600 mt-1">Objects that emit/give out light of their own.</p>
+                    <div class="flex flex-wrap gap-2 mt-2 text-xs font-bold">
+                        <span class="bg-amber-100 px-2 py-1 rounded border border-amber-300"><i class="fa-solid fa-sun"></i> Sun (Natural)</span>
+                        <span class="bg-amber-100 px-2 py-1 rounded border border-amber-300"><i class="fa-solid fa-bug"></i> Firefly (Natural)</span>
+                        <span class="bg-amber-100 px-2 py-1 rounded border border-amber-300"><i class="fa-solid fa-lightbulb"></i> LED Lamp (Artificial)</span>
+                    </div>
+                </div>
+
+                <div class="sketch-border-thin p-3 bg-white">
+                    <h3 class="font-bold text-slate-700 text-lg flex items-center gap-2">
+                        <span class="highlight-cyan">Non-Luminous Objects</span>
+                    </h3>
+                    <p class="text-xs text-slate-600 mt-1">Objects that do NOT emit light themselves; we only see them when they reflect light from a luminous source.</p>
+                    <div class="flex flex-wrap gap-2 mt-2 text-xs font-bold">
+                        <span class="bg-cyan-50 px-2 py-1 rounded border border-cyan-300"><i class="fa-solid fa-moon"></i> Moon</span>
+                        <span class="bg-cyan-50 px-2 py-1 rounded border border-cyan-300"><i class="fa-solid fa-book"></i> Textbook</span>
+                        <span class="bg-cyan-50 px-2 py-1 rounded border border-cyan-300"><i class="fa-solid fa-chair"></i> Chair</span>
+                    </div>
+                    <p class="text-xs text-red-500 font-bold mt-2"><i class="fa-solid fa-triangle-exclamation"></i> Warning: Moon is non-luminous! It only reflects sunlight.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARD 2: How Light Travels (Rectilinear Propagation) -->
+        <section class="bg-[#f0f9ff] sketch-box p-6 relative transform rotate-[-0.8deg]">
+            <i class="fa-solid fa-paperclip paperclip"></i>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-arrow-right-long text-blue-500"></i> 2. Rectilinear Propagation
+            </h2>
+            <div class="sketch-border-thin bg-blue-50/50 p-3 mb-4">
+                <p class="font-bold text-center text-blue-900 text-lg">
+                    "Light travels in a <span class="highlight-cyan">Straight Line!</span>"
+                </p>
+            </div>
+
+            <h3 class="font-bold mb-2 text-sm text-slate-700">Proof Activities:</h3>
+            <ul class="space-y-3 text-xs">
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 font-bold">A.</span>
+                    <div>
+                        <strong class="text-slate-800">The Alignment Test:</strong> Aligning three matchboxes with holes in the exact same spot allows you to see torchlight. Shift even one box slightly sideways, and light is instantly blocked!
+                    </div>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-blue-500 font-bold">B.</span>
+                    <div>
+                        <strong class="text-slate-800">The Pipe Trick:</strong> 
+                        <div class="flex items-center gap-2 mt-1">
+                            <span class="bg-green-100 text-green-800 px-1 py-0.5 rounded"><i class="fa-solid fa-circle-check"></i> Straight Pipe</span>
+                            <span>&rarr; Can see candle flame</span>
+                        </div>
+                        <div class="flex items-center gap-2 mt-1">
+                            <span class="bg-red-100 text-red-800 px-1 py-0.5 rounded"><i class="fa-solid fa-circle-xmark"></i> Bent Pipe</span>
+                            <span>&rarr; Cannot see candle flame!</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="mt-4 p-2 bg-white rounded border border-blue-200 text-center text-xs text-slate-500 italic">
+                Thus, light doesn't bend around obstacles in our everyday environment.
+            </div>
+        </section>
+
+        <!-- CARD 3: Material Classification -->
+        <section class="bg-[#fdf2f8] sketch-box p-6 relative transform rotate-[0.3deg]">
+            <div class="tape"></div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-filter text-pink-500"></i> 3. Materials &amp; Light
+            </h2>
+            <p class="text-xs mb-4">How materials interact with light determines if we can see through them:</p>
+
+            <div class="space-y-3 text-xs">
+                <!-- Transparent -->
+                <div class="bg-white p-3 border-l-4 border-emerald-500 rounded shadow-sm">
+                    <span class="font-bold text-emerald-700 uppercase">Transparent</span>
+                    <p class="text-slate-600 mt-1">Passes light <strong>fully</strong>. We can see through them clearly.</p>
+                    <span class="text-[10px] text-slate-400 block mt-1"><i class="fa-solid fa-glass-water"></i> Glass, Clear Water, Air</span>
+                </div>
+
+                <!-- Translucent -->
+                <div class="bg-white p-3 border-l-4 border-amber-500 rounded shadow-sm">
+                    <span class="font-bold text-amber-700 uppercase">Translucent</span>
+                    <p class="text-slate-600 mt-1">Passes light <strong>partially</strong>. See-through is blurry/hazy.</p>
+                    <span class="text-[10px] text-slate-400 block mt-1"><i class="fa-regular fa-file"></i> Tracing Paper, Butter Paper, Frosted Glass</span>
+                </div>
+
+                <!-- Opaque -->
+                <div class="bg-white p-3 border-l-4 border-rose-500 rounded shadow-sm">
+                    <span class="font-bold text-rose-700 uppercase">Opaque</span>
+                    <p class="text-slate-600 mt-1">Blocks light <strong>completely</strong>. Cannot see through at all!</p>
+                    <span class="text-[10px] text-slate-400 block mt-1"><i class="fa-solid fa-tree"></i> Cardboard, Metal, Thick Cloth, Wood</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARD 4: Shadow Formation -->
+        <section class="bg-[#f8fafc] sketch-box p-6 relative transform rotate-[-0.4deg] col-span-1 md:col-span-2 lg:col-span-1">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-umbrella text-indigo-500"></i> 4. Shadow Dynamics
+            </h2>
+            <div class="bg-slate-800 text-slate-100 p-3 rounded-lg text-xs mb-3">
+                <strong class="text-amber-300">Definition:</strong> A dark patch formed on a screen when an opaque object blocks light traveling in a straight line.
+            </div>
+
+            <h3 class="font-bold text-sm text-slate-700 mb-1">3 Essential Requirements:</h3>
+            <div class="grid grid-cols-3 gap-2 text-center text-[11px] mb-4">
+                <div class="bg-white p-2 rounded border border-slate-300">
+                    <i class="fa-solid fa-sun text-amber-500 block text-lg mb-1"></i>
+                    Light Source
+                </div>
+                <div class="bg-white p-2 rounded border border-slate-300">
+                    <i class="fa-solid fa-box text-slate-600 block text-lg mb-1"></i>
+                    Opaque Object
+                </div>
+                <div class="bg-white p-2 rounded border border-slate-300">
+                    <i class="fa-solid fa-border-all text-blue-500 block text-lg mb-1"></i>
+                    Screen (Wall/Floor)
+                </div>
+            </div>
+
+            <h3 class="font-bold text-sm text-slate-700 mb-2">Key Shadow Properties:</h3>
+            <ul class="space-y-2 text-xs bg-yellow-50 p-3 rounded border border-yellow-200">
+                <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-palette text-red-500"></i>
+                    <span><strong>Always Dark:</strong> No matter the color of the object, the shadow is always black!</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-maximize text-blue-500"></i>
+                    <span><strong>Variable Size:</strong> Moves closer to the light source &rarr; Larger. Moves closer to screen &rarr; Smaller.</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-circle-question text-green-500"></i>
+                    <span><strong>Misleading Shapes:</strong> A shadow can tell us shape details but can also trick us (e.g., hand shadow puppetry).</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- CARD 5: Reflection of Light & Plane Mirrors -->
+        <section class="bg-[#faf5ff] sketch-box p-6 relative transform rotate-[0.7deg]">
+            <i class="fa-solid fa-paperclip paperclip"></i>
+            <h2 class="text-2xl font-bold text-indigo-950 mb-3 flex items-center gap-2">
+                <i class="fa-solid fa-mirror text-indigo-500"></i> 5. Reflection &amp; Mirrors
+            </h2>
+            <div class="text-xs bg-indigo-50 p-3 rounded border border-indigo-200 mb-3">
+                <strong class="text-indigo-900">What is Reflection?</strong> The change in direction of a light beam when it falls on a shiny, highly polished surface like a mirror.
+            </div>
+
+            <h3 class="font-bold text-sm text-slate-700 mb-2">Properties of Images in a Plane Mirror:</h3>
+            <ul class="space-y-2 text-xs bg-white p-3 rounded border border-slate-200">
+                <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-green-600"></i>
+                    <span><strong>Same Size:</strong> Image is exactly as big as the object.</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-arrows-up-down text-blue-600"></i>
+                    <span><strong>Erect:</strong> Upright (head stays top, feet bottom).</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-left-right text-orange-600"></i>
+                    <span><strong class="highlight-pink">Lateral Inversion:</strong> Left side of object becomes right side of image &amp; vice-versa.</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-ruler-horizontal text-purple-600"></i>
+                    <span><strong>Equal Distance:</strong> The image is as far behind the mirror as the object is in front of it.</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-video-slash text-red-600"></i>
+                    <span><strong>Virtual:</strong> Cannot be caught on a screen.</span>
+                </li>
+            </ul>
+
+            <!-- Ambulance Lateral Inversion Callout -->
+            <div class="mt-3 bg-red-50 p-2 rounded text-[11px] border border-red-200 flex items-center gap-2">
+                <span class="font-bold text-red-700 bg-white border border-red-300 px-1 rounded">&#472;&#1433;&#503;&#219;&#1305;&#1434;&#472;&#414;&#338;</span>
+                <span>Why is <strong class="text-red-700">"AMBULANCE"</strong> written backwards? So drivers ahead read it correctly in their rear-view mirrors!</span>
+            </div>
+        </section>
+
+        <!-- CARD 6: Pinhole Camera -->
+        <section class="bg-[#f0fdf4] sketch-box p-6 relative transform rotate-[-0.5deg]">
+            <div class="tape"></div>
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-camera text-emerald-500"></i> 6. Pinhole Camera
+            </h2>
+            <p class="text-xs mb-3">
+                A simple optical device without any lens that forms real, interesting images on a tracing paper screen.
+            </p>
+
+            <div class="sketch-border-thin bg-white p-3 space-y-2">
+                <h3 class="font-bold text-xs text-emerald-800 flex items-center gap-1">
+                    <i class="fa-solid fa-gears"></i> Mechanism of Construction:
+                </h3>
+                <p class="text-[11px] text-slate-600">
+                    Two cardboard boxes (one smaller, sliding inside the larger). One end of the large box has a <strong class="text-emerald-700">tiny pinhole</strong>. The corresponding end of the small box is cut out and covered with a <strong class="text-amber-700">translucent tracing paper screen</strong>.
+                </p>
+            </div>
+
+            <div class="mt-3 bg-emerald-50 p-3 rounded border border-emerald-200">
+                <h4 class="font-bold text-xs text-emerald-950 mb-1">Image Characteristics:</h4>
+                <div class="grid grid-cols-2 gap-2 text-[11px]">
+                    <span class="bg-white p-1 text-center rounded border border-emerald-100"><i class="fa-solid fa-rotate text-red-500"></i> Inverted (Upside down)</span>
+                    <span class="bg-white p-1 text-center rounded border border-emerald-100"><i class="fa-solid fa-palette text-blue-500"></i> Colored (Not black)</span>
+                    <span class="bg-white p-1 text-center rounded border border-emerald-100"><i class="fa-solid fa-eye text-green-500"></i> Real Image</span>
+                    <span class="bg-white p-1 text-center rounded border border-emerald-100"><i class="fa-solid fa-sun text-yellow-500"></i> Shows sun's shape</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARD 7: Optical Instruments (Periscope & Kaleidoscope) -->
+        <section class="bg-[#fff7ed] sketch-box p-6 relative transform rotate-[0.6deg] col-span-1 md:col-span-2 lg:col-span-1">
+            <i class="fa-solid fa-paperclip paperclip"></i>
+            <h2 class="text-2xl font-bold text-slate-900 mb-3 flex items-center gap-2">
+                <i class="fa-solid fa-binoculars text-orange-500"></i> 7. Optical Devices
+            </h2>
+            <p class="text-xs mb-3">Cool devices we can build using multiple flat mirrors and light reflection!</p>
+
+            <div class="space-y-4">
+                <!-- Periscope -->
+                <div class="sketch-border-thin p-3 bg-white">
+                    <h3 class="font-bold text-orange-800 text-sm flex items-center gap-1">
+                        <span class="bg-orange-100 px-2 py-0.5 rounded">Periscope</span>
+                    </h3>
+                    <p class="text-[11px] text-slate-600 mt-1">
+                        A Z-shaped tube containing <strong class="text-slate-800">two plane mirrors</strong> mounted parallel facing each other at a <strong class="text-slate-800">45&deg; angle</strong>.
+                    </p>
+                    <div class="mt-2 text-[10px] bg-slate-50 p-1.5 rounded flex items-center gap-2 text-slate-500">
+                        <i class="fa-solid fa-ship"></i> Used in submarines, army bunkers, or to see over crowds.
+                    </div>
+                </div>
+
+                <!-- Kaleidoscope -->
+                <div class="sketch-border-thin p-3 bg-white">
+                    <h3 class="font-bold text-purple-800 text-sm flex items-center gap-1">
+                        <span class="bg-purple-100 px-2 py-0.5 rounded">Kaleidoscope</span>
+                    </h3>
+                    <p class="text-[11px] text-slate-600 mt-1">
+                        Contains <strong class="text-slate-800">three rectangular plane mirror strips</strong> joined in a triangle inside a cylinder with colored beads/glass bits at one end.
+                    </p>
+                    <div class="mt-2 text-[10px] bg-slate-50 p-1.5 rounded flex items-center gap-2 text-slate-500">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Multiple reflections generate beautiful, non-repeating symmetrical patterns.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARD 8: Rapid Revision / Match 'Em Up -->
+        <section class="bg-[#faf5ff] sketch-box p-6 relative transform rotate-[-0.3deg] col-span-1 md:col-span-2 lg:col-span-2">
+            <h2 class="text-2xl font-bold text-indigo-950 mb-3 flex items-center gap-2">
+                <i class="fa-solid fa-puzzle-piece text-indigo-500"></i> Self-Check: Match the Columns
+            </h2>
+            <div class="overflow-x-auto text-xs">
+                <table class="w-full text-left border-collapse bg-white rounded-lg overflow-hidden border border-slate-300">
+                    <thead>
+                        <tr class="bg-indigo-900 text-white text-[11px] uppercase tracking-wider">
+                            <th class="p-2">Concept / Object</th>
+                            <th class="p-2">Key Operational Property</th>
+                            <th class="p-2">Matching Explanation</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 text-slate-700">
+                        <tr>
+                            <td class="p-2 font-bold text-slate-900">1. Pinhole Camera</td>
+                            <td class="p-2">Forms an inverted image</td>
+                            <td class="p-2 text-slate-500">Due to rectilinear propagation of light.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-2 font-bold text-slate-900">2. Opaque Object</td>
+                            <td class="p-2">Blocks light completely</td>
+                            <td class="p-2 text-slate-500">Forms distinct, dark shadows.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-2 font-bold text-slate-900">3. Transparent Object</td>
+                            <td class="p-2">Allows light to pass fully</td>
+                            <td class="p-2 text-slate-500">Does not form visible shadows.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-2 font-bold text-slate-900">4. Shadow</td>
+                            <td class="p-2">Dark region behind the object</td>
+                            <td class="p-2 text-slate-500">Always black, regardless of light/object color.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-2 font-bold text-slate-900">5. Plane Mirror</td>
+                            <td class="p-2">Reflection &amp; Lateral Inversion</td>
+                            <td class="p-2 text-slate-500">Shows erect image of equal object size.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-[11px] text-slate-400 italic mt-2 text-right">💡 Quick Tip: Use these definitions for direct 1-mark textbook questions!</p>
+        </section>
+
+        <!-- CARD 9: Fascinating Light Trivia -->
+        <section class="bg-yellow-100/50 sketch-box p-6 relative transform rotate-[0.4deg] col-span-1">
+            <h2 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
+                <i class="fa-solid fa-graduation-cap text-yellow-600"></i> Did You Know?
+            </h2>
+            <ul class="space-y-2 text-xs text-slate-700 list-disc pl-4">
+                <li>
+                    <strong>Indian Shadow Puppetry:</strong> Culturally known as <span class="italic">Tholu Bommalata</span> (Andhra Pradesh) or <span class="italic">Charma Bahuli Natya</span> (Maharashtra) &mdash; uses flat leather puppet shadows for story telling.
+                </li>
+                <li>
+                    <strong>Aranmula Kannadi:</strong> A unique metal mirror crafted in Kerala that reflects light without refraction distortions found in normal glass mirrors!
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-slate-500 text-xs border-t border-slate-300 max-w-6xl mx-auto">
+        <p>&copy; Science Study Guide. Designed for Grade 7 Revision. Happy Learning!</p>
+    </footer>
+
+    <!-- DYNAMIC EXPORT BUTTON -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '11._Light_-_Shadows_and_Reflections.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Guide: Measurement of Time and Motion</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome for Doodle Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Kalam:wght@400;700&display=swap');
+    
+    body {
+      font-family: 'Patrick Hand', cursive;
+      background-color: #fbfbf7;
+      /* Doodly graph paper effect */
+      background-image: 
+        linear-gradient(#e2e8f0 1.5px, transparent 1.5px),
+        linear-gradient(90deg, #e2e8f0 1.5px, transparent 1.5px);
+      background-size: 28px 28px;
+      color: #1e293b;
+    }
+
+    /* Hand-drawn/irregular borders */
+    .doodle-card {
+      background: #ffffff;
+      border: 3px solid #0f172a;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      box-shadow: 5px 5px 0px #0f172a;
+      transition: all 0.3s ease;
+    }
+
+    .doodle-card:hover {
+      transform: translateY(-3px) rotate(0deg) !important;
+      box-shadow: 8px 8px 0px #0f172a;
+    }
+
+    /* Custom highlighters */
+    .hl-yellow { background-color: #fef08a; color: #1e293b; padding: 2px 6px; border-radius: 3px; }
+    .hl-cyan { background-color: #cffafe; color: #1e293b; padding: 2px 6px; border-radius: 3px; }
+    .hl-orange { background-color: #ffedd5; color: #1e293b; padding: 2px 6px; border-radius: 3px; }
+    .hl-green { background-color: #dcfce7; color: #1e293b; padding: 2px 6px; border-radius: 3px; }
+    .hl-pink { background-color: #fce7f3; color: #1e293b; padding: 2px 6px; border-radius: 3px; }
+
+    /* Doodle Tape Effect */
+    .tape {
+      background-color: rgba(253, 224, 71, 0.6);
+      transform: rotate(-3deg);
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body class="p-4 md:p-8 min-h-screen relative">
+
+  <!-- Header Banner -->
+  <header class="max-w-7xl mx-auto mb-8 text-center relative">
+    <div class="absolute -top-4 left-4 text-3xl text-yellow-500 opacity-60"><i class="fa-solid fa-star"></i></div>
+    <div class="absolute top-10 right-8 text-4xl text-blue-400 opacity-60"><i class="fa-solid fa-rocket"></i></div>
+    <div class="absolute -bottom-2 left-1/4 text-2xl text-pink-400 opacity-60"><i class="fa-solid fa-heart"></i></div>
+    
+    <div class="inline-block bg-white border-4 border-slate-900 px-6 py-4 rounded-3xl shadow-[6px_6px_0px_#0f172a] transform -rotate-1">
+      <span class="text-sm uppercase tracking-wider text-slate-500 block font-bold">Grade 7 Science &bull; Quick Reference Guide</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-1">
+        <i class="fa-solid fa-stopwatch text-red-500"></i> Chapter 8: Measurement of Time &amp; Motion <i class="fa-solid fa-person-running text-blue-500"></i>
+      </h1>
+    </div>
+  </header>
+
+  <!-- Main Grid Layout -->
+  <main class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+
+    <!-- Card 1: Ancient Timekeeping -->
+    <section class="doodle-card p-6 transform -rotate-1 relative">
+      <div class="absolute -top-3 left-4 bg-yellow-200 border-2 border-slate-900 px-3 py-0.5 text-xs font-bold uppercase rounded">History</div>
+      <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-400 pb-2 mb-4 mt-1 text-slate-800">
+        <i class="fa-solid fa-hourglass-half text-amber-600 mr-2"></i>Ancient Clocks
+      </h2>
+      <p class="mb-3">Before modern wristwatches, humans tracked repetitive natural cycles (Sunrise, Moon phases, changing Seasons).</p>
+      
+      <ul class="space-y-3">
+        <li class="flex items-start gap-2">
+          <span class="text-red-500 mt-1"><i class="fa-solid fa-sun"></i></span>
+          <div>
+            <strong>Sundials:</strong> Tracks local "solar time" using the changing position of a shadow cast by the Sun.
+            <div class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-lightbulb"></i> <em>Samrat Yantra</em> (Jaipur) is the world's largest stone sundial (27m tall, accurate to 2s!).</div>
+          </div>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-blue-500 mt-1"><i class="fa-solid fa-droplet"></i></span>
+          <div>
+            <strong>Water Clocks (Ghatika-yantra):</strong> Uses regular flow of water in/out of a marked vessel. Highly used in ancient India.
+          </div>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-yellow-600 mt-1"><i class="fa-solid fa-hourglass"></i></span>
+          <div>
+            <strong>Hourglass:</strong> Measures fixed durations via sand flowing between two glass bulbs.
+          </div>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-orange-500 mt-1"><i class="fa-solid fa-fire"></i></span>
+          <div>
+            <strong>Candle Clocks:</strong> Marked candles that indicate time intervals as they burn down.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Card 2: Simple Pendulum -->
+    <section class="doodle-card p-6 transform rotate-1 relative">
+      <div class="absolute -top-3 left-4 bg-teal-200 border-2 border-slate-900 px-3 py-0.5 text-xs font-bold uppercase rounded">Core Concept</div>
+      <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-400 pb-2 mb-4 mt-1 text-slate-800">
+        <i class="fa-solid fa-circle-nodes text-blue-600 mr-2"></i>The Simple Pendulum
+      </h2>
+      
+      <p class="mb-4">Consists of a small metallic ball (<span class="hl-cyan">Bob</span>) suspended from a rigid support by a light, inextensible string.</p>
+      
+      <div class="border-2 border-slate-300 rounded-lg p-3 bg-slate-50 mb-4 text-center">
+        <div class="text-xs uppercase tracking-wider text-slate-400 font-bold mb-2">Oscillation path</div>
+        <div class="flex justify-center items-center gap-4 font-bold text-lg">
+          <span>Extreme (B)</span>
+          <span>&larr;</span>
+          <span class="hl-yellow">Mean (O)</span>
+          <span>&rarr;</span>
+          <span>Extreme (A)</span>
+        </div>
+        <div class="text-xs text-slate-500 mt-1">One full oscillation: O &rarr; A &rarr; B &rarr; O</div>
+      </div>
+
+      <ul class="space-y-2 mb-4">
+        <li><strong>Periodic Motion:</strong> Repeats itself at equal intervals.</li>
+        <li><strong>Time Period:</strong> Time taken to complete exactly <span class="hl-orange">one oscillation</span>.</li>
+      </ul>
+
+      <div class="bg-amber-50 border-l-4 border-amber-500 p-2 text-xs rounded">
+        <strong><i class="fa-solid fa-circle-info"></i> Super Important!</strong><br>
+        The time period depends <strong>only on the length</strong> of the pendulum. It does <em>not</em> change with the mass of the bob!
+      </div>
+    </section>
+
+    <!-- Card 3: Clocks History & Mechanics -->
+    <section class="doodle-card p-6 transform -rotate-1 relative">
+      <div class="absolute -top-3 left-4 bg-purple-200 border-2 border-slate-900 px-3 py-0.5 text-xs font-bold uppercase rounded">Evolution</div>
+      <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-400 pb-2 mb-4 mt-1 text-slate-800">
+        <i class="fa-solid fa-gears text-purple-600 mr-2"></i>Clocks &amp; Precision
+      </h2>
+      
+      <div class="space-y-4">
+        <div class="flex items-start gap-3">
+          <div class="bg-blue-100 p-2 rounded text-blue-700 font-bold text-lg"><i class="fa-solid fa-brain"></i></div>
+          <div>
+            <h3 class="font-bold">Galileo's Insight</h3>
+            <p class="text-sm">Noticed a swinging cathedral lamp matched his constant pulse. Concluded pendulum period is constant for a given length.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3">
+          <div class="bg-purple-100 p-2 rounded text-purple-700 font-bold text-lg"><i class="fa-solid fa-clock-rotate-left"></i></div>
+          <div>
+            <h3 class="font-bold">Huygens' Breakthrough (1656)</h3>
+            <p class="text-sm">First to design and patent the highly accurate pendulum-driven clock.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3">
+          <div class="bg-emerald-100 p-2 rounded text-emerald-700 font-bold text-lg"><i class="fa-solid fa-microchip"></i></div>
+          <div>
+            <h3 class="font-bold">Modern Timekeeping</h3>
+            <p class="text-sm"><strong>Quartz Clocks:</strong> Driven by extremely rapid vibrations of a quartz crystal.</p>
+            <p class="text-sm mt-1"><strong>Atomic Clocks:</strong> Absurdly precise, losing only 1 second in millions of years!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 4: Units of Time -->
+    <section class="doodle-card p-6 transform rotate-1 relative">
+      <div class="absolute -top-3 left-4 bg-pink-200 border-2 border-slate-900 px-3 py-0.5 text-xs font-bold uppercase rounded">Units</div>
+      <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-400 pb-2 mb-4 mt-1 text-slate-800">
+        <i class="fa-solid fa-scale-balanced text-pink-600 mr-2"></i>Units of Time
+      </h2>
+      
+      <div class="flex justify-around items-center mb-4 bg-pink-50 p-3 rounded-lg border-2 border-dashed border-pink-200">
+        <div class="text-center">
+          <div class="text-2xl font-extrabold text-pink-600">Second (s)</div>
+          <div class="text-xs uppercase font-bold text-slate-500">SI Base Unit</div>
+        </div>
+        <div class="text-xl font-bold text-slate-400">|</div>
+        <div class="text-center">
+          <div class="text-lg font-bold">min &bull; h</div>
+          <div class="text-xs uppercase font-bold text-slate-500">Larger Units</div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-2 text-center font-bold mb-4">
+        <div class="bg-slate-100 p-2 rounded border border-slate-300">60 s = 1 minute</div>
+        <div class="bg-slate-100 p-2 rounded border border-slate-300">60 min = 1 hour</div>
+      </div>
+
+      <div class="border-2 border-red-200 rounded p-3 bg-red-50 text-xs">
+        <span class="font-bold text-red-600"><i class="fa-solid fa-triangle-exclamation"></i> Writing Guidelines:</span>
+        <ul class="list-disc pl-4 mt-1 space-y-1">
+          <li>Always write unit symbols in <strong>lowercase</strong> (except derived from names, e.g., 's', 'min', 'h').</li>
+          <li>Never use plurals for symbols (e.g., <strong>10 s</strong>, NOT 10 secs; <strong>5 h</strong>, NOT 5 hrs).</li>
+          <li>Never add a full stop after a unit symbol unless it's the end of a sentence.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Card 5: Speed Formula Sheet -->
+    <section class="doodle-card p-6 transform -rotate-1 relative bg-yellow-50">
+      <div class="absolute -top-3 left-4 bg-yellow-300 border-2 border-slate-900 px-3 py-0.5 text-xs font-bold uppercase rounded">Formula Board</div>
+      <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-400 pb-2 mb-4 mt-1 text-slate-800">
+        <i class="fa-solid fa-calculator text-yellow-700 mr-2"></i>What is Speed?
+      </h2>
+      <p class="mb-4">The distance covered by an object in a unit of time. Generally indicates how slow or fast an object is moving.</p>
+
+      <!-- Standard visual math formatting -->
+      <div class="border-2 border-slate-900 bg-white p-4 rounded-xl shadow-md mb-4 flex flex-col items-center justify-center">
+        <div class="text-xl font-bold text-slate-800 flex items-center gap-3">
+          <span>Speed</span>
+          <span>=</span>
+          <div class="flex flex-col items-center">
+            <span class="border-b-2 border-slate-950 px-2 pb-0.5">Total Distance Covered</span>
+            <span class="pt-0.5">Total Time Taken</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-2 mb-4">
+        <div class="flex justify-between items-center bg-white p-2 rounded border border-slate-200 text-sm">
+          <span><strong>SI Unit:</strong> meters per second</span>
+          <span class="hl-green font-bold">m/s</span>
+        </div>
+        <div class="flex justify-between items-center bg-white p-2 rounded border border-slate-200 text-sm">
+          <span><strong>Other Unit:</strong> kilometers per hour</span>
+          <span class="hl-cyan font-bold">km/h</span>
+        </div>
+      </div>
+
+      <div class="bg-blue-50 border-2 border-dashed border-blue-200 rounded p-3 text-xs">
+        <span class="font-bold text-blue-800"><i class="fa-solid fa-shuffle"></i> Fast Conversion Hack:</span>
+        <div class="flex justify-around items-center mt-2 font-bold text-center">
+          <div>km/h &rarr; m/s <br><span class="text-blue-600 font-extrabold text-sm">&times; 5 / 18</span></div>
+          <div>m/s &rarr; km/h <br><span class="text-blue-600 font-extrabold text-sm">&times; 18 / 5</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 6: Formula Derivations & Calculations -->
+    <section class="doodle-card p-6 transform rotate-1 relative">
+      <div class="absolute -top-3 left-4 bg-orange-200 border-2 border-slate-900 px-3 py-0.5 text-xs font-bold uppercase rounded">Math Corner</div>
+      <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-400 pb-2 mb-4 mt-1 text-slate-800">
+        <i class="fa-solid fa-triangle-exclamation text-orange-600 mr-2"></i>Calculations Helper
+      </h2>
+      
+      <div class="grid grid-cols-2 gap-3 mb-4">
+        <div class="bg-orange-50 border border-orange-200 p-3 rounded text-center">
+          <div class="text-xs font-bold text-slate-500 uppercase">Find Distance</div>
+          <div class="font-bold text-slate-800 mt-1">D = Speed &times; Time</div>
+        </div>
+        <div class="bg-orange-50 border border-orange-200 p-3 rounded text-center">
+          <div class="text-xs font-bold text-slate-500 uppercase">Find Time</div>
+          <div class="font-bold text-slate-800 mt-1">T = Distance / Speed</div>
+        </div>
+      </div>
+
+      <div class="border-t-2 border-dashed border-slate-200 pt-3">
+        <div class="bg-slate-100 p-3 rounded-lg text-xs">
+          <div class="font-bold text-slate-700 mb-1"><i class="fa-solid fa-pencil"></i> Quick Example Solved:</div>
+          <p><strong>Q:</strong> Swati rides 3.6 km on her bicycle in 15 minutes. Find her speed in m/s.</p>
+          <div class="mt-2 space-y-1 font-mono text-blue-700 bg-white p-2 rounded border">
+            <div>Distance = 3.6 km = 3.6 &times; 1000 = 3600 m</div>
+            <div>Time = 15 min = 15 &times; 60 = 900 s</div>
+            <div>Speed = 3600 m / 900 s = <span class="bg-yellow-200 px-1 font-bold">4 m/s</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 7: Speedometer & Odometer -->
+    <section class="doodle-card p-6 transform -rotate-1 relative">
+      <div class="absolute -top-3 left-4 bg-cyan-200 border-2 border-slate-900 px-3 py-0.5 text-xs font-bold uppercase rounded">Dashboard</div>
+      <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-400 pb-2 mb-4 mt-1 text-slate-800">
+        <i class="fa-solid fa-gauge text-cyan-600 mr-2"></i>Measuring Devices
+      </h2>
+      
+      <div class="space-y-4">
+        <div class="border-2 border-slate-900 rounded-xl p-3 bg-cyan-50 flex gap-3 items-center">
+          <div class="text-3xl text-cyan-600"><i class="fa-solid fa-gauge-high"></i></div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-800">Speedometer</h3>
+            <p class="text-sm">Measures the speed of a vehicle <strong>instantaneously</strong> in <span class="hl-yellow">km/h</span> directly at any given moment.</p>
+          </div>
+        </div>
+
+        <div class="border-2 border-slate-900 rounded-xl p-3 bg-emerald-50 flex gap-3 items-center">
+          <div class="text-3xl text-emerald-600"><i class="fa-solid fa-road"></i></div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-800">Odometer</h3>
+            <p class="text-sm">Measures the total <strong>distance traveled</strong> by the vehicle in <span class="hl-green">kilometers (km)</span>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 8: Uniform vs Non-Uniform Motion -->
+    <section class="doodle-card p-6 transform rotate-1 relative">
+      <div class="absolute -top-3 left-4 bg-emerald-200 border-2 border-slate-900 px-3 py-0.5 text-xs font-bold uppercase rounded">Motion Types</div>
+      <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-400 pb-2 mb-4 mt-1 text-slate-800">
+        <i class="fa-solid fa-arrows-left-right text-emerald-600 mr-2"></i>Linear Motion
+      </h2>
+      
+      <p class="mb-4">Motion of an object moving along a straight line.</p>
+
+      <div class="space-y-4">
+        <div class="p-3 bg-blue-50 rounded-lg border-2 border-blue-200">
+          <h3 class="font-bold text-blue-900"><i class="fa-solid fa-circle-check"></i> Uniform Linear Motion</h3>
+          <p class="text-xs mt-1">An object covers <span class="hl-cyan">equal distances in equal intervals of time</span>. Speed remains perfectly <strong>constant</strong>.</p>
+          <div class="text-xs text-slate-500 italic mt-1">(An idealization - rare in everyday life!)</div>
+        </div>
+
+        <div class="p-3 bg-red-50 rounded-lg border-2 border-red-200">
+          <h3 class="font-bold text-red-900"><i class="fa-solid fa-circle-xmark"></i> Non-Uniform Linear Motion</h3>
+          <p class="text-xs mt-1">An object covers <span class="hl-pink">unequal distances in equal intervals of time</span>. Speed is <strong>constantly changing</strong>.</p>
+          <div class="text-xs text-slate-500 italic mt-1">(E.g., driving a car through heavy city traffic)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 9: Quick Summary Checklist -->
+    <section class="doodle-card p-6 transform -rotate-1 relative bg-blue-50">
+      <div class="absolute -top-3 left-4 bg-blue-300 border-2 border-slate-900 px-3 py-0.5 text-xs font-bold uppercase rounded">At a Glance</div>
+      <h2 class="text-2xl font-bold border-b-2 border-dashed border-slate-400 pb-2 mb-4 mt-1 text-slate-800">
+        <i class="fa-solid fa-clipboard-check text-blue-700 mr-2"></i>In a Nutshell
+      </h2>
+      
+      <ul class="space-y-3 text-sm">
+        <li class="flex items-start gap-2">
+          <span class="text-green-600"><i class="fa-solid fa-circle-check"></i></span>
+          <span>The time taken by a pendulum to complete one full oscillation is called its <strong>time period</strong>.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-green-600"><i class="fa-solid fa-circle-check"></i></span>
+          <span>The basic SI unit of time is the <strong>second (s)</strong>.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-green-600"><i class="fa-solid fa-circle-check"></i></span>
+          <span>The basic SI unit of speed is <strong>meters per second (m/s)</strong>.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-green-600"><i class="fa-solid fa-circle-check"></i></span>
+          <span><strong>Average speed</strong> = Total distance covered divided by total time taken.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-green-600"><i class="fa-solid fa-circle-check"></i></span>
+          <span><strong>Speedometer</strong> displays speed in km/h, and <strong>Odometer</strong> logs total distance in km.</span>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Decorative Footer -->
+  <footer class="text-center mt-12 mb-20 text-slate-500 text-sm">
+    <p class="font-bold"><i class="fa-solid fa-graduation-cap"></i> Practice makes perfect! Keep studying.</p>
+    <div class="flex justify-center gap-4 mt-2 opacity-50">
+      <i class="fa-solid fa-pen-nib"></i>
+      <i class="fa-solid fa-paperclip"></i>
+      <i class="fa-solid fa-ruler"></i>
+    </div>
+  </footer>
+
+  <!-- DYNAMIC EXPORT BUTTON -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '8._Measurement_of_Time_and_Motion.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

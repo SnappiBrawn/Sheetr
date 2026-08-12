@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Reference: Heat Transfer in Nature</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Kalam (Handwritten/Doodly) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Apply handwriting aesthetic globally */
+        * {
+            font-family: 'Kalam', cursive;
+        }
+        
+        /* Grid paper background pattern */
+        body {
+            background-color: #faf6eb;
+            background-image: 
+                linear-gradient(#e2dec9 1px, transparent 1px),
+                linear-gradient(90deg, #e2dec9 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        /* Hand-drawn sketchy border tricks */
+        .sketchy-card {
+            border: 3px solid #2d2d2d;
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            box-shadow: 4px 4px 0px #2d2d2d;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .sketchy-card:hover {
+            transform: scale(1.01) rotate(0.5deg) !important;
+            box-shadow: 6px 6px 0px #2d2d2d;
+        }
+
+        /* Irregular sketchy header borders */
+        .sketchy-header {
+            border-bottom: 3px dashed #2d2d2d;
+            border-radius: 20px 5px 20px 5px/5px 20px 5px 20px;
+        }
+
+        /* Highlighter effect */
+        .highlight-yellow {
+            background: linear-gradient(120deg, rgba(fef08a, 0.5) 0%, rgba(fef08a, 0.8) 100%);
+            background-color: #fef08a;
+        }
+
+        /* Custom scrollbar to keep hand-drawn vibe */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #faf6eb;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2d2d2d;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 text-[#1a1a1a]">
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto">
+        
+        <!-- HEADER SECTION -->
+        <header class="sketchy-card bg-amber-100 p-6 mb-8 text-center relative overflow-hidden" style="transform: rotate(-0.5deg);">
+            <!-- Decorative Tape/Pins -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-2 bg-yellow-200/80 border border-dashed border-gray-500 w-32 h-8 rotate-1"></div>
+            
+            <h1 class="text-4xl md:text-5xl font-bold text-amber-900 tracking-wide">
+                <i class="fa-solid fa-fire-flame-curved text-orange-500 mr-2"></i>
+                7. Heat Transfer in Nature
+            </h1>
+            <p class="text-lg md:text-xl text-amber-800 mt-2 font-medium">
+                Sikkim to Kerala &bull; The Mechanics of Thermal Energy Flow
+            </p>
+        </header>
+
+        <!-- DENSE STUDY GUIDE GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- CARD 1: THE TRIPLE THREAT (Core Mechanisms) -->
+            <div class="sketchy-card bg-orange-50 p-5 flex flex-col justify-between" style="transform: rotate(0.4deg);">
+                <div>
+                    <h2 class="text-2xl font-bold text-orange-800 border-b-2 border-orange-200 pb-1 mb-3">
+                        <i class="fa-solid fa-arrows-spin mr-2"></i>Modes of Heat Transfer
+                    </h2>
+                    <p class="text-sm text-gray-700 mb-4 italic">How thermal energy migrates from Hot &rarr; Cold regions</p>
+                    
+                    <div class="space-y-4">
+                        <div class="p-2 bg-white/60 rounded border border-orange-300">
+                            <span class="font-bold text-orange-700"><i class="fa-solid fa-cubes mr-1"></i> Conduction:</span>
+                            <p class="text-sm">Heat passes molecule-to-molecule via vibration. Particles stay in fixed spots! <span class="bg-yellow-200 px-1 font-semibold">Requires a medium.</span></p>
+                        </div>
+                        <div class="p-2 bg-white/60 rounded border border-orange-300">
+                            <span class="font-bold text-orange-700"><i class="fa-solid fa-wind mr-1"></i> Convection:</span>
+                            <p class="text-sm">Heat travels through the physical movement of the fluid (liquids/gases) itself. <span class="bg-yellow-200 px-1 font-semibold">Requires a medium.</span></p>
+                        </div>
+                        <div class="p-2 bg-white/60 rounded border border-orange-300">
+                            <span class="font-bold text-orange-700"><i class="fa-solid fa-sun mr-1"></i> Radiation:</span>
+                            <p class="text-sm">Heat travels via electromagnetic waves. <span class="bg-yellow-200 px-1 font-semibold">No material medium required!</span> Works in a vacuum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 pt-3 border-t border-dashed border-orange-300 text-xs text-orange-800 font-bold text-center">
+                    Note: Conduction is dominant in solids; Convection in fluids!
+                </div>
+            </div>
+
+            <!-- CARD 2: CONDUCTION DEEP DIVE -->
+            <div class="sketchy-card bg-red-50 p-5 flex flex-col justify-between" style="transform: rotate(-0.6deg);">
+                <div>
+                    <h2 class="text-2xl font-bold text-red-800 border-b-2 border-red-200 pb-1 mb-3">
+                        <i class="fa-solid fa-temperature-arrow-up mr-2"></i>Conduction & Materials
+                    </h2>
+                    
+                    <div class="grid grid-cols-2 gap-2 mb-4 text-center">
+                        <div class="p-2 bg-green-100 rounded border-2 border-green-300">
+                            <span class="font-bold text-green-800 block text-sm">Good Conductors</span>
+                            <p class="text-xs text-gray-700">Allow heat to pass easily.<br><b>Examples:</b> Aluminum, Iron, Steel.</p>
+                        </div>
+                        <div class="p-2 bg-red-100 rounded border-2 border-red-300">
+                            <span class="font-bold text-red-800 block text-sm">Poor Conductors</span>
+                            <p class="text-xs text-gray-700">Insulators of heat.<br><b>Examples:</b> Wood, Glass, Clay, Plastic, Air.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="font-bold text-red-700 text-md mb-1"><i class="fa-solid fa-circle-question mr-1"></i> Why are we warm in wool?</h3>
+                    <p class="text-sm text-gray-700 bg-white/60 p-2 rounded border border-red-200">
+                        Wool fibers trap <span class="bg-yellow-100 px-1 font-semibold">Air</span> in their tiny pores. Since Air is an excellent insulator, it prevents the escape of body heat to the cold surroundings. 
+                        <br><span class="text-xs text-red-800 font-bold font-sans">*Pro Tip: Two thin blankets trap a layer of air between them, keeping you warmer than one thick blanket!</span>
+                    </p>
+                </div>
+                <div class="mt-4 p-2 bg-amber-100/80 rounded border border-amber-300 text-xs">
+                    <span class="font-bold text-amber-800"><i class="fa-solid fa-lightbulb mr-1"></i> Traditional Practice:</span> 
+                    Himalayan mud houses & hollow brick structures trap air inside pockets to maintain a stable interior temperature.
+                </div>
+            </div>
+
+            <!-- CARD 3: CONVECTION & BREEZES -->
+            <div class="sketchy-card bg-blue-50 p-5" style="transform: rotate(0.5deg);">
+                <h2 class="text-2xl font-bold text-blue-800 border-b-2 border-blue-200 pb-1 mb-3">
+                    <i class="fa-solid fa-cloud-sun-rain mr-2"></i>Convection in Action
+                </h2>
+                <p class="text-sm mb-4">
+                    When fluids heat up, they <span class="bg-blue-100 font-bold px-1 text-blue-900">expand &rarr; become lighter &rarr; rise</span>. Cold, denser fluid sinks to replace them, creating a continuous loop!
+                </p>
+
+                <div class="space-y-4">
+                    <!-- Sea Breeze -->
+                    <div class="p-3 bg-white/70 rounded border border-blue-300">
+                        <span class="font-bold text-blue-700 block text-md"><i class="fa-solid fa-sun text-amber-500"></i> Sea Breeze (Daytime)</span>
+                        <p class="text-xs text-gray-700 mt-1">
+                            Land heats up faster than the sea. 
+                            <br><b>Flow:</b> Land Warm Air rises &uarr; &bull; Cool Sea Air blows in to replace it &rarr; Land.
+                        </p>
+                    </div>
+
+                    <!-- Land Breeze -->
+                    <div class="p-3 bg-white/70 rounded border border-blue-300">
+                        <span class="font-bold text-indigo-800 block text-md"><i class="fa-solid fa-moon text-indigo-400"></i> Land Breeze (Nighttime)</span>
+                        <p class="text-xs text-gray-700 mt-1">
+                            Land cools down faster than the sea. Sea stays warmer.
+                            <br><b>Flow:</b> Sea Warm Air rises &uarr; &bull; Cool Land Air blows out &rarr; Sea.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4: RADIATION & COLOR REFLECTANCE -->
+            <div class="sketchy-card bg-yellow-50 p-5 flex flex-col justify-between" style="transform: rotate(-0.3deg);">
+                <div>
+                    <h2 class="text-2xl font-bold text-amber-800 border-b-2 border-yellow-200 pb-1 mb-3">
+                        <i class="fa-solid fa-snowflake-droplets mr-2"></i>Radiation & Clothing
+                    </h2>
+                    <p class="text-sm text-gray-700 mb-3">
+                        Radiation is heat moving directly through space at the speed of light. All hot surfaces continuously emit it.
+                    </p>
+
+                    <div class="space-y-2 text-sm">
+                        <div class="p-2 bg-white rounded border border-yellow-300 flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-white border border-gray-400 mr-2 flex items-center justify-center text-xs font-bold">W</div>
+                            <div>
+                                <span class="font-bold text-amber-700">Light-Colored Clothes:</span>
+                                <p class="text-xs text-gray-600">Reflect most thermal radiation. Preferred in summers to stay cool!</p>
+                            </div>
+                        </div>
+
+                        <div class="p-2 bg-gray-900 text-white rounded border border-black flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-black border border-gray-600 mr-2 flex items-center justify-center text-xs font-bold text-white">D</div>
+                            <div>
+                                <span class="font-bold text-yellow-300">Dark-Colored Clothes:</span>
+                                <p class="text-xs text-gray-300">Absorb high amounts of thermal radiation. Ideal for winter warmth.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-2 bg-amber-100 rounded border border-amber-300 text-xs">
+                    <span class="font-bold block text-amber-800"><i class="fa-solid fa-house-fire mr-1"></i> Himalayan Bukhari:</span>
+                    A traditional metal room heater that utilizes <b>Conduction</b> (heating cooking vessels on top), <b>Convection</b> (distributing air in room), and <b>Radiation</b> (direct warmth felt sitting beside it).
+                </div>
+            </div>
+
+            <!-- CARD 5: THE HYDROSOCIAL WATER CYCLE -->
+            <div class="sketchy-card bg-emerald-50 p-5 col-span-1 lg:col-span-2" style="transform: rotate(0.3deg);">
+                <h2 class="text-2xl font-bold text-emerald-800 border-b-2 border-emerald-200 pb-1 mb-3">
+                    <i class="fa-solid fa-water mr-2"></i>The Natural Water Cycle & Heat
+                </h2>
+                <p class="text-sm text-gray-700 mb-4">
+                    The Sun's radiation acts as the thermodynamic engine of Earth, driving water transformation through states:
+                </p>
+
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+                    <div class="p-2 bg-white rounded border border-emerald-200">
+                        <span class="text-emerald-700 font-bold block text-sm">1. Evaporation</span>
+                        <p class="text-xs text-gray-600">Solar heat turns liquid water into vapor.</p>
+                    </div>
+                    <div class="p-2 bg-white rounded border border-emerald-200">
+                        <span class="text-emerald-700 font-bold block text-sm">2. Transpiration</span>
+                        <p class="text-xs text-gray-600">Water vapor released through leaves of plants.</p>
+                    </div>
+                    <div class="p-2 bg-white rounded border border-emerald-200">
+                        <span class="text-emerald-700 font-bold block text-sm">3. Condensation</span>
+                        <p class="text-xs text-gray-600">Cooling vapor forms tiny clouds.</p>
+                    </div>
+                    <div class="p-2 bg-white rounded border border-emerald-200">
+                        <span class="text-emerald-700 font-bold block text-sm">4. Precipitation</span>
+                        <p class="text-xs text-gray-600">Rain, snow, or hail falls back to the Earth.</p>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-3 bg-teal-100/50 rounded border border-teal-200 text-xs text-teal-900">
+                    <i class="fa-solid fa-circle-info mr-1"></i> This endless cycle redistributes thermal energy globally and continuously replenishes our rivers, lakes, and freshwater reservoirs.
+                </div>
+            </div>
+
+            <!-- CARD 6: GROUNDWATER & SEEPAGE -->
+            <div class="sketchy-card bg-stone-100 p-5 flex flex-col justify-between" style="transform: rotate(-0.5deg);">
+                <div>
+                    <h2 class="text-2xl font-bold text-stone-800 border-b-2 border-stone-300 pb-1 mb-3">
+                        <i class="fa-solid fa-faucet-drip mr-2"></i>Infiltration & Aquifers
+                    </h2>
+                    
+                    <div class="p-3 bg-white rounded border border-stone-300 mb-3 text-xs space-y-2">
+                        <p>
+                            <span class="font-bold text-stone-700 text-sm">Infiltration:</span> 
+                            The process of surface water seeping downward through soil and rock layers.
+                        </p>
+                        <p>
+                            <span class="font-bold text-stone-700 text-sm">Aquifers:</span> 
+                            Permeable underground layers of rock, sand, or gravel that store massive volumes of extractable <b>groundwater</b>.
+                        </p>
+                    </div>
+
+                    <h3 class="font-bold text-stone-700 text-sm mb-1"><i class="fa-solid fa-hourglass-half mr-1"></i> Soil Seepage Rates</h3>
+                    <div class="flex items-center justify-between text-xs font-bold px-2 py-1 bg-white border border-stone-200 rounded">
+                        <span class="text-green-600">Gravel (Fastest)</span>
+                        <span class="text-gray-400">&gt;</span>
+                        <span class="text-amber-600">Sand (Medium)</span>
+                        <span class="text-gray-400">&gt;</span>
+                        <span class="text-red-600">Clay (Slowest)</span>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-2 bg-amber-50 rounded border border-amber-200 text-xs text-amber-800">
+                    <span class="font-bold block">Conservation Warning:</span>
+                    Due to growing concrete surfaces, natural infiltration has declined. Rainwater harvesting and recharge pits are critical to replenishing depleted aquifers!
+                </div>
+            </div>
+
+            <!-- CARD 7: COOL SCIENCE - ICE STUPAS -->
+            <div class="sketchy-card bg-cyan-50 p-5 col-span-1 lg:col-span-2 flex flex-col justify-between" style="transform: rotate(0.4deg);">
+                <div>
+                    <h2 class="text-2xl font-bold text-cyan-800 border-b-2 border-cyan-200 pb-1 mb-3">
+                        <i class="fa-solid fa-snowflake mr-2"></i>Ladakh's Ice Stupas: Engineering with Freeze
+                    </h2>
+                    <p class="text-sm text-cyan-900 mb-3">
+                        During spring in arid mountainous Ladakh, streams dry up when water is desperately needed for agriculture. Himalayan innovator Sonam Wangchuk pioneered the <b>Ice Stupa</b>.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white/70 p-3 rounded border border-cyan-200 text-xs">
+                            <span class="font-bold text-cyan-800 block"><i class="fa-solid fa-circle-nodes mr-1"></i> How it works:</span>
+                            During winter, mountain stream water is piped downhill. Gravity creates high pressure, spraying the water high into the freezing air. It drops and freezes layer-by-layer into a dense, conical ice mountain.
+                        </div>
+                        <div class="bg-white/70 p-3 rounded border border-cyan-200 text-xs">
+                            <span class="font-bold text-cyan-800 block"><i class="fa-solid fa-clock-rotate-left mr-1"></i> Slow Melting Formula:</span>
+                            The conical geometry minimizes surface area exposure to direct sunlight. This ensures the stupa melts slowly over spring, supplying consistent water for irrigation when crops need it most!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 pt-3 border-t border-dashed border-cyan-200 text-xs text-cyan-800 font-bold text-center">
+                    A beautiful integration of thermal physics and indigenous mountain hydrology!
+                </div>
+            </div>
+
+            <!-- CARD 8: QUICK LAB SUMMARY -->
+            <div class="sketchy-card bg-pink-50 p-5" style="transform: rotate(-0.4deg);">
+                <h2 class="text-2xl font-bold text-pink-800 border-b-2 border-pink-200 pb-1 mb-3">
+                    <i class="fa-solid fa-flask-vial mr-2"></i>Experimental Proofs
+                </h2>
+                <ul class="text-xs space-y-2 text-gray-700">
+                    <li class="bg-white/60 p-2 rounded border border-pink-200">
+                        <b class="text-pink-800 font-sans">Metal Strip & Pins:</b> Wax-attached pins fall one by one starting closest to the heat source. <b>Demonstrates Conduction.</b>
+                    </li>
+                    <li class="bg-white/60 p-2 rounded border border-pink-200">
+                        <b class="text-pink-800 font-sans">Beaker & Permanganate:</b> Purple streaks cycle upwards in the center and sink down the sides. <b>Demonstrates Convection loops.</b>
+                    </li>
+                    <li class="bg-white/60 p-2 rounded border border-pink-200">
+                        <b class="text-pink-800 font-sans">Soil vs. Water:</b> Exposed to sun, soil temperature rises and cools significantly faster than water. <b>Explains Land & Sea Breezes.</b>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- FOOTER & CREDITS -->
+        <footer class="mt-12 text-center text-sm text-gray-600 border-t border-dashed border-gray-400 pt-6 pb-12">
+            <p>&copy; Science Quick Reference Series &bull; Grade 7 Chapter 7 &bull; Crafted with Hand-Drawn Design Aesthetics</p>
+        </footer>
+
+    </div>
+
+    <!-- DYNAMIC EXPORT BUTTON -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '7._Heat_Transfer_in_Nature.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

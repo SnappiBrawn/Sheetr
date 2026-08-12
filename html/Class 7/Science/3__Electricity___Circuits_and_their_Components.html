@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity: Circuits and their Components - Study Guide</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Kalam for a handwritten/doodly feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Kalam', cursive;
+            background-color: #faf9f5;
+            /* Lined notebook paper background */
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(239, 68, 68, 0.08) 1px, transparent 1px);
+            background-size: 100% 24px, 40px 100%;
+            background-attachment: local;
+        }
+
+        /* Hand-drawn borders */
+        .doodle-card {
+            border: 3px solid #1e293b;
+            box-shadow: 6px 6px 0px #1e293b;
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .doodle-card:hover {
+            transform: scale(1.01) rotate(0deg) !important;
+            box-shadow: 8px 8px 0px #1e293b;
+        }
+
+        .hand-drawn-border-sm {
+            border: 2px solid #1e293b;
+            border-radius: 20px 5px 20px 5px/5px 20px 5px 20px;
+        }
+
+        .highlight-yellow {
+            background-color: #fef08a;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        .highlight-green {
+            background-color: #bbf7d0;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        .highlight-pink {
+            background-color: #fbcfe8;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 text-slate-800">
+
+    <!-- Top Navigation / Header -->
+    <header class="max-w-7xl mx-auto mb-10 text-center relative">
+        <div class="inline-block transform -rotate-1 bg-yellow-100 border-4 border-slate-800 p-6 md:p-8 rounded-3xl shadow-[8px_8px_0px_#1e293b] max-w-2xl">
+            <span class="text-sm uppercase tracking-widest bg-red-400 text-white px-3 py-1 rounded-full font-bold">Grade 7 Science &bull; Unit 3</span>
+            <h1 class="text-3xl md:text-5xl font-bold mt-3 text-slate-900">
+                <i class="fa-solid fa-bolt text-yellow-500 mr-2 animate-bounce"></i>
+                Electricity: Circuits &amp; Components
+            </h1>
+            <p class="text-lg md:text-xl text-slate-700 mt-2">Visual Quick Reference &amp; Study Guide</p>
+        </div>
+        
+        <!-- Fun hand-drawn arrow/pointer -->
+        <div class="hidden md:block absolute top-10 right-10 text-slate-600 transform rotate-12">
+            <p class="text-sm">Grab your pens!</p>
+            <i class="fa-solid fa-arrow-turn-down text-3xl mt-1"></i>
+        </div>
+    </header>
+
+    <!-- Main Grid Layout -->
+    <main class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- CARD 1: Power Sources -->
+        <div class="doodle-card bg-amber-50 p-6 transform -rotate-1 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold text-amber-900 underline decoration-wavy decoration-amber-500">
+                        <i class="fa-solid fa-car-battery mr-2 text-amber-600"></i>Power Sources
+                    </h2>
+                    <span class="text-xs bg-amber-200 text-amber-800 font-bold px-2 py-1 rounded">1. Cells &amp; Batteries</span>
+                </div>
+                
+                <h3 class="font-bold text-lg text-slate-900 mt-2">🔋 The Electric Cell</h3>
+                <p class="text-sm text-slate-700 mb-2">A portable source of electrical energy. It converts stored chemical energy into electrical energy.</p>
+                
+                <div class="bg-white p-3 hand-drawn-border-sm my-3 flex items-center justify-around">
+                    <div class="text-center">
+                        <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center font-bold border border-slate-700 text-red-600">+</div>
+                        <span class="text-xs font-bold block mt-1">Positive Terminal</span>
+                        <span class="text-[11px] text-slate-500">(Metal Cap)</span>
+                    </div>
+                    <div class="h-10 w-0.5 bg-slate-300"></div>
+                    <div class="text-center">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center font-bold border border-slate-700 text-blue-600">-</div>
+                        <span class="text-xs font-bold block mt-1">Negative Terminal</span>
+                        <span class="text-[11px] text-slate-500">(Flat Disc)</span>
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-lg text-slate-900 mt-4">🔌 What is a Battery?</h3>
+                <p class="text-sm text-slate-700">A <span class="highlight-yellow">combination of two or more cells</span> connected in a specific sequence.</p>
+                <p class="text-xs text-red-600 font-bold mt-1">⚠️ Rule: The positive (+) terminal of one cell must always connect to the negative (-) terminal of the next cell!</p>
+            </div>
+            
+            <div class="mt-4 border-t-2 border-dashed border-amber-300 pt-3 text-xs text-slate-500">
+                💡 <span class="font-bold">Fact:</span> Mobile phones use compact custom rechargeable batteries.
+            </div>
+        </div>
+
+        <!-- CARD 2: Glowing Bright (Lamps vs LEDs) -->
+        <div class="doodle-card bg-emerald-50 p-6 transform rotate-1 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold text-emerald-900 underline decoration-wavy decoration-emerald-500">
+                        <i class="fa-regular fa-lightbulb mr-2 text-emerald-600"></i>Light Emitters
+                    </h2>
+                    <span class="text-xs bg-emerald-200 text-emerald-800 font-bold px-2 py-1 rounded">2. Lamps vs LEDs</span>
+                </div>
+
+                <!-- Incandescent Lamp -->
+                <div class="mb-4">
+                    <h3 class="font-bold text-lg text-slate-900 flex items-center">💡 Incandescent Bulb</h3>
+                    <p class="text-sm text-slate-700">Contains a very thin wire called a <span class="highlight-green">filament</span> which gets extremely hot and glows when current passes through.</p>
+                    <p class="text-xs text-slate-500 mt-1">🚫 <span class="font-bold text-red-500">Fused Bulb:</span> Occurs when the filament breaks, stopping the flow of current.</p>
+                </div>
+
+                <!-- LED -->
+                <div class="bg-white p-3 hand-drawn-border-sm">
+                    <h3 class="font-bold text-sm text-slate-900 flex items-center">✨ LED (Light Emitting Diode)</h3>
+                    <p class="text-xs text-slate-700">Modern torches use LEDs instead of traditional bulbs because they are more efficient &amp; durable.</p>
+                    <div class="mt-2 text-xs grid grid-cols-2 gap-2 text-slate-600">
+                        <div class="bg-emerald-50 p-1.5 rounded border border-emerald-200">
+                            <strong>Longer wire:</strong><br>Positive (+) Terminal
+                        </div>
+                        <div class="bg-rose-50 p-1.5 rounded border border-rose-200">
+                            <strong>Shorter wire:</strong><br>Negative (-) Terminal
+                        </div>
+                    </div>
+                    <p class="text-[11px] text-amber-600 font-bold mt-2"><i class="fa-solid fa-circle-exclamation mr-1"></i>Current can only flow through an LED in ONE direction!</p>
+                </div>
+            </div>
+
+            <div class="mt-4 border-t-2 border-dashed border-emerald-300 pt-3 text-xs text-slate-500">
+                💡 <span class="font-bold">Pro-Tip:</span> LEDs don't have filaments, so they don't burn out easily!
+            </div>
+        </div>
+
+        <!-- CARD 3: Circuit Symbols Key -->
+        <div class="doodle-card bg-blue-50 p-6 transform -rotate-1 md:col-span-2 lg:col-span-1">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-2xl font-bold text-blue-900 underline decoration-wavy decoration-blue-500">
+                    <i class="fa-solid fa-square-poll-horizontal mr-2 text-blue-600"></i>Symbol Guide
+                </h2>
+                <span class="text-xs bg-blue-200 text-blue-800 font-bold px-2 py-1 rounded">3. Schematic Keys</span>
+            </div>
+
+            <div class="space-y-3">
+                <!-- Cell Symbol -->
+                <div class="flex items-center justify-between p-2 bg-white rounded border border-slate-300">
+                    <div>
+                        <span class="font-bold text-sm text-slate-800 block">Electric Cell</span>
+                        <span class="text-xs text-slate-500">Long line = (+), Short/thick line = (-)</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <span class="text-xs font-bold text-slate-400">+</span>
+                        <div class="w-0.5 h-6 bg-slate-800"></div>
+                        <div class="w-1.5 h-4 bg-slate-800"></div>
+                        <span class="text-xs font-bold text-slate-400">-</span>
+                    </div>
+                </div>
+
+                <!-- Battery Symbol -->
+                <div class="flex items-center justify-between p-2 bg-white rounded border border-slate-300">
+                    <div>
+                        <span class="font-bold text-sm text-slate-800 block">Battery</span>
+                        <span class="text-xs text-slate-500">Multiple cells connected</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-0.5 h-6 bg-slate-800"></div>
+                        <div class="w-1.5 h-4 bg-slate-800"></div>
+                        <div class="w-0.5 h-6 bg-slate-800 ml-1"></div>
+                        <div class="w-1.5 h-4 bg-slate-800"></div>
+                    </div>
+                </div>
+
+                <!-- Lamp Symbol -->
+                <div class="flex items-center justify-between p-2 bg-white rounded border border-slate-300">
+                    <div>
+                        <span class="font-bold text-sm text-slate-800 block">Electric Lamp</span>
+                        <span class="text-xs text-slate-500">Circle containing an 'X'</span>
+                    </div>
+                    <div class="w-6 h-6 rounded-full border-2 border-slate-800 flex items-center justify-center font-bold text-xs">X</div>
+                </div>
+
+                <!-- LED Symbol -->
+                <div class="flex items-center justify-between p-2 bg-white rounded border border-slate-300">
+                    <div>
+                        <span class="font-bold text-sm text-slate-800 block">LED</span>
+                        <span class="text-xs text-slate-500">Triangle pointing to line with arrows</span>
+                    </div>
+                    <div class="relative w-8 h-6 flex items-center justify-center">
+                        <div class="w-0 h-0 border-t-4 border-t-transparent border-b-4 border-b-transparent border-l-8 border-l-slate-800"></div>
+                        <div class="w-0.5 h-4 bg-slate-800 -ml-0.5"></div>
+                        <span class="text-[10px] absolute -top-1 right-0 text-slate-600 font-bold">&nearr;&nearr;</span>
+                    </div>
+                </div>
+
+                <!-- Switch ON Symbol -->
+                <div class="flex items-center justify-between p-2 bg-white rounded border border-slate-300">
+                    <div>
+                        <span class="font-bold text-sm text-slate-800 block">Switch (ON)</span>
+                        <span class="text-xs text-slate-500">Path is connected</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-2 h-2 rounded-full bg-slate-800"></div>
+                        <div class="w-6 h-0.5 bg-slate-800"></div>
+                        <div class="w-2 h-2 rounded-full bg-slate-800"></div>
+                    </div>
+                </div>
+
+                <!-- Switch OFF Symbol -->
+                <div class="flex items-center justify-between p-2 bg-white rounded border border-slate-300">
+                    <div>
+                        <span class="font-bold text-sm text-slate-800 block">Switch (OFF)</span>
+                        <span class="text-xs text-slate-500">Broken pathway</span>
+                    </div>
+                    <div class="flex items-center relative h-6 w-10">
+                        <div class="w-2 h-2 rounded-full bg-slate-800 absolute left-0 bottom-1"></div>
+                        <div class="w-6 h-0.5 bg-slate-800 origin-left -rotate-45 absolute left-1 bottom-2"></div>
+                        <div class="w-2 h-2 rounded-full bg-slate-800 absolute right-1 bottom-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 4: Electric Circuits -->
+        <div class="doodle-card bg-rose-50 p-6 transform rotate-1 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold text-rose-900 underline decoration-wavy decoration-rose-500">
+                        <i class="fa-solid fa-circle-nodes mr-2 text-rose-600"></i>The Circuit
+                    </h2>
+                    <span class="text-xs bg-rose-200 text-rose-800 font-bold px-2 py-1 rounded">4. Flow of Current</span>
+                </div>
+
+                <p class="text-sm text-slate-700 mb-3">An <span class="highlight-pink">electrical circuit</span> provides a complete, continuous loop for electric current to flow through.</p>
+
+                <div class="space-y-3">
+                    <div class="p-3 bg-white hand-drawn-border-sm">
+                        <span class="font-bold text-green-700 text-sm block"><i class="fa-solid fa-circle-check mr-1"></i>Closed Circuit (ON)</span>
+                        <p class="text-xs text-slate-600 mt-1">The path is complete/closed. Current flows from the positive (+) terminal of the cell, through the device, to the negative (-) terminal. The lamp glows.</p>
+                    </div>
+
+                    <div class="p-3 bg-white hand-drawn-border-sm">
+                        <span class="font-bold text-red-700 text-sm block"><i class="fa-solid fa-circle-xmark mr-1"></i>Open Circuit (OFF)</span>
+                        <p class="text-xs text-slate-600 mt-1">There is a gap in the circuit. The path is broken, stopping the flow of electric current. The lamp does not glow.</p>
+                    </div>
+                </div>
+
+                <div class="mt-4 bg-rose-100 p-2.5 rounded text-xs text-rose-950 font-bold border border-rose-300">
+                    💡 Direction Rule: Electric current historically flows from the POSITIVE (+) terminal &rarr; NEGATIVE (-) terminal!
+                </div>
+            </div>
+
+            <div class="mt-4 border-t-2 border-dashed border-rose-300 pt-3 text-xs text-slate-500">
+                🔧 <span class="font-bold">Switch:</span> A simple helper device that completes or breaks the path at your command.
+            </div>
+        </div>
+
+        <!-- CARD 5: Conductors vs Insulators -->
+        <div class="doodle-card bg-purple-50 p-6 transform -rotate-1 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold text-purple-900 underline decoration-wavy decoration-purple-500">
+                        <i class="fa-solid fa-shuffle mr-2 text-purple-600"></i>Materials
+                    </h2>
+                    <span class="text-xs bg-purple-200 text-purple-800 font-bold px-2 py-1 rounded">5. Flow Test</span>
+                </div>
+
+                <p class="text-sm text-slate-700 mb-3">Different materials react to electrical flow in completely unique ways:</p>
+
+                <!-- Conductors -->
+                <div class="mb-4">
+                    <h3 class="font-bold text-sm text-slate-950 uppercase tracking-wide flex items-center gap-1.5">
+                        <span class="w-2.5 h-2.5 rounded-full bg-green-500 inline-block"></span>
+                        Good Conductors
+                    </h3>
+                    <p class="text-xs text-slate-600 mt-1">Materials that allow electric current to pass through them easily.</p>
+                    <div class="flex flex-wrap gap-1 mt-1.5">
+                        <span class="text-xs bg-slate-200 px-2 py-0.5 rounded font-bold">Silver</span>
+                        <span class="text-xs bg-slate-200 px-2 py-0.5 rounded font-bold">Copper</span>
+                        <span class="text-xs bg-slate-200 px-2 py-0.5 rounded font-bold">Gold</span>
+                        <span class="text-xs bg-slate-200 px-2 py-0.5 rounded font-bold">Metal Key</span>
+                    </div>
+                </div>
+
+                <!-- Insulators -->
+                <div class="mb-4">
+                    <h3 class="font-bold text-sm text-slate-950 uppercase tracking-wide flex items-center gap-1.5">
+                        <span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block"></span>
+                        Insulators
+                    </h3>
+                    <p class="text-xs text-slate-600 mt-1">Materials that do not allow electric current to pass easily.</p>
+                    <div class="flex flex-wrap gap-1 mt-1.5">
+                        <span class="text-xs bg-slate-200 px-2 py-0.5 rounded font-bold">Plastic</span>
+                        <span class="text-xs bg-slate-200 px-2 py-0.5 rounded font-bold">Rubber</span>
+                        <span class="text-xs bg-slate-200 px-2 py-0.5 rounded font-bold">Glass</span>
+                        <span class="text-xs bg-slate-200 px-2 py-0.5 rounded font-bold">Wood</span>
+                    </div>
+                </div>
+
+                <div class="bg-red-100 p-2 rounded text-xs text-red-900 border border-red-300 font-bold mt-2">
+                    ⚠️ ALERT: Our human body is a conductor of electricity! Always handle switches and appliances with completely dry hands to prevent shocks.
+                </div>
+            </div>
+
+            <div class="mt-4 border-t-2 border-dashed border-purple-300 pt-3 text-xs text-slate-500">
+                💡 <span class="font-bold">Fact:</span> Copper is widely used for electrical wiring due to high efficiency &amp; low cost.
+            </div>
+        </div>
+
+        <!-- CARD 6: Deep Dive: AC vs DC -->
+        <div class="doodle-card bg-cyan-50 p-6 transform rotate-1 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold text-cyan-900 underline decoration-wavy decoration-cyan-500">
+                        <i class="fa-solid fa-circle-info mr-2 text-cyan-600"></i>Dive Deeper
+                    </h2>
+                    <span class="text-xs bg-cyan-200 text-cyan-800 font-bold px-2 py-1 rounded">6. Power Types</span>
+                </div>
+
+                <p class="text-sm text-slate-700 mb-3">How does power from a portable cell differ from the electricity coming from your household wall sockets?</p>
+
+                <div class="space-y-3">
+                    <div class="bg-white p-3 hand-drawn-border-sm">
+                        <h4 class="font-bold text-sm text-cyan-950 flex items-center justify-between">
+                            <span>Direct Current (DC)</span>
+                            <span class="text-xs text-emerald-600 bg-emerald-100 px-1.5 py-0.2 rounded">Low Risk</span>
+                        </h4>
+                        <p class="text-xs text-slate-600 mt-1">Flows in one single direction. Usually supplied by chemical batteries or solar cells. Typically powers smaller, portable gadgets.</p>
+                    </div>
+
+                    <div class="bg-white p-3 hand-drawn-border-sm">
+                        <h4 class="font-bold text-sm text-cyan-950 flex items-center justify-between">
+                            <span>Alternating Current (AC)</span>
+                            <span class="text-xs text-red-600 bg-red-100 px-1.5 py-0.2 rounded">High Danger</span>
+                        </h4>
+                        <p class="text-xs text-slate-600 mt-1">Changes direction back and forth periodically. Generated by large power plants &amp; delivered via wall sockets. Powers heavy home appliances.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 border-t-2 border-dashed border-cyan-300 pt-3 text-xs text-slate-500">
+                ⚠️ <span class="font-bold">Caution:</span> Mains electricity (AC) is highly dangerous! Never experiment with household wall plug sockets.
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Visual Footer Doodle Note -->
+    <footer class="max-w-7xl mx-auto mt-12 text-center text-slate-600 text-sm">
+        <p class="italic">"The path must be fully complete for the light to shine bright!" &mdash; Science Team Notes</p>
+        <div class="flex justify-center gap-3 mt-4 text-xs">
+            <span class="bg-slate-200 px-2 py-1 rounded"><i class="fa-solid fa-brain mr-1"></i>Learn</span>
+            <span class="bg-slate-200 px-2 py-1 rounded"><i class="fa-solid fa-flask mr-1"></i>Experiment</span>
+            <span class="bg-slate-200 px-2 py-1 rounded"><i class="fa-solid fa-shield-halved mr-1"></i>Stay Safe</span>
+        </div>
+    </footer>
+
+    <!-- DYNAMIC EXPORT BUTTON -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '3._Electricity_-_Circuits_and_their_Components.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

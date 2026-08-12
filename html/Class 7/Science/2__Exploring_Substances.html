@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Substances Study Guide</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Kalam for Handwritten Aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Apply Handwritten Font Globally */
+        body {
+            font-family: 'Kalam', cursive;
+            background-color: #faf8f2;
+            /* Grid Paper CSS Background Effect */
+            background-image: 
+                linear-gradient(rgba(186, 218, 253, 0.3) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(186, 218, 253, 0.3) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        /* Hand-drawn CSS Card borders and sketch styling */
+        .handdrawn-card {
+            border: 3px solid #1e293b;
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            box-shadow: 4px 4px 0px #0f172a;
+            transition: all 0.2s ease;
+        }
+
+        .handdrawn-card:hover {
+            transform: scale(1.02) rotate(0deg) !important;
+            box-shadow: 6px 6px 0px #0f172a;
+        }
+
+        /* Highlight markers */
+        .highlight-yellow {
+            background: linear-gradient(120deg, #fef08a 0%, #fef08a 100%);
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+
+        .highlight-pink {
+            background: linear-gradient(120deg, #fbcfe8 0%, #fbcfe8 100%);
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+
+        .highlight-cyan {
+            background: linear-gradient(120deg, #cffafe 0%, #cffafe 100%);
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+
+        /* Doodly separators */
+        .doodle-line {
+            border: none;
+            height: 4px;
+            background: repeating-linear-gradient(90deg, #1e293b, #1e293b 8px, transparent 8px, transparent 16px);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 text-slate-800 selection:bg-yellow-200">
+
+    <!-- Header Section -->
+    <header class="text-center mb-10 max-w-4xl mx-auto relative">
+        <!-- Floating Doodles -->
+        <div class="hidden md:block absolute -top-8 -left-12 text-pink-500 text-4xl rotate-[-15deg]">
+            <i class="fa-solid fa-flask"></i>
+        </div>
+        <div class="hidden md:block absolute -top-4 -right-12 text-blue-500 text-4xl rotate-[15deg]">
+            <i class="fa-solid fa-atom"></i>
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-bold text-slate-950 tracking-wide drop-shadow-md">
+            <span class="text-orange-600">2.</span> Exploring Substances
+        </h1>
+        <p class="text-xl md:text-2xl mt-2 text-slate-600 font-semibold">
+            <i class="fa-solid fa-pencil"></i> Visual Summary &amp; Essential Science Concepts
+        </p>
+        <div class="doodle-line my-4 max-w-md mx-auto"></div>
+    </header>
+
+    <!-- Main Grid Layout -->
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+        <!-- Card 1: What is an Indicator? -->
+        <div class="handdrawn-card bg-yellow-50 p-6 rotate-[-1deg]">
+            <div class="flex items-center justify-between mb-3 border-b-2 border-slate-900 pb-2">
+                <h3 class="text-2xl font-bold text-yellow-800">
+                    <i class="fa-solid fa-eye-dropper"></i> What are Indicators?
+                </h3>
+                <span class="text-sm bg-yellow-200 text-yellow-800 px-2 py-0.5 rounded border border-yellow-800 font-bold">CORE</span>
+            </div>
+            <p class="text-lg leading-relaxed mb-4">
+                We can't taste everything safely! <span class="highlight-pink font-bold">Indicators</span> are special substances that exhibit distinct, visible <span class="font-bold text-orange-600">colour changes</span> when introduced to acidic or basic environments.
+            </p>
+            <div class="bg-white p-3 rounded border-2 border-dashed border-slate-700">
+                <span class="font-bold block text-sm text-slate-500 uppercase"><i class="fa-solid fa-triangle-exclamation"></i> Safety Caution:</span>
+                <p class="text-sm">Never taste unknown chemicals or substances in the laboratory without supervision!</p>
+            </div>
+        </div>
+
+        <!-- Card 2: Acids & Bases Side-by-Side -->
+        <div class="handdrawn-card bg-rose-50 p-6 rotate-[1deg] md:col-span-2 lg:col-span-1">
+            <div class="flex items-center justify-between mb-3 border-b-2 border-slate-900 pb-2">
+                <h3 class="text-2xl font-bold text-red-800">
+                    <i class="fa-solid fa-balance-scale"></i> Acid vs. Base Crash Course
+                </h3>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Acids Col -->
+                <div class="bg-red-100 p-3 rounded-lg border-2 border-red-300">
+                    <h4 class="text-xl font-bold text-red-700 border-b border-red-300 pb-1 mb-2">
+                        <i class="fa-solid fa-lemon"></i> Acids
+                    </h4>
+                    <ul class="space-y-1 text-md">
+                        <li><i class="fa-solid fa-chevron-right text-xs"></i> Taste <span class="font-bold">Sour</span></li>
+                        <li><i class="fa-solid fa-chevron-right text-xs"></i> Contain hydrogen ions</li>
+                        <li><i class="fa-solid fa-chevron-right text-xs"></i> Turn Blue Litmus &rarr; <span class="text-red-600 font-bold">Red</span></li>
+                    </ul>
+                </div>
+                <!-- Bases Col -->
+                <div class="bg-blue-100 p-3 rounded-lg border-2 border-blue-300">
+                    <h4 class="text-xl font-bold text-blue-700 border-b border-blue-300 pb-1 mb-2">
+                        <i class="fa-solid fa-soap"></i> Bases
+                    </h4>
+                    <ul class="space-y-1 text-md">
+                        <li><i class="fa-solid fa-chevron-right text-xs"></i> Taste <span class="font-bold">Bitter</span></li>
+                        <li><i class="fa-solid fa-chevron-right text-xs"></i> Feel <span class="font-bold">Soapy/Slippery</span></li>
+                        <li><i class="fa-solid fa-chevron-right text-xs"></i> Turn Red Litmus &rarr; <span class="text-blue-600 font-bold">Blue</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-4 text-center">
+                <span class="highlight-cyan font-bold block p-2 rounded border border-cyan-400">
+                    Neutral substances do not change either red or blue litmus papers.
+                </span>
+            </div>
+        </div>
+
+        <!-- Card 3: Litmus - The Natural Legend -->
+        <div class="handdrawn-card bg-emerald-50 p-6 rotate-[-1.5deg]">
+            <div class="flex items-center justify-between mb-3 border-b-2 border-slate-900 pb-2">
+                <h3 class="text-2xl font-bold text-emerald-800">
+                    <i class="fa-solid fa-tree"></i> Litmus: Sourced from Lichens
+                </h3>
+                <span class="text-xs bg-emerald-200 border border-emerald-800 rounded font-bold px-2 py-0.5">NATURAL</span>
+            </div>
+            <p class="mb-3 text-lg">
+                <span class="font-bold">Litmus</span> is a natural indicator extracted from <span class="highlight-yellow font-bold">Lichens</span> (a fascinating symbiotic partnership of a fungus and an alga).
+            </p>
+            
+            <div class="space-y-2 text-md">
+                <div class="flex items-center justify-between bg-white p-2 rounded border border-slate-300">
+                    <span class="font-bold"><i class="fa-solid fa-droplet text-blue-500"></i> Blue Litmus</span>
+                    <span>&rarr; <span class="text-red-600 font-bold bg-red-100 px-1 rounded">Red in Acid</span></span>
+                </div>
+                <div class="flex items-center justify-between bg-white p-2 rounded border border-slate-300">
+                    <span class="font-bold"><i class="fa-solid fa-droplet text-red-500"></i> Red Litmus</span>
+                    <span>&rarr; <span class="text-blue-600 font-bold bg-blue-100 px-1 rounded">Blue in Base</span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4: Naturally Occurring Acids -->
+        <div class="handdrawn-card bg-orange-50 p-6 rotate-[0.5deg]">
+            <div class="flex items-center justify-between mb-3 border-b-2 border-slate-900 pb-2">
+                <h3 class="text-2xl font-bold text-orange-800">
+                    <i class="fa-solid fa-apple-whole"></i> Nature's Acids Gallery
+                </h3>
+            </div>
+            <div class="grid grid-cols-2 gap-2 text-md">
+                <div class="bg-white p-2 rounded border border-orange-200">
+                    <span class="font-bold text-orange-700">Citric Acid</span>
+                    <p class="text-sm text-slate-500">Lemons, Oranges</p>
+                </div>
+                <div class="bg-white p-2 rounded border border-orange-200">
+                    <span class="font-bold text-orange-700">Tartaric Acid</span>
+                    <p class="text-sm text-slate-500">Tamarind (Imli)</p>
+                </div>
+                <div class="bg-white p-2 rounded border border-orange-200">
+                    <span class="font-bold text-orange-700">Acetic Acid</span>
+                    <p class="text-sm text-slate-500">Vinegar (Sirka)</p>
+                </div>
+                <div class="bg-white p-2 rounded border border-orange-200">
+                    <span class="font-bold text-orange-700">Oxalic Acid</span>
+                    <p class="text-sm text-slate-500">Tomatoes, Spinach</p>
+                </div>
+                <div class="bg-white p-2 col-span-2 rounded border border-orange-200 flex justify-between items-center">
+                    <div>
+                        <span class="font-bold text-orange-700">Ascorbic Acid (Vit C)</span>
+                        <p class="text-sm text-slate-500">Amla, Citrus Fruits</p>
+                    </div>
+                    <i class="fa-solid fa-citrus text-orange-400 text-2xl"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5: Other Plant Indicators -->
+        <div class="handdrawn-card bg-pink-50 p-6 rotate-[-0.8deg]">
+            <div class="flex items-center justify-between mb-3 border-b-2 border-slate-900 pb-2">
+                <h3 class="text-2xl font-bold text-pink-800">
+                    <i class="fa-solid fa-seedling"></i> Other Natural Indicators
+                </h3>
+            </div>
+            <div class="space-y-3">
+                <div class="bg-white p-3 rounded-md border border-pink-300">
+                    <h4 class="font-bold text-pink-700"><i class="fa-solid fa-rose"></i> Red Rose Extract</h4>
+                    <p class="text-sm">Turns <span class="text-red-500 font-bold">Red</span> in acidic solutions and turns <span class="text-green-600 font-bold">Green</span> in basic solutions.</p>
+                </div>
+                <div class="bg-white p-3 rounded-md border border-yellow-300">
+                    <h4 class="font-bold text-yellow-700"><i class="fa-solid fa-mortar-pestle"></i> Turmeric (Haldi)</h4>
+                    <p class="text-sm">Stays <span class="text-yellow-600 font-bold">Yellow</span> in acidic/neutral. Turns <span class="text-red-600 font-bold">Reddish-Brown</span> in basic solutions (e.g., when soap meets a curry stain!).</p>
+                </div>
+                <div class="bg-white p-3 rounded-md border border-purple-300 text-sm">
+                    <span class="font-bold text-purple-700"><i class="fa-solid fa-certificate"></i> Hydrangea:</span> Soil pH alters its blooms! Gives blue flowers in acidic soil, pink/red in basic soil.
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6: Olfactory Indicators -->
+        <div class="handdrawn-card bg-purple-50 p-6 rotate-[1.2deg]">
+            <div class="flex items-center justify-between mb-3 border-b-2 border-slate-900 pb-2">
+                <h3 class="text-2xl font-bold text-purple-800">
+                    <i class="fa-solid fa-wind"></i> Olfactory Indicators
+                </h3>
+            </div>
+            <p class="text-md mb-3">
+                These substances change their <span class="highlight-cyan font-bold">smell/odour</span> depending on whether they are mixed with an acid or a base!
+            </p>
+            <div class="bg-white p-3 rounded border border-purple-300">
+                <span class="font-bold text-purple-700"><i class="fa-regular fa-lightbulb"></i> Fun Experiment: Onion Cloth Strips</span>
+                <p class="text-sm mt-1">
+                    Onion-soaked cloth retains its signature strong odour in <span class="font-bold text-red-600">acidic media</span> (e.g., tamarind water) but <span class="font-bold text-blue-600">loses its smell</span> in basic solutions (e.g., baking soda solution).
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 7: The Magic Equation of Neutralisation -->
+        <div class="handdrawn-card bg-indigo-50 p-6 rotate-[-1deg] md:col-span-2">
+            <div class="flex items-center justify-between mb-3 border-b-2 border-slate-900 pb-2">
+                <h3 class="text-2xl font-bold text-indigo-800">
+                    <i class="fa-solid fa-fire"></i> Neutralisation Reaction
+                </h3>
+                <span class="text-xs bg-indigo-200 border border-indigo-800 rounded font-bold px-2 py-0.5">EXOTHERMIC</span>
+            </div>
+            <p class="text-lg mb-4">
+                When an acid mixes with a base in the correct quantities, they nullify each other's effects. This is a <span class="highlight-yellow font-bold">neutralisation reaction</span>, yielding a salt, water, and heat!
+            </p>
+            
+            <!-- Master Formula Display -->
+            <div class="bg-slate-900 text-yellow-300 text-center py-4 px-2 rounded-xl border-4 border-double border-slate-700 my-4 shadow-inner">
+                <p class="text-xl md:text-3xl font-bold tracking-wider">
+                    Acid + Base &rarr; Salt + Water + Heat
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-md text-slate-700">
+                <div class="bg-white p-3 rounded-lg border border-indigo-200">
+                    <span class="font-bold text-indigo-700"><i class="fa-solid fa-temperature-arrow-up"></i> Heat Generation</span>
+                    <p class="text-sm">The mixture temperature rises as neutralisation reactions are exothermic (release energy).</p>
+                </div>
+                <div class="bg-white p-3 rounded-lg border border-indigo-200">
+                    <span class="font-bold text-indigo-700"><i class="fa-solid fa-flask-vial"></i> What is Salt?</span>
+                    <p class="text-sm">A new substance formed during neutralisation. It can be acidic, basic, or neutral in nature.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 8: Scientist Spotlight -->
+        <div class="handdrawn-card bg-neutral-100 p-6 rotate-[0.8deg]">
+            <div class="flex items-center justify-between mb-3 border-b-2 border-slate-900 pb-2">
+                <h3 class="text-2xl font-bold text-neutral-800">
+                    <i class="fa-solid fa-graduation-cap"></i> Scientist Spotlight
+                </h3>
+            </div>
+            <div class="flex items-start gap-3">
+                <div class="bg-white p-2 rounded-md border-2 border-slate-800 shadow">
+                    <i class="fa-solid fa-user-tie text-4xl text-neutral-600"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg text-neutral-950">Acharya Prafulla Chandra Ray</h4>
+                    <p class="text-sm text-neutral-600 font-bold italic">"Father of Modern Indian Chemistry"</p>
+                </div>
+            </div>
+            <p class="text-sm mt-3 leading-relaxed">
+                A legendary Indian chemist, academician, and visionary industrialist. He established India's first pharmaceutical company in 1901 and dedicated his efforts to advancing chemical research and education across India.
+            </p>
+        </div>
+
+        <!-- Card 9: Neutralisation in Daily Life -->
+        <div class="handdrawn-card bg-amber-50 p-6 rotate-[0.5deg] md:col-span-2 lg:col-span-3">
+            <div class="flex items-center justify-between mb-3 border-b-2 border-slate-900 pb-2">
+                <h3 class="text-2xl font-bold text-amber-800">
+                    <i class="fa-solid fa-briefcase"></i> Everyday Neutralisation Remedies
+                </h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Case 1: Ant Bite -->
+                <div class="bg-white p-4 rounded-xl border-2 border-amber-200 shadow-sm">
+                    <h4 class="font-bold text-amber-900 text-lg flex items-center gap-2">
+                        <span class="bg-red-100 text-red-600 w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span>
+                        Ant Bite Relief
+                    </h4>
+                    <p class="text-md text-slate-600 mt-2">
+                        An ant bite injects <span class="font-bold text-red-600">Formic Acid</span> into the skin causing stinging pain.
+                    </p>
+                    <div class="mt-3 bg-green-50 p-2 rounded text-xs border border-green-300">
+                        <span class="font-bold text-green-700">Remedy:</span> Rub <span class="font-bold">moist baking soda</span> (Sodium Hydrogen Carbonate) or calamine solution to neutralise the acid.
+                    </div>
+                </div>
+
+                <!-- Case 2: Soil Treatment -->
+                <div class="bg-white p-4 rounded-xl border-2 border-amber-200 shadow-sm">
+                    <h4 class="font-bold text-amber-900 text-lg flex items-center gap-2">
+                        <span class="bg-green-100 text-green-600 w-8 h-8 rounded-full flex items-center justify-center text-sm">2</span>
+                        Healthy Soil Management
+                    </h4>
+                    <p class="text-md text-slate-600 mt-2">
+                        Excess fertilizers make soil highly <span class="font-bold text-red-600">acidic</span>, stunted crops.
+                    </p>
+                    <div class="mt-3 bg-green-50 p-2 rounded text-xs border border-green-300">
+                        <span class="font-bold text-green-700">Remedy:</span> Add quicklime (calcium oxide) or slaked lime (calcium hydroxide). If basic, organic manure releases organic acids!
+                    </div>
+                </div>
+
+                <!-- Case 3: Factory Waste -->
+                <div class="bg-white p-4 rounded-xl border-2 border-amber-200 shadow-sm">
+                    <h4 class="font-bold text-amber-900 text-lg flex items-center gap-2">
+                        <span class="bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center text-sm">3</span>
+                        Saving Aquatic Ecosystems
+                    </h4>
+                    <p class="text-md text-slate-600 mt-2">
+                        Many factory wastes are heavily <span class="font-bold text-red-600">acidic</span> and harmful to fish if dumped directly.
+                    </p>
+                    <div class="mt-3 bg-green-50 p-2 rounded text-xs border border-green-300">
+                        <span class="font-bold text-green-700">Remedy:</span> Neutralise factory effluent with basic chemicals prior to discharging them into rivers.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Credit & QR Context -->
+    <footer class="text-center mt-12 mb-20 text-slate-500 font-semibold max-w-lg mx-auto">
+        <p><i class="fa-solid fa-graduation-cap"></i> Science Class 7 Study Aid &bull; Interactive Revision Sheet</p>
+        <p class="text-xs mt-1">Created using modern educational visualization frameworks</p>
+    </footer>
+
+    <!-- Dynamic Image Generator and Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '2._Exploring_Substances.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

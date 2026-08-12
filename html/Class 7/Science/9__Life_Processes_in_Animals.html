@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Processes in Animals - Quick Reference</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Patrick Hand & Kalam -->
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Global handwritten aesthetic */
+    body {
+      font-family: 'Patrick Hand', 'Kalam', cursive;
+      background-color: #faf8f5;
+      /* Grid paper effect */
+      background-image: 
+        linear-gradient(rgba(18, 120, 240, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18, 120, 240, 0.07) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    /* Hand-drawn sketchy border styles */
+    .sketch-card {
+      border: 3px solid #1e293b;
+      box-shadow: 5px 5px 0px #1e293b;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .sketch-card:hover {
+      transform: scale(1.01) rotate(0deg) !important;
+      box-shadow: 8px 8px 0px #1e293b;
+    }
+
+    .sketch-header {
+      border-bottom: 3px dashed #1e293b;
+    }
+
+    .sketch-badge {
+      border: 2px solid #1e293b;
+      border-radius: 20px 5px 20px 5px/5px 20px 5px 20px;
+    }
+
+    /* Custom scrollbar to keep hand-drawn theme */
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-left: 2px solid #1e293b;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border: 2px solid #1e293b;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body class="p-4 md:p-8 text-slate-800 selection:bg-yellow-200">
+
+  <!-- Main Container -->
+  <div class="max-w-7xl mx-auto space-y-6">
+    
+    <!-- HEADER BLOCK -->
+    <div class="sketch-card bg-amber-100 p-6 text-center transform rotate-[-0.5deg]">
+      <div class="flex justify-between items-center px-4">
+        <span class="text-3xl">🌱</span>
+        <span class="text-xs bg-amber-200 text-amber-800 py-1 px-3 sketch-badge font-bold uppercase tracking-wider">Science Class • Grade 7</span>
+        <span class="text-3xl">🐾</span>
+      </div>
+      
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-800 mt-2 tracking-wide">
+        <i class="fa-solid fa-heartbeat text-red-500 animate-pulse mr-2"></i>
+        9. Life Processes in Animals
+        <i class="fa-solid fa-seedling text-emerald-600 ml-2"></i>
+      </h1>
+      
+      <p class="text-lg md:text-xl text-slate-600 mt-2 max-w-2xl mx-auto font-semibold">
+        An illustrated quick reference guide to how animals nourish their bodies and power their cells.
+      </p>
+
+      <!-- Thirukkural Quote Sticky Note -->
+      <div class="mt-4 bg-yellow-50 border-2 border-dashed border-amber-600 p-3 rounded-lg text-sm italic max-w-xl mx-auto shadow-sm transform rotate-[0.5deg]">
+        <i class="fa-solid fa-quote-left text-amber-400 mr-1"></i>
+        If your food is fully digested before you eat again, you won't need medicine for pain.
+        <span class="block text-right font-bold text-xs mt-1 text-amber-800">— Thirukkural 942</span>
+      </div>
+    </div>
+
+    <!-- MAIN STUDY GUIDE GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- CARD 1: OVERVIEW OF LIFE PROCESSES -->
+      <div class="sketch-card bg-sky-50 p-5 transform rotate-[0.4deg] flex flex-col justify-between">
+        <div>
+          <div class="sketch-header pb-2 mb-3 flex items-center justify-between">
+            <h2 class="text-2xl font-bold text-sky-800"><i class="fa-solid fa-dna mr-2 text-sky-600"></i>Essential Life Processes</h2>
+            <span class="text-xl">⭐</span>
+          </div>
+          <p class="text-base mb-3 font-semibold text-slate-600">
+            Processes essential for the survival of living organisms collectively called life processes:
+          </p>
+          <ul class="space-y-2 text-base font-bold">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-apple-alt text-red-500 w-5"></i> Nutrition <span class="text-xs text-slate-500 font-normal">(Obtaining energy)</span></li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-lungs text-blue-500 w-5"></i> Respiration <span class="text-xs text-slate-500 font-normal">(Releasing energy)</span></li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-vial text-purple-500 w-5"></i> Excretion <span class="text-xs text-slate-500 font-normal">(Waste removal)</span></li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-child text-emerald-500 w-5"></i> Reproduction <span class="text-xs text-slate-500 font-normal">(Continuity of life)</span></li>
+          </ul>
+        </div>
+        <div class="mt-4 p-2 bg-sky-100 rounded border border-sky-300 text-xs font-semibold text-sky-900">
+          <i class="fa-solid fa-info-circle mr-1"></i> This chapter focuses heavily on <strong>Nutrition</strong> and <strong>Respiration</strong>.
+        </div>
+      </div>
+
+      <!-- CARD 2: HUMAN ALIMENTARY CANAL -->
+      <div class="sketch-card bg-orange-50 p-5 transform rotate-[-0.6deg]">
+        <div class="sketch-header pb-2 mb-3 flex items-center justify-between">
+          <h2 class="text-2xl font-bold text-orange-800"><i class="fa-solid fa-route mr-2 text-orange-600"></i>The Digestive Journey</h2>
+          <span class="text-xs sketch-badge bg-orange-100 px-2 py-0.5 text-orange-800 font-bold">Human Alimentary Canal</span>
+        </div>
+        <p class="text-sm mb-3">Food travels through a continuous long tube called the <strong>alimentary canal</strong>:</p>
+        
+        <div class="space-y-1.5 text-sm font-bold">
+          <div class="flex items-center gap-2 bg-white p-1 rounded border border-orange-200">
+            <span class="w-6 h-6 rounded-full bg-orange-200 text-orange-800 flex items-center justify-center text-xs">1</span>
+            <span>Mouth Cavity</span>
+            <span class="text-xs text-slate-500 font-normal">(Mechanical breakdown + Saliva)</span>
+          </div>
+          <div class="text-center text-xs text-orange-400 font-extrabold">&darr;</div>
+          <div class="flex items-center gap-2 bg-white p-1 rounded border border-orange-200">
+            <span class="w-6 h-6 rounded-full bg-orange-200 text-orange-800 flex items-center justify-center text-xs">2</span>
+            <span>Oesophagus (Food Pipe)</span>
+            <span class="text-xs text-slate-500 font-normal">(Peristalsis)</span>
+          </div>
+          <div class="text-center text-xs text-orange-400 font-extrabold">&darr;</div>
+          <div class="flex items-center gap-2 bg-white p-1 rounded border border-orange-200">
+            <span class="w-6 h-6 rounded-full bg-orange-200 text-orange-800 flex items-center justify-center text-xs">3</span>
+            <span>Stomach</span>
+            <span class="text-xs text-slate-500 font-normal">(Chyme creation + Protein digestion)</span>
+          </div>
+          <div class="text-center text-xs text-orange-400 font-extrabold">&darr;</div>
+          <div class="flex items-center gap-2 bg-white p-1 rounded border border-orange-200">
+            <span class="w-6 h-6 rounded-full bg-orange-200 text-orange-800 flex items-center justify-center text-xs">4</span>
+            <span>Small Intestine</span>
+            <span class="text-xs text-slate-500 font-normal">(Absorption & Final Digestion)</span>
+          </div>
+          <div class="text-center text-xs text-orange-400 font-extrabold">&darr;</div>
+          <div class="flex items-center gap-2 bg-white p-1 rounded border border-orange-200">
+            <span class="w-6 h-6 rounded-full bg-orange-200 text-orange-800 flex items-center justify-center text-xs">5</span>
+            <span>Large Intestine</span>
+            <span class="text-xs text-slate-500 font-normal">(Water & salt absorption)</span>
+          </div>
+          <div class="text-center text-xs text-orange-400 font-extrabold">&darr;</div>
+          <div class="flex items-center gap-2 bg-white p-1 rounded border border-orange-200">
+            <span class="w-6 h-6 rounded-full bg-orange-200 text-orange-800 flex items-center justify-center text-xs text-center">6</span>
+            <span>Rectum & Anus</span>
+            <span class="text-xs text-slate-500 font-normal">(Storage & Egestion of stool)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: THE MOUTH & SALIVA EXPERIMENT -->
+      <div class="sketch-card bg-emerald-50 p-5 transform rotate-[0.3deg]">
+        <div class="sketch-header pb-2 mb-3 flex items-center justify-between">
+          <h2 class="text-2xl font-bold text-emerald-800"><i class="fa-solid fa-teeth mr-2 text-emerald-600"></i>Mouth & Saliva</h2>
+          <span class="text-xs sketch-badge bg-emerald-100 px-2 py-0.5 text-emerald-800 font-bold">Experiment</span>
+        </div>
+        
+        <div class="space-y-3">
+          <div>
+            <span class="font-extrabold text-emerald-950 block text-base"><i class="fa-solid fa-hammer mr-1 text-amber-600"></i> Mechanical Digestion</span>
+            <span class="text-sm">Teeth crush and chew food into fine pieces.</span>
+          </div>
+          
+          <div>
+            <span class="font-extrabold text-emerald-950 block text-base"><i class="fa-solid fa-droplet text-blue-500 mr-1"></i> Saliva & Starch</span>
+            <span class="text-sm">Saliva contains digestive juices that break down <strong>starch (complex carb)</strong> into <strong>sugar (simpler forms)</strong>.</span>
+          </div>
+
+          <!-- Quick Test Box -->
+          <div class="bg-white p-3 rounded-lg border-2 border-emerald-300 text-sm space-y-1.5 shadow-sm">
+            <span class="font-extrabold text-emerald-900 block text-center"><i class="fa-solid fa-vial text-emerald-500"></i> Iodine Test on Rice</span>
+            <div class="grid grid-cols-2 gap-2 text-xs">
+              <div class="bg-sky-50 p-1.5 rounded text-center">
+                <span class="font-bold block text-sky-900">Test Tube A</span>
+                <span>Boiled Rice + Iodine &rarr; <strong class="text-indigo-900 font-bold">Blue-Black</strong> (Starch is Present)</span>
+              </div>
+              <div class="bg-amber-50 p-1.5 rounded text-center">
+                <span class="font-bold block text-amber-900">Test Tube B</span>
+                <span>Chewed Rice + Iodine &rarr; <strong class="text-amber-800 font-bold">No Color Change</strong> (Saliva broke down Starch)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4: STOMACH & SECRETIONS -->
+      <div class="sketch-card bg-yellow-50 p-5 transform rotate-[-0.3deg]">
+        <div class="sketch-header pb-2 mb-3 flex items-center justify-between">
+          <h2 class="text-2xl font-bold text-amber-800"><i class="fa-solid fa-fire-burner mr-2 text-amber-600"></i>The Stomach Chamber</h2>
+          <span class="text-xs sketch-badge bg-amber-100 px-2 py-0.5 text-amber-800 font-bold">Chemical Factory</span>
+        </div>
+        
+        <div class="space-y-3 text-sm">
+          <div class="bg-white p-2.5 rounded border border-amber-200">
+            <span class="font-bold text-amber-900 block"><i class="fa-solid fa-arrows-spin mr-1"></i> Peristalsis & Churning</span>
+            <span>Walls gently contract and relax in wave-like motions to push food down and mix it with secretions.</span>
+          </div>
+
+          <p class="font-extrabold text-slate-700">The inner lining of stomach secretes three crucial fluids:</p>
+          <ul class="space-y-1.5 list-disc list-inside font-semibold text-slate-800 pl-1">
+            <li><strong class="text-rose-700">Digestive Juice:</strong> Breaks down complex proteins into simpler components.</li>
+            <li><strong class="text-amber-700">Hydrochloric Acid (HCl):</strong> Kills harmful bacteria entering with food and creates an acidic medium for digestion.</li>
+            <li><strong class="text-cyan-700">Mucus:</strong> Protects the delicate inner lining of the stomach from its own strong acid.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CARD 5: SMALL INTESTINE: SUPER DIGESTER -->
+      <div class="sketch-card bg-rose-50 p-5 transform rotate-[0.5deg]">
+        <div class="sketch-header pb-2 mb-3 flex items-center justify-between">
+          <h2 class="text-2xl font-bold text-rose-800"><i class="fa-solid fa-bezier-curve mr-2 text-rose-600"></i>Small Intestine (Villi)</h2>
+          <span class="text-xs sketch-badge bg-rose-100 px-2 py-0.5 text-rose-800 font-bold">~6 Meters Long!</span>
+        </div>
+        
+        <div class="space-y-3 text-sm">
+          <p class="font-semibold text-slate-700">The longest part of the digestive tract, receiving secretions from 3 sources:</p>
+          
+          <div class="grid grid-cols-2 gap-2 text-xs font-semibold">
+            <div class="bg-amber-100 p-2 rounded border border-amber-300">
+              <strong class="text-amber-900 block font-bold">1. Liver (Biles)</strong>
+              Secretes basic Bile. Neutralizes acid and emulsifies fats into tiny droplets.
+            </div>
+            <div class="bg-orange-100 p-2 rounded border border-orange-300">
+              <strong class="text-orange-900 block font-bold">2. Pancreas</strong>
+              Secretes pancreatic juice. Breaks down carbs, proteins, and fats.
+            </div>
+          </div>
+
+          <div class="bg-white p-3 rounded-lg border-2 border-rose-300 mt-2">
+            <span class="font-extrabold text-rose-900 block mb-1 text-base"><i class="fa-solid fa-fingerprint mr-1"></i> Villi: Absorption Experts</span>
+            <p class="text-xs leading-relaxed">
+              Thousands of tiny finger-like projections on the inner lining. Villi vastly <strong>increase the surface area</strong> for efficient absorption of digested nutrients into blood vessels.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6: ANIMAL DIGESTIVE ADAPTATIONS -->
+      <div class="sketch-card bg-purple-50 p-5 transform rotate-[-0.4deg]">
+        <div class="sketch-header pb-2 mb-3 flex items-center justify-between">
+          <h2 class="text-2xl font-bold text-purple-800"><i class="fa-solid fa-cow mr-2 text-purple-600"></i>Animal Adaptations</h2>
+          <span class="text-xs sketch-badge bg-purple-100 px-2 py-0.5 text-purple-800 font-bold">Evolution</span>
+        </div>
+        
+        <div class="space-y-3 text-sm">
+          <div class="p-2.5 bg-white rounded border border-purple-200">
+            <span class="font-extrabold text-purple-900 block text-base"><i class="fa-solid fa-seedling text-emerald-600 mr-1"></i> Ruminants (Cows, Buffaloes)</span>
+            <p class="text-xs">
+              Partially chew grass and swallow to a chamber called the <strong>Rumen</strong>. It is later brought back to the mouth as cud for slow chewing (<strong>Rumination</strong>).
+            </p>
+          </div>
+
+          <div class="p-2.5 bg-white rounded border border-purple-200">
+            <span class="font-extrabold text-purple-900 block text-base"><i class="fa-solid fa-crow text-slate-600 mr-1"></i> Birds (Gizzard)</span>
+            <p class="text-xs">
+              Birds have no teeth! They rely on a strong muscular organ called the <strong>Gizzard</strong> containing ingested <strong>grit (small stones)</strong> to crush food.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 7: BREATHING VS RESPIRATION -->
+      <div class="sketch-card bg-blue-50 p-5 transform rotate-[0.2deg]">
+        <div class="sketch-header pb-2 mb-3 flex items-center justify-between">
+          <h2 class="text-2xl font-bold text-blue-800"><i class="fa-solid fa-wind mr-2 text-blue-600"></i>Breathing vs Respiration</h2>
+          <span class="text-xs sketch-badge bg-blue-100 px-2 py-0.5 text-blue-800 font-bold">Key Concept</span>
+        </div>
+        
+        <div class="space-y-3 text-sm">
+          <div class="grid grid-cols-2 gap-2">
+            <div class="bg-indigo-50 p-2.5 rounded border border-indigo-200 text-center">
+              <span class="font-extrabold text-indigo-900 block text-base"><i class="fa-solid fa-lungs"></i> Breathing</span>
+              <span class="text-xs text-slate-600 font-bold">Physical Process</span>
+              <p class="text-xs mt-1">Inhaling oxygen-rich air & exhaling carbon dioxide.</p>
+            </div>
+            
+            <div class="bg-emerald-50 p-2.5 rounded border border-emerald-200 text-center">
+              <span class="font-extrabold text-emerald-900 block text-base"><i class="fa-solid fa-bolt"></i> Respiration</span>
+              <span class="text-xs text-emerald-600 font-bold">Chemical Process</span>
+              <p class="text-xs mt-1">Breaking down food inside cells to release energy.</p>
+            </div>
+          </div>
+
+          <div class="bg-white p-3 rounded border-2 border-indigo-400 text-center">
+            <span class="font-extrabold text-indigo-900 block text-xs uppercase tracking-wide">Chemical Formula</span>
+            <span class="font-bold text-sm block mt-1 text-slate-800">
+              Glucose + Oxygen &rarr; Carbon Dioxide + Water + Energy
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 8: BREATHING MECHANICS -->
+      <div class="sketch-card bg-amber-50 p-5 transform rotate-[-0.5deg]">
+        <div class="sketch-header pb-2 mb-3 flex items-center justify-between">
+          <h2 class="text-2xl font-bold text-amber-800"><i class="fa-solid fa-arrows-up-down mr-2 text-amber-600"></i>How We Breathe</h2>
+          <span class="text-xs sketch-badge bg-amber-100 px-2 py-0.5 text-amber-800 font-bold">Mechanical Model</span>
+        </div>
+        
+        <div class="space-y-2.5 text-xs font-semibold">
+          <div class="bg-emerald-50 p-2.5 rounded border-2 border-emerald-300">
+            <span class="font-bold text-emerald-900 block text-sm"><i class="fa-solid fa-plus-circle mr-1"></i> Inhalation (Breathing In)</span>
+            <ul class="list-disc list-inside mt-1 space-y-0.5">
+              <li>Ribs move <strong>up &amp; outwards</strong>.</li>
+              <li>Diaphragm moves <strong>downwards (flattens)</strong>.</li>
+              <li>Chest cavity expands &rarr; Air rushed into lungs.</li>
+            </ul>
+          </div>
+
+          <div class="bg-rose-50 p-2.5 rounded border-2 border-rose-300">
+            <span class="font-bold text-rose-900 block text-sm"><i class="fa-solid fa-minus-circle mr-1"></i> Exhalation (Breathing Out)</span>
+            <ul class="list-disc list-inside mt-1 space-y-0.5">
+              <li>Ribs move <strong>down &amp; inwards</strong>.</li>
+              <li>Diaphragm moves <strong>upwards (returns to dome shape)</strong>.</li>
+              <li>Chest cavity contracts &rarr; Air pushed out.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 9: GAS COMPOSITION & EXCHANGE -->
+      <div class="sketch-card bg-cyan-50 p-5 transform rotate-[0.3deg]">
+        <div class="sketch-header pb-2 mb-3 flex items-center justify-between">
+          <h2 class="text-2xl font-bold text-cyan-900"><i class="fa-solid fa-circle-nodes mr-2 text-cyan-600"></i>Gas Exchange</h2>
+          <span class="text-xs sketch-badge bg-cyan-100 px-2 py-0.5 text-cyan-900 font-bold">Alveoli</span>
+        </div>
+        
+        <div class="space-y-3 text-xs font-semibold text-slate-800">
+          <p class="text-sm">Exchange occurs in balloon-like sacs called <strong>alveoli</strong>, rich with blood vessels.</p>
+          
+          <table class="w-full text-center bg-white rounded border border-cyan-200 overflow-hidden">
+            <thead>
+              <tr class="bg-cyan-100 text-cyan-950 font-bold text-sm">
+                <th class="p-1 border-b border-r">Gas</th>
+                <th class="p-1 border-b border-r">Inhaled Air</th>
+                <th class="p-1 border-b">Exhaled Air</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-1 border-b border-r font-bold text-left">Oxygen (O<sub>2</sub>)</td>
+                <td class="p-1 border-b border-r bg-emerald-50">~21%</td>
+                <td class="p-1 border-b bg-rose-50">~16-17%</td>
+              </tr>
+              <tr>
+                <td class="p-1 border-r font-bold text-left">Carbon Dioxide (CO<sub>2</sub>)</td>
+                <td class="p-1 border-r bg-indigo-50">~0.04%</td>
+                <td class="p-1 bg-amber-50">~4-5%</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="p-2 bg-yellow-50 rounded border border-yellow-200 text-center">
+            <span class="font-bold text-amber-950 block"><i class="fa-solid fa-flask mr-1"></i> The Lime Water Test</span>
+            <span class="text-[11px] block mt-0.5">Exhaling into lime water turns it <strong>milky/cloudy</strong>, demonstrating carbon dioxide release!</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 10: RESPIRATION IN OTHER ANIMALS -->
+      <div class="sketch-card bg-pink-50 p-5 transform rotate-[-0.3deg]">
+        <div class="sketch-header pb-2 mb-3 flex items-center justify-between">
+          <h2 class="text-2xl font-bold text-pink-800"><i class="fa-solid fa-fish mr-2 text-pink-600"></i>Respiration Adaptations</h2>
+          <span class="text-xs sketch-badge bg-pink-100 px-2 py-0.5 text-pink-800 font-bold">Diversity</span>
+        </div>
+        
+        <div class="space-y-2 text-sm font-semibold">
+          <div class="flex items-center gap-3 bg-white p-2 rounded border border-pink-200">
+            <span class="text-2xl">🐟</span>
+            <div>
+              <span class="font-bold text-pink-950 block">Fish: Gills</span>
+              <p class="text-xs text-slate-600">Gills absorb dissolved oxygen directly from water passing through them.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 bg-white p-2 rounded border border-pink-200">
+            <span class="text-2xl">🐸</span>
+            <div>
+              <span class="font-bold text-pink-950 block">Frogs (Amphibians)</span>
+              <p class="text-xs text-slate-600">Tadpoles use gills. Adult frogs use lungs on land and moist skin in water.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 bg-white p-2 rounded border border-pink-200">
+            <span class="text-2xl">🪱</span>
+            <div>
+              <span class="font-bold text-pink-950 block">Earthworms</span>
+              <p class="text-xs text-slate-600">Breathe completely through their thin, moist skin for direct gas exchange.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 11: HISTORICAL & MEDICAL CORNER -->
+      <div class="sketch-card bg-teal-50 p-5 transform rotate-[0.4deg] lg:col-span-2">
+        <div class="sketch-header pb-2 mb-3 flex items-center justify-between">
+          <h2 class="text-2xl font-bold text-teal-800"><i class="fa-solid fa-lightbulb mr-2 text-teal-600"></i>Science, Society &amp; Factoids</h2>
+          <span class="text-xs sketch-badge bg-teal-100 px-2 py-0.5 text-teal-800 font-bold">Fascinating Tidbits</span>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-semibold">
+          <div class="bg-white p-3 rounded border border-teal-200">
+            <span class="font-bold text-teal-950 block mb-1"><i class="fa-solid fa-user-md mr-1 text-teal-600"></i> Alexis &amp; Beaumont (1822)</span>
+            <p class="text-[11px] leading-relaxed">
+              Dr. William Beaumont discovered digestion by performing experiments through a shotgun wound in patient Alexis St. Martin's stomach that never fully closed!
+            </p>
+          </div>
+
+          <div class="bg-white p-3 rounded border border-teal-200">
+            <span class="font-bold text-teal-950 block mb-1"><i class="fa-solid fa-ban-wheat mr-1 text-amber-600"></i> Celiac Disease</span>
+            <p class="text-[11px] leading-relaxed">
+              An autoimmune condition where eating gluten (wheat protein) damages the small intestine's villi, making it hard to absorb vital nutrients.
+            </p>
+          </div>
+
+          <div class="bg-white p-3 rounded border border-teal-200">
+            <span class="font-bold text-teal-950 block mb-1"><i class="fa-solid fa-om mr-1 text-indigo-600"></i> Pranayama &amp; Yoga</span>
+            <p class="text-[11px] leading-relaxed">
+              Ancient breathing techniques such as Pranayama and Tummo breathing are practiced globally to improve lung health, balance, and focus.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER / SOURCE INFO -->
+    <div class="text-center py-4 text-sm font-semibold text-slate-500">
+      <p>Curiosity Textbook • Grade 7 Science • Illustrated Quick Study Guide</p>
+    </div>
+
+  </div>
+
+  <!-- DYNAMIC EXPORT BUTTON -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '9._Life_Processes_in_Animals.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>
