@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond Earth - Study Sheet</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Kalam for the handwritten look -->
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* Global Handwritten Theme */
+    body {
+      font-family: 'Kalam', cursive;
+      background-color: #fbf8f3;
+      /* Grid paper effect */
+      background-image: 
+        linear-gradient(rgba(18, 113, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(18, 113, 255, 0.06) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    /* Hand-Drawn Sketchy Borders */
+    .border-sketchy-1 {
+      border: 3px solid #1e293b;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    }
+
+    .border-sketchy-2 {
+      border: 3px solid #1e293b;
+      border-radius: 20px 300px 20px 250px/250px 20px 320px 20px;
+    }
+
+    /* Notebook Margin Red Line */
+    .notebook-margin {
+      border-left: 2px solid rgba(239, 68, 68, 0.4);
+    }
+
+    /* Hand-drawn tape styling */
+    .washi-tape {
+      background: rgba(251, 191, 36, 0.6);
+      transform: rotate(-3deg);
+      box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .washi-tape-blue {
+      background: rgba(96, 165, 250, 0.6);
+      transform: rotate(2deg);
+      box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body class="p-4 md:p-8 text-slate-800 relative min-h-screen">
+
+  <!-- Floating Tape Title / Header -->
+  <header class="max-w-6xl mx-auto mb-10 text-center relative">
+    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-40 h-8 washi-tape z-10 flex items-center justify-center">
+      <span class="text-xs tracking-widest text-amber-900 font-bold opacity-75">☆ TOP SECRET COZY NOTES ☆</span>
+    </div>
+    <div class="bg-white border-sketchy-1 p-6 md:p-8 inline-block shadow-lg bg-yellow-50 transform rotate-[-0.5deg]">
+      <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-2">
+        <i class="fa-solid fa-user-astronaut text-indigo-600 mr-2 animate-bounce"></i> 
+        Chapter 12: Beyond Earth 
+      </h1>
+      <p class="text-lg md:text-xl text-slate-600 font-medium max-w-2xl mx-auto">
+        A cozy, visual field-guide to stars, constellations, planets, and the mysterious depths of our night sky.
+      </p>
+    </div>
+  </header>
+
+  <!-- Masonry Columns Grid -->
+  <main class="max-w-7xl mx-auto columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+
+    <!-- CARD 1: Stars & Constellations -->
+    <section class="break-inside-avoid bg-white p-6 border-sketchy-1 shadow-md transform rotate-[0.5deg] relative">
+      <div class="absolute -top-3 left-4 w-16 h-6 washi-tape-blue"></div>
+      <h2 class="text-2xl font-bold text-indigo-700 mb-3 flex items-center border-b-2 border-dashed border-slate-300 pb-1">
+        <i class="fa-solid fa-star-and-crescent mr-2"></i> Stars &amp; Constellations
+      </h2>
+      <p class="text-sm mb-3">
+        Stars shine with their <strong>own light</strong>. Groups of stars forming recognizable patterns are called <strong>Constellations</strong>.
+      </p>
+      
+      <!-- IAU Highlight -->
+      <div class="bg-amber-50 p-3 rounded-md border-sketchy-2 mb-4 text-xs">
+        <span class="font-bold text-amber-700"><i class="fa-solid fa-circle-info"></i> More to Know:</span>
+        Boundaries were defined in the early 20th century by the <strong class="text-slate-900">International Astronomical Union (IAU)</strong>. There are exactly <strong class="text-amber-800">88 official constellations</strong>.
+      </div>
+
+      <!-- Constellation List -->
+      <ul class="space-y-3 text-sm">
+        <li class="flex items-start">
+          <i class="fa-solid fa-location-crosshairs text-red-500 mt-1 mr-2"></i>
+          <div>
+            <strong>Orion (The Hunter):</strong> Easily spotted in winter. Features <strong class="text-indigo-600">three bright middle stars</strong> forming the "belt". Contains <em>Betelgeuse</em> (known in Indian Astronomy as <em>Ardra</em>).
+          </div>
+        </li>
+        <li class="flex items-start">
+          <i class="fa-solid fa-dog text-amber-600 mt-1 mr-2"></i>
+          <div>
+            <strong>Canis Major (Great Dog):</strong> Contains <strong class="text-blue-600">Sirius</strong>, the brightest star in the entire night sky. Locate it by drawing a line eastward through Orion’s belt!
+          </div>
+        </li>
+        <li class="flex items-start">
+          <i class="fa-solid fa-cow text-emerald-600 mt-1 mr-2"></i>
+          <div>
+            <strong>Taurus (The Bull):</strong> Houses <em>Aldebaran</em> (known as <em>Rohini</em>) and the star cluster <em>Pleiades</em> (<em>Krittika</em>).
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CARD 2: Navigating with the Dippers -->
+    <section class="break-inside-avoid bg-amber-50/60 p-6 border-sketchy-2 shadow-md transform rotate-[-1deg] relative">
+      <div class="absolute -top-3 right-6 w-12 h-12 rounded-full flex items-center justify-center text-red-500 text-xl font-bold">
+        📌
+      </div>
+      <h2 class="text-2xl font-bold text-amber-800 mb-3 flex items-center border-b-2 border-dashed border-amber-300 pb-1">
+        <i class="fa-solid fa-compass mr-2"></i> Celestial Roadmaps
+      </h2>
+
+      <!-- Saptarishi & Dhruva Tara -->
+      <div class="space-y-4 text-sm">
+        <div class="bg-white p-3 rounded border border-slate-300">
+          <h3 class="font-bold text-slate-800 text-base"><i class="fa-solid fa-spoon mr-1"></i> Big Dipper vs. Little Dipper</h3>
+          <p class="text-xs text-slate-600 mt-1">
+            <strong>Big Dipper:</strong> Part of <em>Ursa Major</em> (known as <strong>Saptarishi</strong> in India). Looks like a long-handled ladle or pot.<br>
+            <strong>Little Dipper:</strong> Part of <em>Ursa Minor</em>. Contains the famous <strong>Pole Star</strong>.
+          </p>
+        </div>
+
+        <div class="bg-blue-50 p-3 rounded border border-blue-200">
+          <h3 class="font-bold text-indigo-800 text-base"><i class="fa-solid fa-compass text-indigo-500 mr-1"></i> Pole Star (Polaris / Dhruva tara)</h3>
+          <p class="text-xs text-slate-700 mt-1">
+            Appears completely <strong>stationary</strong> in the North sky. Used heavily by ancient explorers for night navigation.
+          </p>
+          <div class="mt-2 text-xs font-semibold text-slate-800">
+            👉 <span class="bg-yellow-200 px-1">How to locate:</span> Look at the two pointer stars at the end of the Big Dipper's cup. Draw an imaginary straight line through them, extend it about 5x the distance, and you'll hit Polaris!
+          </div>
+        </div>
+
+        <!-- Regional Tribal Stories -->
+        <div class="text-xs italic bg-orange-50 p-2 rounded text-slate-700 border border-orange-200">
+          <strong>Tribal Lore:</strong> Central Indian tribes view the Big Dipper rectangle as a "grandmother's cot" with 3 thieves stealing it! Konkan fishermen see it as a "boat".
+        </div>
+      </div>
+    </section>
+
+    <!-- CARD 3: Our Solar System Engine - The Sun -->
+    <section class="break-inside-avoid bg-white p-6 border-sketchy-1 shadow-md transform rotate-[0.5deg]">
+      <h2 class="text-2xl font-bold text-orange-600 mb-3 flex items-center border-b-2 border-dashed border-orange-200 pb-1">
+        <i class="fa-solid fa-sun animate-spin mr-2"></i> The Sun &amp; Near Space
+      </h2>
+      <p class="text-sm mb-3">
+        The Sun is a medium-sized star (known as <em>Surya</em>) that produces all of our system's heat and light. It is about <strong>100 times larger</strong> than Earth in diameter.
+      </p>
+
+      <!-- Solar Formulas / Scale -->
+      <div class="grid grid-cols-2 gap-2 text-xs mb-4">
+        <div class="bg-orange-50 p-3 rounded-lg text-center border border-orange-200">
+          <span class="block text-slate-500">Distance to Earth</span>
+          <strong class="text-lg text-orange-700">~150 Million km</strong>
+          <span class="block text-[10px] text-slate-400">(= 1 Astronomical Unit / au)</span>
+        </div>
+        <div class="bg-indigo-50 p-3 rounded-lg text-center border border-indigo-200">
+          <span class="block text-slate-500">Next Nearest Star</span>
+          <strong class="text-lg text-indigo-700">Proxima Centauri</strong>
+          <span class="block text-[10px] text-slate-400">~269,000 au away</span>
+        </div>
+      </div>
+
+      <!-- Core Mechanics -->
+      <div class="text-xs space-y-2 border-t border-slate-200 pt-2 text-slate-700">
+        <div><i class="fa-solid fa-rotate-right text-slate-400 mr-1"></i> <strong>Revolution:</strong> Movement of a body around the Sun. Earth takes ~1 year.</div>
+        <div><i class="fa-solid fa-arrows-spin text-slate-400 mr-1"></i> <strong>Rotation:</strong> Spinning on its own axis. Earth takes 24 hours (1 day).</div>
+      </div>
+    </section>
+
+    <!-- CARD 4: Planet Lineup & Local Names -->
+    <section class="break-inside-avoid bg-indigo-950 text-white p-6 border-sketchy-2 shadow-lg transform rotate-[-0.5deg] relative">
+      <div class="absolute -top-3 left-10 w-20 h-6 washi-tape-blue"></div>
+      <h2 class="text-2xl font-bold text-yellow-300 mb-3 flex items-center border-b border-dashed border-slate-600 pb-1">
+        <i class="fa-solid fa-globe mr-2"></i> Planet Field Guide
+      </h2>
+      
+      <!-- Table of Planets -->
+      <div class="text-xs space-y-3">
+        <div class="grid grid-cols-3 font-bold border-b border-slate-700 pb-1 text-slate-300">
+          <span>Planet</span>
+          <span>Indian Name</span>
+          <span>Key Feature</span>
+        </div>
+        
+        <div class="grid grid-cols-3 border-b border-slate-800 pb-1">
+          <span class="font-semibold text-slate-200">1. Mercury</span>
+          <span class="italic text-yellow-200">Budha</span>
+          <span class="text-slate-400">Closest to Sun, rocky</span>
+        </div>
+        <div class="grid grid-cols-3 border-b border-slate-800 pb-1">
+          <span class="font-semibold text-slate-200">2. Venus</span>
+          <span class="italic text-yellow-200">Shukra</span>
+          <span class="text-amber-300">"Morning/Evening Star" (Hotest!)</span>
+        </div>
+        <div class="grid grid-cols-3 border-b border-slate-800 pb-1">
+          <span class="font-semibold text-slate-200">3. Earth</span>
+          <span class="italic text-yellow-200">Prithvi</span>
+          <span class="text-blue-300">"Blue Planet" (Water &amp; Life)</span>
+        </div>
+        <div class="grid grid-cols-3 border-b border-slate-800 pb-1">
+          <span class="font-semibold text-slate-200">4. Mars</span>
+          <span class="italic text-yellow-200">Mangala</span>
+          <span class="text-red-400">"Red Planet" (Iron-rich soil)</span>
+        </div>
+        <div class="grid grid-cols-3 border-b border-slate-800 pb-1">
+          <span class="font-semibold text-slate-200">5. Jupiter</span>
+          <span class="italic text-yellow-200">Brihaspati</span>
+          <span class="text-slate-400">Largest, gas giant with rings</span>
+        </div>
+        <div class="grid grid-cols-3 border-b border-slate-800 pb-1">
+          <span class="font-semibold text-slate-200">6. Saturn</span>
+          <span class="italic text-yellow-200">Shani</span>
+          <span class="text-slate-400">Stunning dust &amp; rock rings</span>
+        </div>
+        <div class="grid grid-cols-3 border-b border-slate-800 pb-1">
+          <span class="font-semibold text-slate-200">7. Uranus</span>
+          <span class="italic text-yellow-200">-</span>
+          <span class="text-slate-400">Icy gas giant</span>
+        </div>
+        <div class="grid grid-cols-3">
+          <span class="font-semibold text-slate-200">8. Neptune</span>
+          <span class="italic text-yellow-200">-</span>
+          <span class="text-slate-400">Coldest, farthest giant</span>
+        </div>
+      </div>
+
+      <!-- Quick Concept: Inner vs Outer -->
+      <div class="mt-4 pt-3 border-t border-slate-700 grid grid-cols-2 gap-2 text-[11px]">
+        <div class="p-2 bg-slate-900 rounded">
+          <span class="block text-yellow-300 font-bold">Inner Planets (1-4)</span>
+          Mercury to Mars. Smaller, solid, rocky surfaces.
+        </div>
+        <div class="p-2 bg-slate-900 rounded">
+          <span class="block text-yellow-300 font-bold">Outer Planets (5-8)</span>
+          Jupiter to Neptune. Gaseous giants with rings.
+        </div>
+      </div>
+
+      <!-- Pluto Note -->
+      <div class="mt-3 bg-red-950/50 p-2 rounded border border-red-900 text-[10px] text-red-200">
+        ⚠️ <strong>Pluto</strong> was reclassified as a <strong class="text-white">Dwarf Planet</strong> by the IAU in 2006.
+      </div>
+    </section>
+
+    <!-- CARD 5: Natural Satellites & The Moon -->
+    <section class="break-inside-avoid bg-white p-6 border-sketchy-1 shadow-md transform rotate-[0.5deg]">
+      <h2 class="text-2xl font-bold text-slate-700 mb-3 flex items-center border-b-2 border-dashed border-slate-300 pb-1">
+        <i class="fa-solid fa-moon mr-2 text-yellow-400"></i> The Moon &amp; Satellites
+      </h2>
+      <p class="text-sm mb-3">
+        Any object revolving around a larger object is a <strong>satellite</strong>. The Moon is Earth's natural satellite.
+      </p>
+
+      <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 text-xs mb-3 space-y-1">
+        <div>🌕 <strong>Distance from Earth:</strong> ~3,84,000 km</div>
+        <div>🔄 <strong>Revolution Period:</strong> Takes ~27 days to orbit the Earth</div>
+        <div>🌪️ <strong>Atmosphere:</strong> Absolutely none! Features like craters remain frozen in time.</div>
+        <div>🕳️ <strong>Craters:</strong> Bowl-like structures caused by meteor/asteroid impacts.</div>
+      </div>
+
+      <!-- Moon Mission Spotlight -->
+      <div class="bg-blue-50/70 p-3 rounded-lg border-sketchy-2 text-xs">
+        <div class="font-bold text-blue-800 flex items-center mb-1">
+          <i class="fa-solid fa-rocket mr-1 animate-pulse"></i> Chandrayaan Missions (India)
+        </div>
+        <ul class="list-disc list-inside space-y-1 text-slate-700">
+          <li><strong>Chandrayaan-1 (2008):</strong> India's first Moon orbiter.</li>
+          <li><strong>Chandrayaan-2 (2019):</strong> High resolution mapping.</li>
+          <li><strong>Chandrayaan-3 (July 2023):</strong> Landed the <em>Vikram</em> lander &amp; <em>Pragyan</em> rover successfully near the <strong class="text-blue-900">Moon's South Pole</strong> on <strong class="text-indigo-800">23 August 2023</strong>!</li>
+        </ul>
+        <div class="mt-2 text-[10px] text-center bg-yellow-100 p-1 rounded font-bold text-yellow-800">
+          🇮🇳 23rd August is celebrated as "National Space Day" in India!
+        </div>
+      </div>
+    </section>
+
+    <!-- CARD 6: Celestial Visitors (Asteroids & Comets) -->
+    <section class="break-inside-avoid bg-orange-50/50 p-6 border-sketchy-2 shadow-md transform rotate-[-0.5deg] relative">
+      <div class="absolute -top-3 left-1/3 w-16 h-6 washi-tape"></div>
+      <h2 class="text-2xl font-bold text-red-700 mb-3 flex items-center border-b-2 border-dashed border-red-200 pb-1">
+        <i class="fa-solid fa-meteor mr-2"></i> Celestial Travelers
+      </h2>
+
+      <!-- Asteroids -->
+      <div class="mb-4">
+        <h3 class="font-bold text-sm text-slate-800 flex items-center">
+          <span class="inline-block w-2.5 h-2.5 bg-amber-600 rounded-full mr-2"></span>
+          Asteroids (Minor Rocky Bodies)
+        </h3>
+        <p class="text-xs text-slate-600 pl-4 mt-1">
+          Rocky, irregular bodies measuring from <strong class="text-slate-800">10 m to 500 km</strong>. They orbit primarily in the <strong class="text-amber-800 font-semibold">Asteroid Belt</strong> situated between <strong class="text-slate-800">Mars and Jupiter</strong>.
+        </p>
+      </div>
+
+      <!-- Comets -->
+      <div>
+        <h3 class="font-bold text-sm text-slate-800 flex items-center">
+          <span class="inline-block w-2.5 h-2.5 bg-cyan-500 rounded-full mr-2"></span>
+          Comets (Icy-Rocky Travelers)
+        </h3>
+        <p class="text-xs text-slate-600 pl-4 mt-1">
+          Composed of ice, dust, and gases. As they approach the Sun, the frozen material evaporates, creating a brilliant, glowing tail pointing <strong>away from the Sun</strong>.
+        </p>
+        
+        <div class="mt-2 bg-white p-2.5 rounded border border-orange-200 text-[11px] text-slate-700 space-y-1">
+          <div>💫 <strong>Halley's Comet:</strong> Appears once every <strong>76 years</strong>. Last seen in 1986.</div>
+          <div>🗣️ <strong>Local Names:</strong> Known as <em>Dhumaketu</em>, <em>Pucchya-Taro</em> (star with a tail), or <em>Zendya-Taro</em>.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARD 7: Cosmos Scale (Milky Way & Universe) -->
+    <section class="break-inside-avoid bg-white p-6 border-sketchy-1 shadow-md transform rotate-[0.5deg]">
+      <h2 class="text-2xl font-bold text-purple-700 mb-3 flex items-center border-b-2 border-dashed border-purple-200 pb-1">
+        <i class="fa-solid fa-mask-face mr-2 text-indigo-400"></i> The Great Beyond
+      </h2>
+
+      <div class="space-y-3 text-sm">
+        <div class="bg-indigo-50 p-3 rounded">
+          <strong class="text-indigo-900 block"><i class="fa-solid fa-wind mr-1"></i> The Milky Way Galaxy</strong>
+          <span class="text-xs text-slate-700">
+            Known in India as <strong>Akasha Ganga</strong>. It is a massive spiral band containing billions of stars. Our solar system resides in one of its arms.
+          </span>
+        </div>
+
+        <div class="bg-purple-50 p-3 rounded">
+          <strong class="text-purple-900 block"><i class="fa-solid fa-infinity mr-1"></i> The Universe</strong>
+          <span class="text-xs text-slate-700">
+            The sum total of all space, matter, energy, and billions of independent galaxies.
+          </span>
+        </div>
+
+        <div class="bg-emerald-50 p-3 rounded text-xs text-emerald-900">
+          <strong>🛸 Exoplanets &amp; Life:</strong> Scientists are searching for planets orbiting stars outside our solar system (exoplanets) to seek signs of extraterrestrial life. No conclusive evidence found yet!
+        </div>
+      </div>
+    </section>
+
+    <!-- CARD 8: Night Sky Watching Preparation -->
+    <section class="break-inside-avoid bg-blue-50/50 p-6 border-sketchy-2 shadow-md transform rotate-[-0.5deg]">
+      <h2 class="text-2xl font-bold text-slate-800 mb-3 flex items-center border-b-2 border-dashed border-slate-300 pb-1">
+        <i class="fa-solid fa-binoculars mr-2 text-indigo-600"></i> Night Sky Watching
+      </h2>
+      <p class="text-xs text-slate-600 mb-3">
+        Light pollution, smoke, and tall buildings limit our stargazing. Find dark, cloudless, moonless open areas for the best view!
+      </p>
+
+      <div class="space-y-2 text-xs text-slate-700">
+        <div class="flex items-center"><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Stay under adult guidance in safe open spots.</div>
+        <div class="flex items-center"><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Allow <strong>30 minutes</strong> for your eyes to adjust to darkness.</div>
+        <div class="flex items-center"><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Use sky-mapping apps like <strong class="text-indigo-800">Stellarium</strong> or <strong class="text-indigo-800">Sky Map</strong>.</div>
+        <div class="flex items-center"><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Use binoculars or a telescope for dim cosmic entities.</div>
+      </div>
+
+      <div class="mt-4 p-2 bg-red-100 rounded text-[10px] text-red-800 font-semibold border border-red-300">
+        ⚠️ CAUTION: Never go to secluded dark spots at night without an adult!
+      </div>
+    </section>
+
+    <!-- CARD 9: Keywords & Terminology Quick Check -->
+    <section class="break-inside-avoid bg-white p-6 border-sketchy-1 shadow-md transform rotate-[0.5deg] relative">
+      <h2 class="text-2xl font-bold text-slate-800 mb-3 flex items-center border-b-2 border-dashed border-slate-300 pb-1">
+        <i class="fa-solid fa-spell-check mr-2 text-amber-500"></i> Cosmic Glossary
+      </h2>
+      
+      <div class="grid grid-cols-2 gap-2 text-xs">
+        <span class="bg-yellow-100 p-1.5 rounded text-center"><strong>Asteroid</strong></span>
+        <span class="bg-blue-100 p-1.5 rounded text-center"><strong>Constellation</strong></span>
+        <span class="bg-purple-100 p-1.5 rounded text-center"><strong>Milky Way</strong></span>
+        <span class="bg-pink-100 p-1.5 rounded text-center"><strong>Satellite</strong></span>
+        <span class="bg-green-100 p-1.5 rounded text-center"><strong>Revolution</strong></span>
+        <span class="bg-orange-100 p-1.5 rounded text-center"><strong>Nakshatra</strong></span>
+        <span class="bg-cyan-100 p-1.5 rounded text-center"><strong>Comet</strong></span>
+        <span class="bg-indigo-100 p-1.5 rounded text-center"><strong>Exoplanet</strong></span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="max-w-6xl mx-auto mt-12 mb-20 text-center text-xs text-slate-500 border-t border-dashed border-slate-300 pt-4">
+    <p>⚡ Designed by Expert Educational Designers &amp; Frontend Developers ⚡</p>
+    <p class="mt-1">Hand-drawn style for quick study review • Feel free to download your copy below!</p>
+  </footer>
+
+  <!-- DYNAMIC EXPORT BUTTON -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '12._Beyond_Earth.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

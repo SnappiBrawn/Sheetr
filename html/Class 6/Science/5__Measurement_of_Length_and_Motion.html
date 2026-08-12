@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Measurement of Length and Motion</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Handwritten Aesthetics -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Doodly Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Patrick Hand', cursive;
+            background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+            background-color: #fafaf9;
+            color: #1e293b;
+        }
+        
+        .marker-font {
+            font-family: 'Permanent Marker', cursive;
+        }
+
+        /* Hand-drawn borders */
+        .doodle-card {
+            border: 3px solid #1e293b;
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            box-shadow: 4px 4px 0px #1e293b;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .doodle-card:hover {
+            transform: scale(1.01) rotate(0deg) !important;
+            box-shadow: 6px 6px 0px #1e293b;
+        }
+
+        /* Paper tape decorations */
+        .tape {
+            background-color: rgba(253, 224, 71, 0.7);
+            box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+        }
+
+        .tape-blue {
+            background-color: rgba(147, 197, 253, 0.7);
+            box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
+            transform: rotate(1deg);
+        }
+
+        /* Custom scrollbar to keep hand-drawn vibe */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 min-h-screen">
+
+    <div class="max-w-7xl mx-auto">
+        
+        <!-- HEADER HEADER -->
+        <div class="relative mb-10 text-center py-6 px-4 bg-white doodle-card rotate-[-0.5deg] max-w-3xl mx-auto bg-amber-50">
+            <div class="absolute -top-4 left-10 w-24 h-6 tape"></div>
+            <div class="absolute -top-3 right-12 w-20 h-6 tape-blue"></div>
+            
+            <h1 class="marker-font text-3xl md:text-5xl text-rose-600 tracking-wider mb-2">
+                <i class="fa-solid fa-compass-drafting mr-2"></i> MEASUREMENT &amp; MOTION
+            </h1>
+            <p class="text-lg md:text-2xl text-slate-700 font-bold">
+                Physics Study Guide <span class="text-blue-600">&bull;</span> Chapter 5 Quick Review
+            </p>
+        </div>
+
+        <!-- MASONRY / DENSE GRID SYSTEM -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+            
+            <!-- SECTION 1: HISTORICAL vs STANDARD -->
+            <div class="bg-amber-100 p-6 doodle-card rotate-[-1deg] relative">
+                <div class="absolute -top-3 left-1/3 w-28 h-6 tape"></div>
+                <h2 class="marker-font text-2xl text-amber-800 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-ruler-horizontal"></i> 1. Measurement Basics
+                </h2>
+                <p class="mb-3 text-lg">In ancient times, people used inconsistent body parts to measure:</p>
+                
+                <ul class="space-y-2 mb-4 text-md">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-hand-sparkles text-amber-600"></i> <strong>Angula:</strong> Finger width width.</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-hands text-amber-600"></i> <strong>Handspan (Balisht):</strong> Stretch of palm.</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-shoe-prints text-amber-600"></i> <strong>Strides &amp; Foot:</strong> Walking pacing steps.</li>
+                </ul>
+
+                <div class="p-3 bg-white/70 border-2 border-dashed border-amber-800 rounded-lg">
+                    <p class="text-rose-600 font-bold text-center text-lg">
+                        <i class="fa-solid fa-triangle-exclamation mr-1"></i> The Problem:
+                    </p>
+                    <p class="text-center text-md">Body dimensions vary per person! This created massive confusion, necessitating a <strong>universal standard</strong>.</p>
+                </div>
+            </div>
+
+            <!-- SECTION 2: THE SI SYSTEM & CONVERSIONS -->
+            <div class="bg-sky-100 p-6 doodle-card rotate-[1deg] relative">
+                <div class="absolute -top-3 right-1/4 w-24 h-6 tape-blue"></div>
+                <h2 class="marker-font text-2xl text-sky-800 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-calculator"></i> 2. SI Units &amp; Conversion
+                </h2>
+                <p class="mb-4 text-md">The worldwide standard system is the <strong>International System of Units (SI Units)</strong>.</p>
+                
+                <div class="bg-white p-3 rounded-lg border-2 border-sky-800 mb-4">
+                    <p class="text-lg font-bold text-sky-900 text-center">
+                        SI Unit of Length = <span class="underline text-rose-600">Metre (m)</span>
+                    </p>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center bg-sky-200/50 p-2 rounded border border-sky-300 font-bold">
+                        <span><i class="fa-solid fa-road text-sky-700 mr-2"></i> Kilometer</span>
+                        <span>1 km = 1000 m</span>
+                    </div>
+                    <div class="flex justify-between items-center bg-sky-200/50 p-2 rounded border border-sky-300 font-bold">
+                        <span><i class="fa-solid fa-ruler text-sky-700 mr-2"></i> Centimeter</span>
+                        <span>1 m = 100 cm</span>
+                    </div>
+                    <div class="flex justify-between items-center bg-sky-200/50 p-2 rounded border border-sky-300 font-bold">
+                        <span><i class="fa-solid fa-barcode text-sky-700 mr-2"></i> Millimeter</span>
+                        <span>1 cm = 10 mm</span>
+                    </div>
+                    <div class="flex justify-between items-center bg-amber-200/50 p-2 rounded border border-amber-300 font-bold">
+                        <span><i class="fa-solid fa-quote-left text-amber-700 mr-2"></i> Imperial Inch</span>
+                        <span>1 inch = 2.54 cm</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 3: RULES OF CORRECT MEASUREMENT -->
+            <div class="bg-emerald-50 p-6 doodle-card rotate-[-0.5deg] relative md:col-span-2 lg:col-span-1">
+                <h2 class="marker-font text-2xl text-emerald-800 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-square-check"></i> 3. Measurement Guide
+                </h2>
+                
+                <div class="space-y-4 text-md">
+                    <div class="p-3 bg-white border border-emerald-300 rounded shadow-sm">
+                        <p class="font-bold text-emerald-900"><i class="fa-solid fa-1 mr-2 text-rose-600"></i>Placement:</p>
+                        <p>Place the scale parallel and in complete contact with the object along its entire length.</p>
+                    </div>
+
+                    <div class="p-3 bg-white border border-emerald-300 rounded shadow-sm">
+                        <p class="font-bold text-emerald-900"><i class="fa-solid fa-2 mr-2 text-rose-600"></i>Eye Alignment:</p>
+                        <p>Your eye position must be <strong>directly vertically above</strong> the target point. Looking from angles causes parallax error!</p>
+                        <p class="text-center text-sm font-bold text-slate-500 mt-1">Eye (A) &larr; WRONG | Eye (B) &darr; CORRECT | Eye (C) &rarr; WRONG</p>
+                    </div>
+
+                    <div class="p-3 bg-white border border-emerald-300 rounded shadow-sm">
+                        <p class="font-bold text-emerald-900"><i class="fa-solid fa-3 mr-2 text-rose-600"></i>Broken Scales:</p>
+                        <p class="mb-1">If the zero end is worn/broken, measure from another mark (e.g., 1.0 cm):</p>
+                        <p class="bg-yellow-100 p-1 rounded font-bold text-center border border-yellow-300 text-sm">
+                            True Length = End Value &minus; Start Value
+                        </p>
+                        <p class="text-xs text-slate-500 text-center mt-1">Example: 10.4 cm &minus; 1.0 cm = 9.4 cm</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 4: CURVED LINES & POSITION -->
+            <div class="bg-rose-50 p-6 doodle-card rotate-[0.5deg] relative">
+                <h2 class="marker-font text-2xl text-rose-800 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-bezier-curve"></i> 4. Curves &amp; Positions
+                </h2>
+                
+                <div class="mb-4">
+                    <p class="font-bold text-lg text-rose-900 mb-1">Measuring Curved Lines:</p>
+                    <p class="text-md mb-2">You cannot use a straight wooden ruler directly!</p>
+                    <div class="bg-white p-3 rounded border border-rose-300 text-md">
+                        <p class="font-bold"><i class="fa-solid fa-arrow-right text-rose-500"></i> The Thread Trick:</p>
+                        <ol class="list-decimal pl-5 text-sm space-y-1 mt-1 text-slate-700">
+                            <li>Trace along the curve carefully using a flexible thread.</li>
+                            <li>Mark the start and endpoints on the thread.</li>
+                            <li>Stretch the thread straight along a standard scale to measure the length.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <hr class="border-rose-200 my-4">
+
+                <div>
+                    <p class="font-bold text-lg text-rose-900 mb-1">What is a Reference Point?</p>
+                    <p class="text-md">A fixed, stationary location used to state the position or observe the motion of an object.</p>
+                    <p class="text-xs text-rose-700 mt-2 font-bold"><i class="fa-solid fa-map-pin mr-1"></i> Example: A bus stand, milestone, or gate post from which distances are measured.</p>
+                </div>
+            </div>
+
+            <!-- SECTION 5: STATE OF REST VS MOTION -->
+            <div class="bg-violet-50 p-6 doodle-card rotate-[-1deg] relative">
+                <div class="absolute -top-3 left-10 w-24 h-6 tape"></div>
+                <h2 class="marker-font text-2xl text-violet-800 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-person-running"></i> 5. Rest &amp; Motion
+                </h2>
+
+                <div class="space-y-4 text-md">
+                    <div class="p-3 bg-white border border-violet-200 rounded">
+                        <p class="font-bold text-violet-900">
+                            <i class="fa-solid fa-circle-dot mr-1 text-violet-500"></i> Motion:
+                        </p>
+                        <p>An object is said to be in motion if its <strong>position changes</strong> with respect to a fixed reference point over time.</p>
+                    </div>
+
+                    <div class="p-3 bg-white border border-violet-200 rounded">
+                        <p class="font-bold text-violet-900">
+                            <i class="fa-solid fa-chair mr-1 text-violet-500"></i> Rest:
+                        </p>
+                        <p>An object is said to be at rest if its <strong>position remains unchanged</strong> relative to a fixed reference point over time.</p>
+                    </div>
+
+                    <div class="bg-amber-100 p-3 rounded-lg border-2 border-dashed border-amber-500 text-sm">
+                        <p class="font-bold text-amber-900"><i class="fa-solid fa-lightbulb mr-1"></i> Relative Nature of Motion:</p>
+                        <p class="text-slate-700">A passenger inside a moving bus is at <strong>rest</strong> relative to other passengers inside, but in <strong>motion</strong> relative to trees outside!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 6: TYPES OF MOTION (FULL SPAN PREFERRED) -->
+            <div class="bg-amber-50 p-6 doodle-card rotate-[0.5deg] relative md:col-span-2 lg:col-span-1">
+                <div class="absolute -top-3 right-10 w-24 h-6 tape-blue"></div>
+                <h2 class="marker-font text-2xl text-yellow-800 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-arrows-spin"></i> 6. Types of Motion
+                </h2>
+                
+                <div class="space-y-3 text-md">
+                    <div class="p-3 bg-white rounded border border-yellow-300">
+                        <p class="font-bold text-yellow-900"><i class="fa-solid fa-arrow-trend-up text-orange-500 mr-2"></i>Linear Motion</p>
+                        <p class="text-sm text-slate-600 mb-1">Movement along a perfectly straight line path.</p>
+                        <p class="text-xs bg-slate-100 p-1 rounded inline-block font-mono">e.g., Falling apple, marching troops, sliding box</p>
+                    </div>
+
+                    <div class="p-3 bg-white rounded border border-yellow-300">
+                        <p class="font-bold text-yellow-900"><i class="fa-solid fa-rotate text-sky-500 mr-2"></i>Circular Motion</p>
+                        <p class="text-sm text-slate-600 mb-1">Movement of an object along a circular trajectory path.</p>
+                        <p class="text-xs bg-slate-100 p-1 rounded inline-block font-mono">e.g., Hands of a clock, merry-go-round, spinning top</p>
+                    </div>
+
+                    <div class="p-3 bg-white rounded border border-yellow-300">
+                        <p class="font-bold text-yellow-900"><i class="fa-solid fa-repeat text-purple-500 mr-2"></i>Oscillatory Motion</p>
+                        <p class="text-sm text-slate-600 mb-1">Continuous to-and-fro movement about a fixed, stable position.</p>
+                        <p class="text-xs bg-slate-100 p-1 rounded inline-block font-mono">e.g., Simple pendulum, swing, vibrating ruler</p>
+                    </div>
+
+                    <div class="p-3 bg-white rounded border border-yellow-300">
+                        <p class="font-bold text-yellow-900"><i class="fa-solid fa-clock text-rose-500 mr-2"></i>Periodic Motion</p>
+                        <p class="text-sm text-slate-600 mb-1">Any motion that repeats its path after exact, fixed intervals of time.</p>
+                        <p class="text-xs bg-rose-100/50 text-rose-900 p-1 rounded inline-block font-mono">Note: Circular &amp; Oscillatory motions are often periodic.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- QUICK SUMMARY BLOCK -->
+        <div class="mt-8 mb-16 p-6 bg-white doodle-card max-w-4xl mx-auto rotate-[-0.3deg] border-2 border-slate-800">
+            <h3 class="marker-font text-xl text-slate-800 mb-3 text-center">
+                <i class="fa-solid fa-list-check text-rose-500 mr-1"></i> Quick Summary Check!
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm font-bold">
+                <div class="p-2 bg-rose-100 rounded border border-rose-300">SI Unit is Metre (m)</div>
+                <div class="p-2 bg-amber-100 rounded border border-amber-300">1 m = 100 cm = 1000 mm</div>
+                <div class="p-2 bg-sky-100 rounded border border-sky-300">Avoid Parallax Error</div>
+                <div class="p-2 bg-emerald-100 rounded border border-emerald-300">Motion is relative to Reference Point</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- DYNAMIC EXPORT BUTTON -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '5._Measurement_of_Length_and_Motion.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10: Living Creatures</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font: Kalam (Doodly/Handwritten) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global handwritten style */
+        body {
+            font-family: 'Kalam', cursive;
+            background-color: #f9f6f0;
+            /* Lined notebook paper background */
+            background-image: linear-gradient(#e5e0d8 1px, transparent 1px);
+            background-size: 100% 28px;
+            color: #2d3748;
+        }
+
+        /* Red margin line for notebook aesthetic */
+        .notebook-margin {
+            border-left: 2px solid #f87171;
+            padding-left: 2rem;
+        }
+
+        /* Hand-drawn sketchy border tricks */
+        .doodle-card {
+            background: #ffffff;
+            border: 3px solid #2d3748;
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            box-shadow: 5px 5px 0px #2d3748;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+        }
+
+        .doodle-card:hover {
+            transform: scale(1.02) rotate(0deg) !important;
+            box-shadow: 8px 8px 0px #1a202c;
+        }
+
+        /* Sticky note variant */
+        .sticky-note {
+            background: #fef08a; /* pastel yellow */
+            border: 2px dashed #ca8a04;
+            border-radius: 10px 20px 15px 30px/15px 10px 25px 12px;
+            box-shadow: 4px 4px 0px #ca8a04;
+        }
+
+        /* Highlight effects */
+        .highlight-yellow {
+            background: linear-gradient(104deg, rgba(254, 240, 138, 0.8) 0%, rgba(254, 240, 138, 0.3) 100%);
+            border-radius: 5px;
+            padding: 0 4px;
+        }
+
+        .highlight-green {
+            background: linear-gradient(104deg, rgba(187, 247, 208, 0.8) 0%, rgba(187, 247, 208, 0.3) 100%);
+            border-radius: 5px;
+            padding: 0 4px;
+        }
+
+        .highlight-blue {
+            background: linear-gradient(104deg, rgba(191, 219, 254, 0.8) 0%, rgba(191, 219, 254, 0.3) 100%);
+            border-radius: 5px;
+            padding: 0 4px;
+        }
+
+        /* Washi tape effect */
+        .washi-tape {
+            background: rgba(251, 191, 36, 0.6);
+            backdrop-filter: blur(1px);
+            transform: rotate(-3deg);
+            border-left: 2px dashed #b45309;
+            border-right: 2px dashed #b45309;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 min-h-screen relative">
+
+    <!-- Header Banner -->
+    <header class="max-w-7xl mx-auto mb-10 relative">
+        <!-- Sketchy Tape -->
+        <div class="absolute -top-6 left-12 w-32 h-8 washi-tape z-10 flex items-center justify-center text-xs text-amber-900 font-bold tracking-widest shadow-sm">
+            TOP SECRET STUDY GUIDE
+        </div>
+        
+        <div class="border-4 border-slate-800 bg-white p-6 rounded-3xl shadow-[8px_8px_0px_#1e293b] transform -rotate-1 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-4">
+                <div class="bg-indigo-100 text-indigo-600 text-5xl p-4 rounded-2xl border-2 border-slate-800 shadow-[3px_3px_0px_#1e293b]">
+                    <i class="fa-solid fa-dna animate-bounce"></i>
+                </div>
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-800">Chapter 10: Living Creatures</h1>
+                    <p class="text-xl text-slate-600 font-medium mt-1"><i class="fa-solid fa-seedling text-emerald-500 mr-1"></i> Exploring Their Characteristics & Life Cycles</p>
+                </div>
+            </div>
+            <div class="flex gap-4 flex-wrap justify-center text-sm md:text-base">
+                <span class="bg-emerald-100 border-2 border-slate-800 px-3 py-1 rounded-full font-bold shadow-[2px_2px_0px_#1e293b]"><i class="fa-solid fa-bug text-emerald-700"></i> Organisms</span>
+                <span class="bg-amber-100 border-2 border-slate-800 px-3 py-1 rounded-full font-bold shadow-[2px_2px_0px_#1e293b]"><i class="fa-solid fa-hourglass-half text-amber-700"></i> Life Cycles</span>
+                <span class="bg-blue-100 border-2 border-slate-800 px-3 py-1 rounded-full font-bold shadow-[2px_2px_0px_#1e293b]"><i class="fa-solid fa-wind text-blue-700"></i> Respiration</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 notebook-margin">
+
+        <!-- CARD 1: Core Characteristics of Living Beings -->
+        <div class="doodle-card p-6 transform rotate-1 bg-white flex flex-col justify-between">
+            <div>
+                <div class="absolute -top-3 right-4 bg-red-400 text-white font-bold px-2 py-0.5 rounded text-xs border border-slate-800 shadow-sm">
+                    MUST KNOW!
+                </div>
+                <h3 class="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-dashed border-slate-300 pb-1">
+                    <i class="fa-solid fa-list-check text-rose-500 mr-2"></i>What Makes it "Living"?
+                </h3>
+                <p class="text-sm text-slate-500 mb-4 italic">An object is alive if it demonstrates ALL of these vital signs:</p>
+                
+                <ul class="space-y-3 font-semibold text-slate-700">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-person-walking text-blue-500"></i> Movement <span class="text-xs text-slate-400 font-normal ml-auto">(Internal or External)</span></li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-apple-whole text-emerald-500"></i> Nutrition <span class="text-xs text-slate-400 font-normal ml-auto">(Energy & Food)</span></li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-lungs text-purple-500"></i> Respiration <span class="text-xs text-slate-400 font-normal ml-auto">(Breathing & Energy)</span></li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-dumpster text-amber-600"></i> Excretion <span class="text-xs text-slate-400 font-normal ml-auto">(Waste Elimination)</span></li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-bolt text-yellow-500"></i> Stimuli Response <span class="text-xs text-slate-400 font-normal ml-auto">(React to Changes)</span></li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-baby text-pink-500"></i> Reproduction <span class="text-xs text-slate-400 font-normal ml-auto">(Continuity of Kind)</span></li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-chart-line text-indigo-500"></i> Growth & Death <span class="text-xs text-slate-400 font-normal ml-auto">(Life to End)</span></li>
+                </ul>
+            </div>
+            <div class="mt-4 pt-3 border-t-2 border-dashed border-slate-200 text-xs text-slate-500">
+                <i class="fa-solid fa-triangle-exclamation text-amber-500"></i> <strong class="text-slate-700">Note:</strong> Absence of any of these over its lifespan indicates it is <span class="highlight-yellow font-bold">non-living</span>.
+            </div>
+        </div>
+
+        <!-- CARD 2: Secret Movements of Plants -->
+        <div class="doodle-card p-6 transform -rotate-1 bg-emerald-50/30">
+            <h3 class="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-dashed border-slate-300 pb-1">
+                <i class="fa-solid fa-leaf text-emerald-600 mr-2"></i>Plant Movements?!
+            </h3>
+            <p class="text-slate-700 mb-4">Plants don't walk, but they certainly move in clever ways!</p>
+            
+            <div class="space-y-4">
+                <div class="p-3 border border-slate-800 rounded-xl bg-white shadow-[3px_3px_0px_#1e293b]">
+                    <span class="font-bold text-emerald-700 block"><i class="fa-solid fa-circle-dot mr-1"></i> Insect Trap (*Drosera*):</span>
+                    Saucer-shaped leaves with sticky, hair-like projections. When insects land, hairs fold inward and <span class="highlight-green">trap the insect</span> for nutrition.
+                </div>
+                
+                <div class="p-3 border border-slate-800 rounded-xl bg-white shadow-[3px_3px_0px_#1e293b]">
+                    <span class="font-bold text-sky-700 block"><i class="fa-solid fa-wind mr-1"></i> Climber Vines:</span>
+                    Climbers search for support and actively wind around poles, branches, or walls.
+                </div>
+
+                <div class="p-3 border border-slate-800 rounded-xl bg-white shadow-[3px_3px_0px_#1e293b]">
+                    <span class="font-bold text-indigo-700 block"><i class="fa-solid fa-sun mr-1"></i> Sleep & Bloom:</span>
+                    Opening and closing of flower petals and leaves in response to daylight.
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3: Seed Germination Rules -->
+        <div class="doodle-card p-6 transform rotate-1 bg-amber-50/20">
+            <h3 class="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-dashed border-slate-300 pb-1">
+                <i class="fa-solid fa-seedling text-amber-600 mr-2"></i>Seed Germination Ingredients
+            </h3>
+            <p class="text-slate-600 mb-4">To wake up a tiny embryo, a seed needs precise conditions:</p>
+
+            <div class="grid grid-cols-2 gap-3 mb-4">
+                <div class="p-2 bg-blue-50 border-2 border-blue-200 rounded-lg text-center">
+                    <i class="fa-solid fa-droplet text-blue-500 text-lg"></i>
+                    <p class="font-bold text-sm mt-1">Water</p>
+                    <p class="text-[11px] text-slate-500">Softens the seed coat & activates embryo.</p>
+                </div>
+                <div class="p-2 bg-emerald-50 border-2 border-emerald-200 rounded-lg text-center">
+                    <i class="fa-solid fa-wind text-emerald-500 text-lg"></i>
+                    <p class="font-bold text-sm mt-1">Air & Soil</p>
+                    <p class="text-[11px] text-slate-500">Gives space & oxygen for root respiration.</p>
+                </div>
+            </div>
+
+            <!-- Sticky Note Style Warning inside card -->
+            <div class="sticky-note p-3 text-xs">
+                <strong class="text-amber-800"><i class="fa-solid fa-lightbulb"></i> Fun Fact: Light vs. Dark</strong>
+                <ul class="list-disc pl-4 mt-1 space-y-1">
+                    <li><span class="font-bold">*Coleus & Petunia*:</span> Need light to sprout!</li>
+                    <li><span class="font-bold">*Calendula & Zinnia*:</span> Need complete darkness!</li>
+                    <li>Most crops do not require light until *after* germination.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CARD 4: Plant Behavior & Jagadish Chandra Bose -->
+        <div class="doodle-card p-6 transform -rotate-1 bg-white">
+            <h3 class="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-dashed border-slate-300 pb-1">
+                <i class="fa-solid fa-compass text-sky-600 mr-2"></i>Growth & Stimuli responses
+            </h3>
+            <div class="space-y-3 text-slate-700">
+                <p class="font-semibold"><i class="fa-solid fa-arrows-up-down text-indigo-500 mr-1"></i> Directional Rules:</p>
+                <div class="bg-indigo-50 border border-slate-800 rounded p-2 text-xs">
+                    <i class="fa-solid fa-circle-chevron-down text-indigo-700"></i> Roots grow <span class="highlight-blue font-bold">downward</span> (towards water/gravity).<br>
+                    <i class="fa-solid fa-circle-chevron-up text-amber-600"></i> Shoots grow <span class="highlight-yellow font-bold">upward</span> (towards sunlight).
+                </div>
+
+                <div class="border-t border-slate-200 pt-3">
+                    <p class="font-bold text-amber-800 text-sm"><i class="fa-solid fa-microscope mr-1"></i> Scientist Spotlight:</p>
+                    <div class="flex gap-3 items-center mt-2">
+                        <div class="bg-slate-100 p-2 border border-slate-800 rounded-full w-12 h-12 flex items-center justify-center font-bold text-slate-700 text-xs text-center leading-none">
+                            J.C. Bose
+                        </div>
+                        <p class="text-xs text-slate-600">
+                            <strong class="text-slate-800">Jagadish Chandra Bose (1858-1937)</strong> built the <span class="highlight-yellow font-bold">Crescograph</span> to record plant responses to stimuli (heat, electricity, gravity).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 5: Life Cycle of a Bean Plant -->
+        <div class="doodle-card p-6 transform rotate-1 bg-emerald-50/10">
+            <h3 class="text-2xl font-bold text-slate-800 mb-3 border-b-2 border-dashed border-slate-300 pb-1">
+                <i class="fa-solid fa-arrows-spin text-emerald-600 mr-2"></i>Bean Plant Life Cycle
+            </h3>
+            <div class="space-y-2 text-sm text-slate-700">
+                <div class="flex items-center gap-3">
+                    <span class="bg-amber-200 border border-slate-800 rounded-full w-6 h-6 flex items-center justify-center font-bold text-xs">I</span>
+                    <p><strong class="text-emerald-800">Seed:</strong> Resting embryo protected by a seed coat.</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="bg-emerald-200 border border-slate-800 rounded-full w-6 h-6 flex items-center justify-center font-bold text-xs">II</span>
+                    <p><strong class="text-emerald-800">Germination:</strong> Roots sprout down, shoots up.</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="bg-blue-200 border border-slate-800 rounded-full w-6 h-6 flex items-center justify-center font-bold text-xs">III</span>
+                    <p><strong class="text-emerald-800">Leaves:</strong> Photosynthesis begins, growth bursts.</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="bg-purple-200 border border-slate-800 rounded-full w-6 h-6 flex items-center justify-center font-bold text-xs">IV</span>
+                    <p><strong class="text-emerald-800">Flowers:</strong> Plant transitions to sexual reproduction.</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="bg-rose-200 border border-slate-800 rounded-full w-6 h-6 flex items-center justify-center font-bold text-xs">V</span>
+                    <p><strong class="text-emerald-800">Fruits/Pods:</strong> Seeds form. Plant eventually dies.</p>
+                </div>
+            </div>
+            <!-- Hand-drawn Arrow Diagram -->
+            <div class="mt-4 p-2 bg-white border border-dashed border-slate-300 text-center rounded text-xs font-bold text-slate-500">
+                Seed &rarr; Sprout &rarr; Leaves &rarr; Flower &rarr; Pod/Fruit &rarr; Death &rarr; Seed
+            </div>
+        </div>
+
+        <!-- CARD 6: Mosquito Life Cycle & Control Hack -->
+        <div class="doodle-card p-6 transform -rotate-1 bg-rose-50/10">
+            <h3 class="text-2xl font-bold text-slate-800 mb-3 border-b-2 border-dashed border-slate-300 pb-1">
+                <i class="fa-solid fa-mosquito text-rose-600 mr-2"></i>Mosquito Cycle & Control
+            </h3>
+            
+            <p class="text-xs text-slate-500 mb-3 italic">Mosquitoes spread malaria, dengue, & chikungunya by breeding in stagnant water.</p>
+
+            <div class="space-y-2 text-xs mb-4">
+                <div class="p-2 border border-slate-200 bg-white rounded flex justify-between items-center">
+                    <span><strong>1. Eggs</strong> (Laid on stagnant water)</span>
+                    <i class="fa-solid fa-ellipsis text-slate-400"></i>
+                </div>
+                <div class="p-2 border border-slate-200 bg-white rounded flex justify-between items-center">
+                    <span><strong>2. Larva</strong> (Worm-like, actively swimming)</span>
+                    <i class="fa-solid fa-worm text-rose-400"></i>
+                </div>
+                <div class="p-2 border border-slate-200 bg-white rounded flex justify-between items-center">
+                    <span><strong>3. Pupa</strong> (Resting stage, shape changing)</span>
+                    <i class="fa-solid fa-shield text-sky-400"></i>
+                </div>
+                <div class="p-2 border border-slate-200 bg-white rounded flex justify-between items-center">
+                    <span><strong>4. Adult</strong> (Emerges and flies away)</span>
+                    <i class="fa-solid fa-bug text-slate-700"></i>
+                </div>
+            </div>
+
+            <!-- Survival Hack -->
+            <div class="p-3 bg-red-100 border border-red-400 rounded-lg">
+                <p class="text-xs font-bold text-red-900"><i class="fa-solid fa-shield-halved"></i> Biological Hack: Kerosene Spray</p>
+                <p class="text-[11px] text-red-800 mt-1">
+                    Spraying a thin layer of <strong class="text-red-950">kerosene oil</strong> over stagnant water blocks the surface tension. Larvae & pupae can't pierce it to breathe oxygen &rarr; <span class="underline">they suffocate & die</span>.
+                </p>
+            </div>
+        </div>
+
+        <!-- CARD 7: Frog Life Cycle -->
+        <div class="doodle-card p-6 transform rotate-1 bg-white">
+            <h3 class="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-dashed border-slate-300 pb-1">
+                <i class="fa-solid fa-frog text-emerald-600 mr-2"></i>Life Cycle of a Frog
+            </h3>
+            <p class="text-slate-600 mb-3">Frogs undergo radical change called <span class="highlight-green font-bold">Metamorphosis</span>:</p>
+
+            <ul class="space-y-2 text-sm text-slate-700">
+                <li><i class="fa-solid fa-circle text-[8px] text-emerald-500 mr-2"></i><strong>Spawn (Day 1):</strong> White jelly-like egg clusters floating on pond surface.</li>
+                <li><i class="fa-solid fa-circle text-[8px] text-emerald-500 mr-2"></i><strong>Embryo (Day 3-4):</strong> Growth inside the egg capsule.</li>
+                <li><i class="fa-solid fa-circle text-[8px] text-emerald-500 mr-2"></i><strong>Tadpole (Day 7-10):</strong> Swims in water, breathes via gills, has a long tail.</li>
+                <li><i class="fa-solid fa-circle text-[8px] text-emerald-500 mr-2"></i><strong>Tadpole with legs (Week 8-10):</strong> Grows hind & front limbs.</li>
+                <li><i class="fa-solid fa-circle text-[8px] text-emerald-500 mr-2"></i><strong>Froglet (Week 12):</strong> Tail shrinks; lungs develop. Transition to land.</li>
+                <li><i class="fa-solid fa-circle text-[8px] text-emerald-500 mr-2"></i><strong>Adult Frog (Week 14):</strong> Fully formed, no tail, lives on land & water.</li>
+            </ul>
+        </div>
+
+        <!-- CARD 8: Touch-Me-Not (Mimosa / Stimulus) -->
+        <div class="doodle-card p-6 transform -rotate-1 bg-yellow-50/20">
+            <h3 class="text-2xl font-bold text-slate-800 mb-3 border-b-2 border-dashed border-slate-300 pb-1">
+                <i class="fa-solid fa-hand-pointer text-amber-600 mr-2"></i>Crazy Plant Stimuli
+            </h3>
+            <p class="text-slate-700 mb-4">A <strong class="highlight-yellow">stimulus</strong> is any external change that triggers an instant response.</p>
+
+            <div class="space-y-4">
+                <div class="border-l-4 border-amber-500 pl-3">
+                    <span class="font-bold block text-slate-800">1. Touch-me-not (*Mimosa pudica* / *Chhui-mui*):</span>
+                    <p class="text-xs text-slate-600 mt-1">Leaves instantly fold up & drop when touched. This is a rapid defense mechanism!</p>
+                </div>
+
+                <div class="border-l-4 border-indigo-500 pl-3">
+                    <span class="font-bold block text-slate-800">2. Amla (Indian Gooseberry):</span>
+                    <p class="text-xs text-slate-600 mt-1">Leaves face each other and fold inward right after sunset. (Sleep movement)</p>
+                </div>
+
+                <div class="border-l-4 border-emerald-500 pl-3">
+                    <span class="font-bold block text-slate-800">3. Climbers:</span>
+                    <p class="text-xs text-slate-600 mt-1">Wind tightly around obstacles. The touch of the object triggers asymmetric growth!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 9: Quick Vocab / Key Terms -->
+        <div class="doodle-card p-6 transform rotate-1 bg-white">
+            <h3 class="text-2xl font-bold text-slate-800 mb-3 border-b-2 border-dashed border-slate-300 pb-1">
+                <i class="fa-solid fa-spell-check text-rose-500 mr-2"></i>Shorthand Glossary
+            </h3>
+            <div class="grid grid-cols-2 gap-2 text-xs text-slate-700">
+                <div class="p-2 border border-slate-200 rounded">
+                    <strong>Respiration:</strong> Inhaling air to extract oxygen to release energy.
+                </div>
+                <div class="p-2 border border-slate-200 rounded">
+                    <strong>Excretion:</strong> Discarding harmful chemical metabolic wastes.
+                </div>
+                <div class="p-2 border border-slate-200 rounded">
+                    <strong>Stomata:</strong> Tiny pores on plant leaves for gas exchange.
+                </div>
+                <div class="p-2 border border-slate-200 rounded">
+                    <strong>Spawn:</strong> White jelly-like egg clutches of frogs.
+                </div>
+                <div class="p-2 border border-slate-200 rounded">
+                    <strong>Germination:</strong> Process of seed sprouting to form a seedling.
+                </div>
+                <div class="p-2 border border-slate-200 rounded">
+                    <strong>Metamorphosis:</strong> Transforming radically from larva to adult.
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Note -->
+    <footer class="max-w-7xl mx-auto mt-12 text-center text-slate-500 pb-20">
+        <p class="text-base font-bold"><i class="fa-solid fa-pen-fancy text-slate-400 mr-1"></i> Drawn with &hearts; for Grade 6 Science Learners</p>
+    </footer>
+
+    <!-- DYNAMIC EXPORT BUTTON -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '10._Living_Creatures.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

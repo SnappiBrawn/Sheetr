@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 7: Temperature and its Measurement</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome for doodly icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Styles for hand-drawn / notebook aesthetic -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Patrick+Hand&family=Kalam:wght@400;700&display=swap');
+    
+    body {
+      font-family: 'Patrick Hand', 'Kalam', 'Caveat', cursive;
+      background-color: #f7f4eb;
+      /* Grid notebook paper effect */
+      background-image: 
+        linear-gradient(rgba(186, 218, 253, 0.4) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(186, 218, 253, 0.4) 1px, transparent 1px);
+      background-size: 20px 20px;
+      color: #1e293b;
+    }
+
+    /* Hand-drawn borders */
+    .doodle-card {
+      border: 3px solid #1e293b;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      box-shadow: 6px 6px 0px #1e293b;
+      background-color: #ffffff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .doodle-card:hover {
+      transform: scale(1.01) rotate(0deg) !important;
+      box-shadow: 8px 8px 0px #1e293b;
+    }
+
+    .doodle-border-sm {
+      border: 2px solid #1e293b;
+      border-radius: 255px 10px 225px 10px/10px 225px 10px 255px;
+    }
+
+    .highlight-yellow {
+      background: linear-gradient(120deg, #fef08a 0%, #fef08a 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 0.3em;
+      background-position: 0 88%;
+    }
+
+    .highlight-pink {
+      background: linear-gradient(120deg, #fbcfe8 0%, #fbcfe8 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 0.3em;
+      background-position: 0 88%;
+    }
+
+    .highlight-cyan {
+      background: linear-gradient(120deg, #cffafe 0%, #cffafe 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 0.3em;
+      background-position: 0 88%;
+    }
+
+    /* Red notebook margin line */
+    .notebook-margin {
+      border-left: 2px solid #f43f5e;
+      padding-left: 1.5rem;
+    }
+  </style>
+</head>
+<body class="p-4 sm:p-6 lg:p-8 min-h-screen flex flex-col justify-between">
+
+  <!-- Main Container -->
+  <div class="max-w-7xl mx-auto w-full">
+    
+    <!-- Top Header Banner -->
+    <header class="doodle-card bg-amber-100 p-6 mb-8 flex flex-col md:flex-row justify-between items-center gap-6 transform rotate-[-0.5deg]">
+      <div class="flex items-center gap-4">
+        <div class="bg-amber-400 text-slate-900 text-5xl font-bold p-4 doodle-border-sm flex items-center justify-center transform rotate-[-3deg]">
+          <span>Ch. 7</span>
+        </div>
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-800">Temperature &amp; its Measurement</h1>
+          <p class="text-xl sm:text-2xl text-slate-600 mt-1">Highly Dense Study Notes / Science Study Sheet</p>
+        </div>
+      </div>
+      <div class="bg-white p-3 doodle-border-sm max-w-sm transform rotate-[1deg] shadow-sm">
+        <p class="italic text-base text-slate-700 font-semibold">
+          <i class="fa-solid fa-quote-left text-amber-500 mr-1"></i>
+          Wrong measurements are worse than no measurements at all.
+        </p>
+        <span class="block text-right text-sm font-bold text-amber-600 mt-1">&mdash; Anna Mani (Indian Meteorologist)</span>
+      </div>
+    </header>
+
+    <!-- Dense Masonry / Grid Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+
+      <!-- Column 1: Core Concepts & Hot/Cold -->
+      <div class="space-y-6">
+        
+        <!-- Concept 1: Hot or Cold? -->
+        <div class="doodle-card p-5 bg-yellow-50 transform rotate-[-1deg]">
+          <h2 class="text-2xl font-bold text-slate-800 mb-3 border-b-2 border-slate-800 pb-1">
+            <i class="fa-solid fa-hand-holding-droplet text-amber-500 mr-2"></i>7.1 Hot or Cold?
+          </h2>
+          <div class="notebook-margin space-y-3 text-lg">
+            <p>
+              We cannot always rely on our <span class="highlight-yellow font-bold">sense of touch</span> to judge temperature.
+            </p>
+            <div class="bg-white p-3 doodle-border-sm text-sm border-l-4 border-amber-500">
+              <span class="font-bold text-amber-600"><i class="fa-solid fa-flask"></i> Activity 7.1 experiment:</span><br>
+              If you dip one hand in warm water and the other in cold water, then place both in tap water:
+              <ul class="list-disc list-inside mt-1 font-semibold text-slate-700">
+                <li>Warm-conditioned hand feels <span class="text-blue-600">Cold</span></li>
+                <li>Cold-conditioned hand feels <span class="text-rose-600">Warm</span></li>
+              </ul>
+              <span class="font-bold text-slate-800 block mt-1">Conclusion: Our touch is relative, not absolute!</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Concept 2: What is Temperature? -->
+        <div class="doodle-card p-5 bg-blue-50 transform rotate-[1deg]">
+          <h2 class="text-2xl font-bold text-slate-800 mb-3 border-b-2 border-slate-800 pb-1">
+            <i class="fa-solid fa-temperature-high text-blue-500 mr-2"></i>7.2 Defining Temperature
+          </h2>
+          <div class="space-y-3 text-lg">
+            <p class="font-semibold">
+              <span class="highlight-cyan font-bold">Temperature:</span> A reliable measure of the hotness or coldness of a body.
+            </p>
+            <p>
+              <span class="highlight-cyan font-bold">Thermometer:</span> A physical device used to measure temperature.
+            </p>
+            <div class="bg-slate-800 text-yellow-300 p-3 rounded-lg doodle-border-sm text-center">
+              <p class="text-xl font-bold">SI Unit of Temperature:</p>
+              <p class="text-3xl font-extrabold tracking-widest my-1 text-white">kelvin (K)</p>
+              <p class="text-xs italic text-slate-300 font-sans">Name starts lowercase (kelvin) but the symbol is a capital K. No degree sign (&deg;) is used with Kelvin!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Concept 3: Temperature Scales & Writing Rules -->
+        <div class="doodle-card p-5 bg-purple-50 transform rotate-[-0.5deg]">
+          <h2 class="text-2xl font-bold text-slate-800 mb-3 border-b-2 border-slate-800 pb-1">
+            <i class="fa-solid fa-list-ol text-purple-600 mr-2"></i>Three Common Scales
+          </h2>
+          <div class="space-y-3 text-lg">
+            <ul class="space-y-2 font-semibold">
+              <li class="flex justify-between items-center bg-white px-3 py-1 doodle-border-sm">
+                <span>Celsius Scale</span>
+                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded text-sm font-bold">&deg;C</span>
+              </li>
+              <li class="flex justify-between items-center bg-white px-3 py-1 doodle-border-sm">
+                <span>Fahrenheit Scale</span>
+                <span class="bg-purple-100 text-purple-800 px-2 py-0.5 rounded text-sm font-bold">&deg;F</span>
+              </li>
+              <li class="flex justify-between items-center bg-white px-3 py-1 doodle-border-sm">
+                <span>Kelvin Scale</span>
+                <span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-sm font-bold">K</span>
+              </li>
+            </ul>
+
+            <div class="bg-white p-3 doodle-border-sm space-y-2 text-sm border-l-4 border-purple-500">
+              <p class="font-bold text-purple-700"><i class="fa-solid fa-pen-nib"></i> Grammatical Rules for Scales:</p>
+              <ul class="list-disc list-inside space-y-1 text-slate-700">
+                <li>Scale Names capitalized: <span class="font-bold text-slate-900">C</span>elsius, <span class="font-bold text-slate-900">F</span>ahrenheit, <span class="font-bold text-slate-900">K</span>elvin.</li>
+                <li>Unit Names lowercase: degree <span class="font-bold text-slate-900">c</span>elsius, degree <span class="font-bold text-slate-900">f</span>ahrenheit, <span class="font-bold text-slate-900">k</span>elvin.</li>
+                <li>Always leave a space between number and unit (e.g., <span class="font-bold">37 &deg;C</span>, NOT 37&deg;C).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Column 2: Thermometers Compared -->
+      <div class="space-y-6">
+
+        <!-- Concept 4: Clinical Thermometers -->
+        <div class="doodle-card p-5 bg-rose-50 transform rotate-[0.5deg]">
+          <h2 class="text-2xl font-bold text-slate-800 mb-3 border-b-2 border-slate-800 pb-1">
+            <i class="fa-solid fa-user-doctor text-rose-500 mr-2"></i>7.3.1 Clinical Thermometer
+          </h2>
+          <div class="space-y-3 text-lg">
+            <p class="font-semibold">Designed <span class="highlight-pink">only for human body temperature</span>.</p>
+            
+            <div class="grid grid-cols-2 gap-2 text-center text-sm font-bold">
+              <div class="bg-white p-2 doodle-border-sm">
+                <span class="block text-xs text-slate-500">NORMAL BODY TEMP</span>
+                <span class="text-2xl text-rose-600">37.0 &deg;C</span>
+                <span class="block text-xs text-slate-400 font-sans">or 98.6 &deg;F</span>
+              </div>
+              <div class="bg-white p-2 doodle-border-sm">
+                <span class="block text-xs text-slate-500">MEASUREMENT RANGE</span>
+                <span class="text-2xl text-slate-800">35 &deg;C &rarr; 42 &deg;C</span>
+              </div>
+            </div>
+
+            <div class="space-y-2 text-sm font-semibold">
+              <div class="bg-white p-2.5 doodle-border-sm flex items-start gap-2">
+                <i class="fa-solid fa-circle-info text-rose-500 mt-1"></i>
+                <p><span class="font-bold">Digital Thermometers:</span> Built with heat sensors; do not use mercury. Runs on batteries. Safer and easier to read.</p>
+              </div>
+              <div class="bg-white p-2.5 doodle-border-sm flex items-start gap-2">
+                <i class="fa-solid fa-virus-slash text-blue-500 mt-1"></i>
+                <p><span class="font-bold">Non-contact (Infrared) Thermometers:</span> Measure temp from a distance using infrared radiation. Crucial during COVID-19 pandemic to curb transmission.</p>
+              </div>
+              <div class="bg-orange-100 p-2.5 doodle-border-sm flex items-start gap-2 text-orange-950">
+                <i class="fa-solid fa-triangle-exclamation text-orange-600 mt-1"></i>
+                <p><span class="font-bold">Mercury Alert:</span> Traditional glass thermometers contain mercury (extremely toxic, hazardous when broken, very hard to dispose).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Concept 5: Scale Conversions -->
+        <div class="doodle-card p-5 bg-teal-50 transform rotate-[-1deg]">
+          <h2 class="text-2xl font-bold text-slate-800 mb-3 border-b-2 border-slate-800 pb-1">
+            <i class="fa-solid fa-calculator text-teal-600 mr-2"></i>Scale Conversions
+          </h2>
+          <div class="space-y-4 text-center">
+            <p class="text-lg font-semibold text-slate-700">Converting Celsius to Kelvin Scale:</p>
+            <div class="bg-slate-800 text-white p-4 doodle-border-sm inline-block w-full">
+              <span class="text-amber-300 block text-sm font-bold uppercase font-sans tracking-wide">Standard Equation</span>
+              <span class="text-2xl font-bold text-white block my-1">K = &deg;C + 273.15</span>
+              <span class="text-xs text-slate-300 block mt-1">Example: 0 &deg;C = 273.15 K</span>
+            </div>
+            <div class="text-left bg-white p-3 doodle-border-sm text-sm">
+              <span class="font-bold text-teal-700"><i class="fa-solid fa-circle-question"></i> Think About It:</span>
+              <p class="text-slate-600 mt-1">Can we use a clinical thermometer for boiling water or ice? <br><span class="text-rose-600 font-bold">No!</span> Boiling water (~100 &deg;C) and melting ice (~0 &deg;C) fall completely outside the clinical range (35 &deg;C to 42 &deg;C).</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Column 3: Lab Thermometers & Expert Insights -->
+      <div class="space-y-6">
+
+        <!-- Concept 6: Laboratory Thermometers -->
+        <div class="doodle-card p-5 bg-amber-50 transform rotate-[1deg]">
+          <h2 class="text-2xl font-bold text-slate-800 mb-3 border-b-2 border-slate-800 pb-1">
+            <i class="fa-solid fa-flask-vial text-amber-600 mr-2"></i>7.3.2 Laboratory Thermometer
+          </h2>
+          <div class="space-y-3 text-lg">
+            <p class="font-semibold">Used for <span class="highlight-yellow">general laboratory experiments</span>.</p>
+            
+            <div class="bg-white p-3 doodle-border-sm text-center">
+              <span class="block text-xs font-bold text-slate-500 uppercase tracking-widest">TYPICAL TEMPERATURE RANGE</span>
+              <span class="text-3xl font-extrabold text-amber-700">-10 &deg;C &rarr; 110 &deg;C</span>
+            </div>
+
+            <p class="text-sm font-semibold text-slate-700">
+              <i class="fa-solid fa-circle-dot text-amber-600 mr-1"></i>
+              Filled with <span class="text-rose-600">alcohol (colored red)</span> or mercury.
+            </p>
+
+            <div class="bg-rose-100 text-rose-950 p-3 doodle-border-sm text-xs space-y-1">
+              <p class="font-bold text-rose-800 uppercase tracking-wide"><i class="fa-solid fa-circle-exclamation mr-1"></i>CRITICAL WARNING</p>
+              <p>Unlike clinical thermometers, <span class="font-bold">the liquid level falls instantly</span> when removed from the test substance. Therefore:</p>
+              <p class="font-bold underline mt-1">Always read laboratory thermometer readings while the bulb is still fully immersed in the liquid!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Concept 7: Key Precautions side-by-side -->
+        <div class="doodle-card p-5 bg-emerald-50 transform rotate-[-0.5deg]">
+          <h2 class="text-2xl font-bold text-slate-800 mb-3 border-b-2 border-slate-800 pb-1">
+            <i class="fa-solid fa-shield-halved text-emerald-600 mr-2"></i>Usage Precautions
+          </h2>
+          <div class="grid grid-cols-2 gap-3 text-xs font-semibold">
+            <div class="bg-white p-2.5 doodle-border-sm border-t-4 border-rose-500">
+              <span class="font-bold text-rose-700 block mb-1">CLINICAL:</span>
+              <ul class="list-decimal list-inside space-y-1 text-slate-600">
+                <li>Wash tip with soap/water before/after use.</li>
+                <li>Ensure digital display is reset.</li>
+                <li>Place deep under tongue, close mouth.</li>
+                <li>Wait for beep/flash.</li>
+              </ul>
+            </div>
+            <div class="bg-white p-2.5 doodle-border-sm border-t-4 border-amber-500">
+              <span class="font-bold text-amber-700 block mb-1">LABORATORY:</span>
+              <ul class="list-decimal list-inside space-y-1 text-slate-600">
+                <li>Keep thermometer held <span class="font-bold">completely vertical</span>.</li>
+                <li>Bulb must NOT touch container bottom or sides.</li>
+                <li>Read with eye level aligned with liquid top.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Concept 8: Curious Facts & Meteorologist Tribute -->
+        <div class="doodle-card p-5 bg-indigo-50 transform rotate-[1deg]">
+          <h2 class="text-2xl font-bold text-slate-800 mb-3 border-b-2 border-slate-800 pb-1">
+            <i class="fa-solid fa-lightbulb text-indigo-500 mr-2"></i>Curious Science Facts
+          </h2>
+          <div class="space-y-3 text-sm font-semibold">
+            <div class="bg-white p-3 doodle-border-sm">
+              <p class="text-indigo-900"><i class="fa-solid fa-mountain text-indigo-500 mr-1"></i> Altitude effect on Boiling:</p>
+              <p class="text-slate-600 text-xs mt-1">Water boils at lower temperatures at high altitudes. In Shillong, water boils at <span class="font-bold text-indigo-600">~98 &deg;C</span> instead of the standard 100 &deg;C due to lower atmospheric pressure!</p>
+            </div>
+            <div class="bg-white p-3 doodle-border-sm">
+              <p class="text-indigo-900"><i class="fa-solid fa-wind text-indigo-500 mr-1"></i> Anna Mani (1918 - 2001):</p>
+              <p class="text-slate-600 text-xs mt-1">Known as the <span class="highlight-cyan font-bold">"Weather Woman of India"</span>. She designed &amp; manufactured multiple advanced weather monitoring instruments, and championed wind and solar energy studies in India.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Summary Sheet Footer / Key Highlights Bar -->
+    <div class="doodle-card bg-slate-900 text-white p-4 mt-8 flex flex-wrap justify-around items-center gap-4 text-center transform rotate-[-0.3deg]">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-star text-yellow-400 text-xl"></i>
+        <span class="text-lg font-bold">SI Unit: kelvin (K)</span>
+      </div>
+      <div class="flex items-center gap-2 border-l border-slate-700 pl-4">
+        <i class="fa-solid fa-heartbeat text-rose-400 text-xl"></i>
+        <span class="text-lg font-bold">Body Normal: 37 &deg;C / 98.6 &deg;F</span>
+      </div>
+      <div class="flex items-center gap-2 border-l border-slate-700 pl-4">
+        <i class="fa-solid fa-circle-minus text-blue-400 text-xl"></i>
+        <span class="text-lg font-bold">Lab Range: -10 &deg;C to 110 &deg;C</span>
+      </div>
+      <div class="flex items-center gap-2 border-l border-slate-700 pl-4">
+        <i class="fa-solid fa-bolt text-amber-400 text-xl"></i>
+        <span class="text-lg font-bold">Melting/Boiling Temp: Constant!</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Dynamic Export Script and Button -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '7._Temperature_and_its_Measurement.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

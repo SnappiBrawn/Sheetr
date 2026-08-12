@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materials Around Us</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Font: Kalam (Handwritten) -->
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Kalam', cursive;
+      background-color: #fafaf9;
+      /* Grid paper effect */
+      background-image: 
+        linear-gradient(#e2e8f0 1px, transparent 1px),
+        linear-gradient(90deg, #e2e8f0 1px, transparent 1px);
+      background-size: 20px 20px;
+      color: #1e293b;
+    }
+
+    /* Hand-drawn card aesthetic */
+    .doodle-card {
+      background: #ffffff;
+      border: 3px solid #0f172a;
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      box-shadow: 6px 6px 0px #0f172a;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .doodle-card:hover {
+      transform: scale(1.02) rotate(0.5deg) !important;
+      box-shadow: 8px 8px 0px #0f172a;
+    }
+
+    /* Sticky tape effect */
+    .tape {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-2deg);
+      width: 100px;
+      height: 25px;
+      background-color: rgba(254, 240, 138, 0.7); /* translucent yellow */
+      border-left: 3px dashed rgba(234, 179, 8, 0.4);
+      border-right: 3px dashed rgba(234, 179, 8, 0.4);
+      box-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+      z-index: 10;
+    }
+
+    .tape-pink {
+      background-color: rgba(251, 207, 232, 0.7);
+      border-left: 3px dashed rgba(244, 114, 182, 0.4);
+      border-right: 3px dashed rgba(244, 114, 182, 0.4);
+    }
+
+    /* Hand-drawn underline highlight */
+    .highlight {
+      background: linear-gradient(120deg, #fef08a 0%, #fef08a 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 40%;
+      background-position: 0 88%;
+    }
+
+    .highlight-green {
+      background: linear-gradient(120deg, #bbf7d0 0%, #bbf7d0 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 40%;
+      background-position: 0 88%;
+    }
+
+    .highlight-blue {
+      background: linear-gradient(120deg, #bfdbfe 0%, #bfdbfe 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 40%;
+      background-position: 0 88%;
+    }
+
+    /* Realistic binder rings at the top */
+    .notebook-header {
+      border-bottom: 4px dashed #94a3b8;
+    }
+  </style>
+</head>
+<body class="p-4 md:p-8 min-h-screen relative">
+
+  <!-- Left margin red line to simulate notebook paper -->
+  <div class="fixed top-0 left-6 md:left-12 w-0.5 h-full bg-red-400 opacity-40 z-0 pointer-events-none"></div>
+  <div class="fixed top-0 left-8 md:left-14 w-0.5 h-full bg-red-400 opacity-20 z-0 pointer-events-none"></div>
+
+  <!-- Main Sheet Container -->
+  <div class="max-w-7xl mx-auto relative z-10">
+    
+    <!-- HEADER SECTION -->
+    <header class="text-center mb-10 mt-4 relative">
+      <div class="inline-block bg-white border-4 border-slate-900 px-6 py-4 rounded-xl shadow-lg transform -rotate-1">
+        <div class="flex items-center justify-center gap-3">
+          <i class="fa-solid fa-flask text-teal-600 text-3xl md:text-4xl animate-bounce"></i>
+          <h1 class="text-3xl md:text-5xl font-bold text-slate-900 tracking-wide">
+            6. Materials Around Us
+          </h1>
+          <i class="fa-solid fa-magnifying-glass text-amber-500 text-3xl"></i>
+        </div>
+        <p class="text-md md:text-lg text-slate-600 mt-2 font-semibold">
+          <i class="fa-solid fa-pencil"></i> Grade 6 Science &bull; Interactive Revision Doodle Sheet
+        </p>
+      </div>
+    </header>
+
+    <!-- MAIN DENSE GRID LAYOUT -->
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- CARD 1: WHAT IS A MATERIAL? & MATTER -->
+      <section class="doodle-card p-6 transform rotate-[-0.5deg] bg-amber-50">
+        <div class="tape"></div>
+        <h2 class="text-2xl font-bold mb-4 text-slate-900 border-b-2 border-slate-900 pb-1 flex items-center gap-2">
+          <i class="fa-solid fa-box text-amber-600"></i> Matter vs. Material
+        </h2>
+        
+        <div class="space-y-4 text-lg">
+          <div>
+            <span class="highlight font-bold text-xl">Matter:</span>
+            <p class="text-slate-700 leading-relaxed">
+              Anything that <span class="font-bold text-red-600">occupies space</span> and has <span class="font-bold text-red-600">mass</span>. 
+              <br><em class="text-sm text-slate-500">(e.g., Water, sand, pebbles, air, cup)</em>
+            </p>
+          </div>
+
+          <div class="border-t-2 border-dashed border-slate-300 pt-3">
+            <span class="highlight-green font-bold text-xl">Material:</span>
+            <p class="text-slate-700 leading-relaxed">
+              Any substance used to <span class="font-bold">create or make</span> objects.
+            </p>
+            <div class="bg-white border-2 border-slate-900 rounded p-2 mt-2 text-sm">
+              <span class="font-bold"><i class="fa-solid fa-code-compare"></i> One Object &rarr; Multiple Materials:</span>
+              <p>A <span class="underline">Tumbler</span> can be made of: Glass, Plastic, Metal, or Wood!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARD 2: HOW TO GROUP MATERIALS (CLASSIFICATION) -->
+      <section class="doodle-card p-6 transform rotate-[0.5deg] bg-blue-50">
+        <div class="tape tape-pink"></div>
+        <h2 class="text-2xl font-bold mb-4 text-slate-900 border-b-2 border-slate-900 pb-1 flex items-center gap-2">
+          <i class="fa-solid fa-layer-group text-blue-600"></i> Classification
+        </h2>
+        <p class="text-lg mb-3">
+          The method of arranging objects into groups based on a <span class="highlight-blue font-bold">common property</span> they share.
+        </p>
+        <div class="bg-white border-2 border-slate-900 p-3 rounded-lg">
+          <p class="font-bold text-md mb-2 text-slate-800"><i class="fa-solid fa-filter"></i> Sorting Parameters:</p>
+          <ul class="grid grid-cols-2 gap-2 text-sm font-semibold">
+            <li class="flex items-center gap-1"><i class="fa-solid fa-circle text-red-500"></i> Shape</li>
+            <li class="flex items-center gap-1"><i class="fa-solid fa-palette text-purple-500"></i> Colour</li>
+            <li class="flex items-center gap-1"><i class="fa-solid fa-hammer text-slate-600"></i> Hardness</li>
+            <li class="flex items-center gap-1"><i class="fa-solid fa-wand-magic-sparkles text-yellow-500"></i> Lustre (Shine)</li>
+          </ul>
+        </div>
+        <p class="text-xs text-slate-500 mt-4 italic">
+          *Grouping helps us study and observe patterns in the properties of things.
+        </p>
+      </section>
+
+      <!-- CARD 3: PHYSICAL PROPERTIES (APPEARANCE & HARDNESS) -->
+      <section class="doodle-card p-6 transform rotate-[-0.3deg] bg-green-50">
+        <div class="tape"></div>
+        <h2 class="text-2xl font-bold mb-4 text-slate-900 border-b-2 border-slate-900 pb-1 flex items-center gap-2">
+          <i class="fa-solid fa-eye text-green-600"></i> Appearance & Hardness
+        </h2>
+        
+        <div class="space-y-4 text-lg">
+          <div>
+            <h3 class="font-bold text-lg text-green-800">1. Lustre (Shiny vs Dull)</h3>
+            <ul class="list-disc pl-5 text-sm space-y-1 mt-1">
+              <li><span class="font-bold">Lustrous (Shiny):</span> Metals like Iron, Copper, Aluminium, Gold.</li>
+              <li><span class="font-bold">Non-Lustrous:</span> Paper, Wood, Rubber, Chalk.</li>
+            </ul>
+            <div class="bg-yellow-100 border border-yellow-400 rounded p-2 mt-2 text-xs italic">
+              <i class="fa-solid fa-triangle-exclamation text-amber-600"></i> Metals can lose their shine over time due to the action of <strong>air & moisture</strong>! Look at freshly cut surfaces!
+            </div>
+          </div>
+
+          <div class="border-t-2 border-dashed border-slate-300 pt-3">
+            <h3 class="font-bold text-lg text-green-800">2. Hardness (Hard vs Soft)</h3>
+            <ul class="list-disc pl-5 text-sm space-y-1 mt-1">
+              <li><span class="font-bold">Hard:</span> Difficult to compress or scratch (e.g., Stone, Metal Key, Brick).</li>
+              <li><span class="font-bold">Soft:</span> Easily compressed or scratched (e.g., Sponge, Eraser).</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARD 4: TRANSPARENCY (SEEING THROUGH) -->
+      <section class="doodle-card p-6 transform rotate-[0.4deg] bg-purple-50">
+        <div class="tape tape-pink"></div>
+        <h2 class="text-2xl font-bold mb-4 text-slate-900 border-b-2 border-slate-900 pb-1 flex items-center gap-2">
+          <i class="fa-solid fa-binoculars text-purple-600"></i> Transparency
+        </h2>
+        
+        <div class="space-y-4">
+          <div class="flex items-start gap-3 bg-white p-2 border-2 border-slate-900 rounded">
+            <div class="bg-blue-200 text-blue-800 font-bold p-1 rounded text-xs">CLEAR</div>
+            <div>
+              <h4 class="font-bold text-md text-slate-900">Transparent</h4>
+              <p class="text-xs text-slate-600">Things seen clearly. (e.g., Glass, Water, Air, Cellophane)</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 bg-white p-2 border-2 border-slate-900 rounded">
+            <div class="bg-yellow-200 text-yellow-800 font-bold p-1 rounded text-xs">HAZY</div>
+            <div>
+              <h4 class="font-bold text-md text-slate-900">Translucent</h4>
+              <p class="text-xs text-slate-600">Things seen, but not clearly. (e.g., Butter paper, Frosted glass)</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 bg-white p-2 border-2 border-slate-900 rounded">
+            <div class="bg-red-200 text-red-800 font-bold p-1 rounded text-xs">BLOCK</div>
+            <div>
+              <h4 class="font-bold text-md text-slate-900">Opaque</h4>
+              <p class="text-xs text-slate-600">Cannot see through at all. (e.g., Wood, Cardboard, Metals)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 bg-purple-100 border border-purple-400 p-2 rounded text-center">
+          <span class="font-bold text-xs"><i class="fa-solid fa-circle-question"></i> Is water transparent?</span>
+          <p class="text-xs text-slate-700 font-semibold">Yes! But it can be made opaque (e.g. by mixing mud/paint).</p>
+        </div>
+      </section>
+
+      <!-- CARD 5: SOLUBILITY IN WATER -->
+      <section class="doodle-card p-6 transform rotate-[-0.6deg] bg-teal-50">
+        <div class="tape"></div>
+        <h2 class="text-2xl font-bold mb-4 text-slate-900 border-b-2 border-slate-900 pb-1 flex items-center gap-2">
+          <i class="fa-solid fa-glass-water text-teal-600"></i> Solubility in Water
+        </h2>
+        
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white p-3 border-2 border-slate-900 rounded">
+            <h4 class="font-bold text-teal-800 border-b border-slate-300 pb-1"><i class="fa-solid fa-circle-check"></i> Soluble</h4>
+            <p class="text-xs text-slate-600 mt-1">Disappears completely in water.</p>
+            <p class="text-xs font-bold text-slate-900 mt-1">Sugar, Salt, Oxygen Gas.</p>
+          </div>
+
+          <div class="bg-white p-3 border-2 border-slate-900 rounded">
+            <h4 class="font-bold text-red-800 border-b border-slate-300 pb-1"><i class="fa-solid fa-circle-xmark"></i> Insoluble</h4>
+            <p class="text-xs text-slate-600 mt-1">Does not disappear even after stirring.</p>
+            <p class="text-xs font-bold text-slate-900 mt-1">Sand, Sawdust, Chalk, Oil.</p>
+          </div>
+        </div>
+
+        <!-- ORS Recipe Feature Box -->
+        <div class="mt-4 bg-yellow-100 border-2 border-slate-900 p-3 rounded-lg">
+          <h4 class="font-bold text-sm text-yellow-900 flex items-center gap-1">
+            <i class="fa-solid fa-prescription-bottle-medical text-red-500"></i> Make Your Own ORS!
+          </h4>
+          <p class="text-xs text-slate-700 mt-1">
+            <strong>Oral Rehydration Solution</strong> (helps treat severe dehydration due to diarrhoea):
+          </p>
+          <div class="text-xs mt-2 bg-white px-2 py-1 rounded border border-yellow-300 font-bold text-slate-800">
+            1 Litre Boiled Water + 6 tsp Sugar + 0.5 tsp Common Salt
+          </div>
+        </div>
+      </section>
+
+      <!-- CARD 6: MEASURING MATTER (MASS & VOLUME) -->
+      <section class="doodle-card p-6 transform rotate-[0.2deg] bg-rose-50">
+        <div class="tape tape-pink"></div>
+        <h2 class="text-2xl font-bold mb-4 text-slate-900 border-b-2 border-slate-900 pb-1 flex items-center gap-2">
+          <i class="fa-solid fa-scale-balanced text-rose-600"></i> Mass & Volume Basics
+        </h2>
+
+        <div class="space-y-4 text-sm">
+          <!-- Mass -->
+          <div class="bg-white p-3 border-2 border-slate-900 rounded-lg">
+            <h3 class="font-bold text-lg text-rose-800 flex justify-between items-center">
+              <span>Mass</span>
+              <span class="text-xs bg-rose-100 px-2 py-0.5 rounded text-rose-900">SI Unit: kg</span>
+            </h3>
+            <p class="text-slate-700">Quantity of matter present in an object.</p>
+            <ul class="list-disc pl-4 mt-1 text-xs text-slate-600">
+              <li>Measured in: gram (g), kilogram (kg).</li>
+              <li>Space format: Leave a space between number and unit (e.g., <span class="underline">7 kg</span>, not 7kg).</li>
+            </ul>
+          </div>
+
+          <!-- Volume -->
+          <div class="bg-white p-3 border-2 border-slate-900 rounded-lg">
+            <h3 class="font-bold text-lg text-blue-800 flex justify-between items-center">
+              <span>Volume</span>
+              <span class="text-xs bg-blue-100 px-2 py-0.5 rounded text-blue-900">SI Unit: m&sup3;</span>
+            </h3>
+            <p class="text-slate-700">The space occupied by matter.</p>
+            <ul class="list-disc pl-4 mt-1 text-xs text-slate-600">
+              <li>Measured in: Litre (L), Millilitre (mL), Cubic Metre (m&sup3;).</li>
+              <li>Conversion: <span class="font-bold text-slate-950">1 m&sup3; = 1000 L</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARD 7: HISTORICAL FACTS & ANCIENT WISDOM -->
+      <section class="doodle-card p-6 transform rotate-[-0.5deg] bg-orange-50 lg:col-span-3">
+        <div class="tape"></div>
+        <h2 class="text-2xl font-bold mb-4 text-slate-900 border-b-2 border-slate-900 pb-1 flex items-center gap-2">
+          <i class="fa-solid fa-landmark text-orange-600"></i> Ancient Wisdom & Pottery History
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Left Col: Pottery -->
+          <div class="bg-white p-4 border-2 border-slate-900 rounded-lg">
+            <h4 class="font-bold text-orange-800 flex items-center gap-1">
+              <i class="fa-solid fa-faucet-drip"></i> Earliest Pottery (7,000 to 8,000 years old)
+            </h4>
+            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+              Found in the Ganga plains (Lahuradewa) and Baluchistan (Mehrgarh). 
+              Baked clay pottery is called <span class="font-bold text-slate-800">terracotta</span>. Used for cooking and storage of food grains, oils, ghee.
+            </p>
+          </div>
+
+          <!-- Right Col: Ayurveda -->
+          <div class="bg-white p-4 border-2 border-slate-900 rounded-lg">
+            <h4 class="font-bold text-emerald-800 flex items-center gap-1">
+              <i class="fa-solid fa-leaf"></i> Ayurvedic 10 Pairs of Opposites (Gu&ntilde;as)
+            </h4>
+            <p class="text-xs text-slate-500 mb-2">From Ashtanga Hridaya Sutrasthana - used to describe physical matter:</p>
+            <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-xs font-bold text-slate-700">
+              <div>(i) guru (heavy) &times; laghu (light)</div>
+              <div>(ii) manda (slow) &times; tikshna (quick)</div>
+              <div>(iii) hima (cold) &times; ushna (hot)</div>
+              <div>(iv) snigdha (unctous) &times; ruksha (dry)</div>
+              <div>(v) shlakshana (smooth) &times; khara (rough)</div>
+              <div>(vi) sandra (solid) &times; drava (liquid)</div>
+              <div>(vii) mridu (soft) &times; kathina (hard)</div>
+              <div>(viii) sthira (stable) &times; khala (mobile)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER SIGN-OFF -->
+    <footer class="text-center mt-12 mb-20 text-slate-500 font-semibold">
+      <p>Made with <i class="fa-solid fa-heart text-red-500"></i> for Grade 6 Explorers &bull; Study Hard, Stay Curious!</p>
+    </footer>
+
+  </div>
+
+  <!-- DYNAMIC EXPORT BUTTON -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '6._Materials_Around_Us.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>

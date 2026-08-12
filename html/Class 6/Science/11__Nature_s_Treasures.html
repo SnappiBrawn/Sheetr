@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Treasures</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Patrick Hand & Kalam -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Global handwritten styles */
+        body {
+            font-family: 'Patrick Hand', 'Kalam', cursive;
+            background-color: #faf9f2;
+            background-image: 
+                linear-gradient(rgba(18, 107, 214, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(18, 107, 214, 0.08) 1px, transparent 1px);
+            background-size: 20px 20px;
+            min-height: 100vh;
+        }
+
+        /* Lined paper margin line */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 50px;
+            width: 2px;
+            height: 100%;
+            background-color: rgba(239, 68, 68, 0.4);
+            z-index: -1;
+        }
+
+        /* Hand-drawn organic cards style */
+        .sketchy-card {
+            border: 3px solid #1e293b;
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            box-shadow: 4px 4px 0px #1e293b;
+            background-color: #ffffff;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .sketchy-card:hover {
+            transform: translate(-2px, -2px) rotate(0deg) !important;
+            box-shadow: 6px 6px 0px #1e293b;
+        }
+
+        /* Highlight markers */
+        .highlight-yellow {
+            background: linear-gradient(120deg, #fef08a 0%, #fef08a 100%);
+            padding: 0px 4px;
+            border-radius: 4px;
+        }
+
+        .highlight-green {
+            background: linear-gradient(120deg, #bbf7d0 0%, #bbf7d0 100%);
+            padding: 0px 4px;
+            border-radius: 4px;
+        }
+
+        .highlight-blue {
+            background: linear-gradient(120deg, #bfdbfe 0%, #bfdbfe 100%);
+            padding: 0px 4px;
+            border-radius: 4px;
+        }
+
+        /* Sticky Tape effect */
+        .sticky-tape {
+            background-color: rgba(253, 224, 71, 0.6);
+            transform: rotate(-3deg);
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12 text-slate-800 selection:bg-yellow-200">
+
+    <!-- Header Section -->
+    <header class="relative max-w-7xl mx-auto mb-10 text-center z-10">
+        <!-- Sticky Tape Decoration -->
+        <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-40 h-8 sticky-tape border-dashed border border-yellow-400"></div>
+        
+        <div class="inline-block bg-emerald-100 border-4 border-slate-800 p-6 rounded-3xl transform -rotate-1 shadow-lg max-w-full">
+            <h1 class="text-4xl md:text-6xl font-bold text-emerald-800 uppercase tracking-wide">
+                <i class="fa-solid fa-leaf text-emerald-600 mr-2"></i>11. Nature's Treasures<i class="fa-solid fa-seedling text-emerald-600 ml-2"></i>
+            </h1>
+            <p class="text-xl md:text-2xl text-emerald-900 mt-2 font-semibold">
+                An Ultimate Hand-Drawn Guide to Earth's Vital Resources!
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Cheat Sheet Grid Layout -->
+    <main class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start pb-24">
+        
+        <!-- CARD 1: THE AIR WE BREATHE -->
+        <div class="sketchy-card p-6 transform rotate-1 bg-sky-50">
+            <span class="text-xs font-bold uppercase tracking-wider bg-sky-200 text-sky-800 px-2 py-1 rounded border border-sky-400 float-right">Topic 11.1</span>
+            <h2 class="text-2xl font-bold text-sky-900 mb-3"><i class="fa-solid fa-wind mr-2"></i> 11.1 Air around Us</h2>
+            
+            <p class="mb-3 text-lg leading-snug">We can survive without food or water for days, but <span class="highlight-yellow font-bold">cannot survive without oxygen</span> for even a few minutes!</p>
+            
+            <!-- Air composition interactive visual -->
+            <div class="bg-white p-3 rounded-xl border-2 border-slate-800 mb-4">
+                <h3 class="text-lg font-semibold text-slate-700 mb-2 text-center">Composition of Air (10x10 Grid)</h3>
+                <div class="flex justify-center items-center gap-4">
+                    <!-- 10x10 Grid representing air components -->
+                    <div class="grid grid-cols-10 gap-0.5 w-24 h-24 border-2 border-slate-800 bg-slate-100 p-0.5">
+                        <!-- 78 Nitrogen (Blue) -->
+                        <div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div>
+                        <div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div>
+                        <div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div>
+                        <div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div>
+                        <div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div>
+                        <div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div>
+                        <div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div>
+                        <div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div><div class="bg-sky-400 rounded-sm"></div>
+                        <!-- 21 Oxygen (Red) -->
+                        <div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div>
+                        <div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div>
+                        <div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div><div class="bg-rose-400 rounded-sm"></div>
+                        <!-- 1 Others (Pink) -->
+                        <div class="bg-amber-400 rounded-sm"></div>
+                    </div>
+                    <div class="text-sm font-semibold">
+                        <p class="text-sky-600"><span class="inline-block w-3 h-3 bg-sky-400 rounded-sm mr-1"></span> Nitrogen: 78%</p>
+                        <p class="text-rose-600"><span class="inline-block w-3 h-3 bg-rose-400 rounded-sm mr-1"></span> Oxygen: 21%</p>
+                        <p class="text-amber-600"><span class="inline-block w-3 h-3 bg-amber-400 rounded-sm mr-1"></span> Argon, CO2, others: 1%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t-2 border-dashed border-sky-300 pt-3">
+                <p class="text-sm italic text-sky-800"><i class="fa-solid fa-circle-exclamation mr-1"></i> <strong>Note:</strong> Moving air is called <strong>wind</strong>. We can see its presence when leaves rustle or paper pinwheels (firki) rotate!</p>
+            </div>
+        </div>
+
+        <!-- CARD 2: WIND ENERGY -->
+        <div class="sketchy-card p-6 transform -rotate-1 bg-amber-50">
+            <span class="text-xs font-bold uppercase tracking-wider bg-amber-200 text-amber-800 px-2 py-1 rounded border border-amber-400 float-right">Windmills</span>
+            <h2 class="text-2xl font-bold text-amber-900 mb-3"><i class="fa-solid fa-fan mr-2 animate-spin"></i> Wind Power</h2>
+            
+            <p class="text-lg mb-4">Windmills operate on the same principle as a paper <span class="highlight-yellow">firki</span>. They are used to:</p>
+            
+            <ul class="space-y-2 text-md mb-4 font-semibold">
+                <li><i class="fa-solid fa-circle-arrow-right text-amber-600"></i> Run flour mills</li>
+                <li><i class="fa-solid fa-circle-arrow-right text-amber-600"></i> Pump underground water</li>
+                <li><i class="fa-solid fa-circle-arrow-right text-amber-600"></i> Generate clean electricity</li>
+            </ul>
+
+            <div class="bg-amber-100 p-3 rounded-xl border-2 border-slate-800">
+                <h3 class="font-bold text-amber-900 text-lg mb-1"><i class="fa-solid fa-location-dot mr-1"></i> Leading Wind Farms in India:</h3>
+                <ul class="text-sm space-y-1">
+                    <li>&bull; <strong class="text-amber-800">Muppandal Wind Farm</strong> - Tamil Nadu</li>
+                    <li>&bull; <strong class="text-amber-800">Jaisalmer Wind Park</strong> - Rajasthan</li>
+                    <li>&bull; <strong class="text-amber-800">Brahmanvel Wind Farm</strong> - Maharashtra</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CARD 3: WATER: THE ELIXIR OF LIFE -->
+        <div class="sketchy-card p-6 transform rotate-1 bg-blue-50">
+            <span class="text-xs font-bold uppercase tracking-wider bg-blue-200 text-blue-800 px-2 py-1 rounded border border-blue-400 float-right">11.2 Water</span>
+            <h2 class="text-2xl font-bold text-blue-900 mb-3"><i class="fa-solid fa-droplet mr-2 text-blue-500"></i> 11.2 Water Wisdom</h2>
+            
+            <div class="bg-blue-100 p-3 rounded-lg border-2 border-slate-800 mb-3 text-center">
+                <p class="text-lg font-bold text-blue-900"><i class="fa-solid fa-earth-americas text-blue-600 mr-1"></i> ~2/3 of Earth is covered by water!</p>
+            </div>
+
+            <div class="space-y-2 mb-4 text-md">
+                <p>🌊 <strong class="text-blue-800">Saline Water:</strong> Found in oceans & seas. Unfit for domestic, industrial, or farming use.</p>
+                <p>❄️ <strong class="text-blue-800">Freshwater:</strong> Locked in ice sheets, snow, rivers, lakes, and underground. Extremely precious!</p>
+            </div>
+
+            <div class="bg-yellow-50 p-3 rounded-xl border-2 border-slate-800">
+                <h3 class="font-bold text-slate-800"><i class="fa-solid fa-bucket mr-1 text-amber-500"></i> Rainwater Harvesting (RWH)</h3>
+                <p class="text-sm mb-2">Traditional methods collect rainwater directly to combat scarcity:</p>
+                <div class="grid grid-cols-2 gap-2 text-center text-xs font-bold">
+                    <div class="bg-amber-100 p-1 rounded border border-slate-700">BAWADI<br><span class="text-slate-600">(Rajasthan)</span></div>
+                    <div class="bg-amber-100 p-1 rounded border border-slate-700">VAV<br><span class="text-slate-600">(Gujarat)</span></div>
+                </div>
+            </div>
+
+            <div class="mt-3 text-center">
+                <p class="text-xs font-bold bg-blue-600 text-white inline-block px-3 py-1 rounded-full"><i class="fa-solid fa-calendar-day mr-1"></i> World Water Day: 22nd March</p>
+            </div>
+        </div>
+
+        <!-- CARD 4: ENERGY FROM THE SUN -->
+        <div class="sketchy-card p-6 transform -rotate-1 bg-yellow-50">
+            <span class="text-xs font-bold uppercase tracking-wider bg-yellow-200 text-yellow-800 px-2 py-1 rounded border border-yellow-400 float-right">11.3 Sun</span>
+            <h2 class="text-2xl font-bold text-yellow-950 mb-3"><i class="fa-solid fa-sun mr-2 text-yellow-500 animate-pulse"></i> 11.3 Solar Energy</h2>
+            
+            <p class="text-lg mb-3">The <span class="highlight-yellow font-bold">Sun is the ultimate source of energy</span> on Earth. All plants and animals depend directly or indirectly on it.</p>
+
+            <div class="bg-white p-3 rounded-xl border-2 border-slate-800 mb-4 text-sm">
+                <h4 class="font-bold text-yellow-900 mb-1"><i class="fa-solid fa-circle-question mr-1"></i> How is Solar Energy Captured?</h4>
+                <ul class="space-y-1">
+                    <li>☀️ <strong class="text-yellow-800">Direct Heat:</strong> Solar cookers, drying clothes & crops (e.g., chillies, mangoes).</li>
+                    <li>⚡ <strong class="text-yellow-800">Solar Panels:</strong> Capture sunlight & convert it into electricity for households, street lights, and traffic signals.</li>
+                </ul>
+            </div>
+
+            <div class="p-2 bg-emerald-50 rounded-lg border border-emerald-300 text-xs text-center text-emerald-800 font-semibold">
+                💚 "Plants prepare food via photosynthesis using sunlight. Animals eat plants. Thus, even a grass-eating cow depends on the Sun!"
+            </div>
+        </div>
+
+        <!-- CARD 5: FORESTS & CONSERVATION -->
+        <div class="sketchy-card p-6 transform rotate-1 bg-emerald-50">
+            <span class="text-xs font-bold uppercase tracking-wider bg-emerald-200 text-emerald-800 px-2 py-1 rounded border border-emerald-400 float-right">11.4 Forests</span>
+            <h2 class="text-2xl font-bold text-emerald-950 mb-3"><i class="fa-solid fa-tree mr-2 text-emerald-600"></i> 11.4 Forests & Nature</h2>
+            
+            <p class="mb-3 text-lg leading-snug">Forests are large areas with <span class="highlight-green">dense growth of plants</span> providing food and shelter to wildlife.</p>
+
+            <div class="bg-white p-3 rounded-xl border-2 border-slate-800 space-y-2 mb-3">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">🌱</span>
+                    <div>
+                        <h4 class="font-bold text-emerald-800 text-sm">Van Mahotsav</h4>
+                        <p class="text-xs text-slate-600">A week-long tree plantation festival celebrated across India in July.</p>
+                    </div>
+                </div>
+                <hr class="border-slate-200">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">🤝</span>
+                    <div>
+                        <h4 class="font-bold text-emerald-800 text-sm">Chipko Movement</h4>
+                        <p class="text-xs text-slate-600">Started in the early 1970s in Uttarakhand. Brave local women hugged trees to prevent them from being felled!</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-xs text-emerald-800 font-bold italic"><i class="fa-solid fa-quote-left mr-1"></i> Traditions forbid plucking certain fruits; they are left entirely for forest animals and birds!</p>
+        </div>
+
+        <!-- CARD 6: SOIL & ROCKS -->
+        <div class="sketchy-card p-6 transform -rotate-1 bg-stone-100">
+            <span class="text-xs font-bold uppercase tracking-wider bg-stone-300 text-stone-800 px-2 py-1 rounded border border-stone-400 float-right">11.5 Soil</span>
+            <h2 class="text-2xl font-bold text-stone-900 mb-3"><i class="fa-solid fa-mountain-sun mr-2 text-amber-700"></i> 11.5 Soil & Rocks</h2>
+            
+            <p class="mb-3 text-sm"><strong>Soil Formation:</strong> Formed by the <span class="highlight-yellow">disintegration (breaking apart) of rocks</span> via the actions of the Sun, water, wind, and organisms over thousands of years!</p>
+
+            <div class="bg-amber-50 p-2 rounded-lg border border-amber-300 mb-3">
+                <p class="text-xs font-bold text-amber-900"><i class="fa-solid fa-bug mr-1"></i> Earthworms are natural tillers!</p>
+                <p class="text-[11px] text-amber-800">They help loosen the soil, creating air spaces for plant roots to grow smoothly.</p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 text-xs">
+                <div class="p-2 bg-white rounded border border-slate-700">
+                    <h5 class="font-bold text-stone-700"><i class="fa-solid fa-house mr-1"></i> Rocks Used</h5>
+                    <p>Slate (roofing), laterite (bricks), granite, sandstone, marble (sculptures/construction).</p>
+                </div>
+                <div class="p-2 bg-white rounded border border-slate-700">
+                    <h5 class="font-bold text-stone-700"><i class="fa-solid fa-gem mr-1"></i> Minerals Extracted</h5>
+                    <p>Aluminium, Gold, Copper, Iron, Silver, Cobalt (vital for mobile phones!).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 7: FOSSIL FUELS -->
+        <div class="sketchy-card p-6 transform rotate-1 bg-red-50">
+            <span class="text-xs font-bold uppercase tracking-wider bg-red-200 text-red-800 px-2 py-1 rounded border border-red-400 float-right">11.6 Fuels</span>
+            <h2 class="text-2xl font-bold text-red-950 mb-3"><i class="fa-solid fa-fire-flame-curved mr-2 text-red-500"></i> 11.6 Fossil Fuels</h2>
+            
+            <p class="mb-3 text-sm">Formed from the <span class="highlight-yellow">remains of microorganisms and plants</span> buried deep inside the Earth over millions of years.</p>
+
+            <div class="bg-white p-3 rounded-xl border-2 border-slate-800 space-y-2 text-xs mb-3">
+                <div class="flex justify-between items-center bg-stone-100 p-1 rounded">
+                    <span class="font-bold">🪨 Coal</span>
+                    <span>Electricity production & factories</span>
+                </div>
+                <div class="flex justify-between items-center bg-stone-100 p-1 rounded">
+                    <span>⛽ Petrol & Diesel</span>
+                    <span class="font-bold text-right">Extracted from petroleum</span>
+                </div>
+                <div class="flex justify-between items-center bg-stone-100 p-1 rounded">
+                    <span class="font-bold">💨 Natural Gas / CNG</span>
+                    <span>Clean fuel for cooking & vehicles</span>
+                </div>
+            </div>
+
+            <div class="p-2 bg-green-100 rounded border border-green-400 text-[11px] text-green-800 font-semibold">
+                💡 <strong>CNG & LPG:</strong> Modern eco-friendly alternatives that have gradually replaced highly polluting fuels like coal, wood, and dung cakes in households.
+            </div>
+        </div>
+
+        <!-- CARD 8: RENEWABLE VS NON-RENEWABLE -->
+        <div class="sketchy-card p-6 transform -rotate-1 bg-violet-50">
+            <span class="text-xs font-bold uppercase tracking-wider bg-violet-200 text-violet-800 px-2 py-1 rounded border border-violet-400 float-right">11.7 Classes</span>
+            <h2 class="text-2xl font-bold text-violet-950 mb-3"><i class="fa-solid fa-arrows-spin mr-2"></i> 11.7 Natural Resources</h2>
+
+            <div class="grid grid-cols-2 gap-3 mb-2 text-xs">
+                <!-- Renewable -->
+                <div class="bg-emerald-100 p-3 rounded-xl border-2 border-slate-800">
+                    <h4 class="font-bold text-emerald-900 text-sm mb-1"><i class="fa-solid fa-rotate-left"></i> Renewable</h4>
+                    <p class="mb-2">Get renewed or restored by natural processes within a short span of time.</p>
+                    <p class="font-bold text-emerald-800">☀️ Air, Water, Forest</p>
+                </div>
+                <!-- Non-Renewable -->
+                <div class="bg-rose-100 p-3 rounded-xl border-2 border-slate-800">
+                    <h4 class="font-bold text-rose-900 text-sm mb-1"><i class="fa-solid fa-ban"></i> Non-Renewable</h4>
+                    <p class="mb-2">Exist in limited quantities and take millions of years to form.</p>
+                    <p class="font-bold text-rose-800">🛢️ Coal, Petrol, Minerals</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-2 rounded-lg border border-slate-400 text-[11px] italic text-center">
+                🤖 <strong>Human-made resources:</strong> Built by humans for convenience (e.g., electric bulbs, bicycles, solar panels, furniture).
+            </div>
+        </div>
+
+        <!-- CARD 9: CHIPKO / GANDHI WISDOM -->
+        <div class="sketchy-card p-6 transform rotate-1 bg-yellow-100 border-dashed">
+            <span class="text-xs font-bold uppercase tracking-wider bg-yellow-200 text-yellow-800 px-2 py-1 rounded border border-yellow-400 float-right">Key Quote</span>
+            <h2 class="text-2xl font-bold text-yellow-950 mb-3"><i class="fa-solid fa-quote-left mr-1"></i> Nature's Golden Rule</h2>
+            
+            <blockquote class="text-xl italic font-semibold text-slate-800 mb-4 mt-2">
+                "Earth provides enough to satisfy every man's need but not for every man's greed."
+            </blockquote>
+            
+            <p class="text-right text-lg font-bold text-slate-700">- M. K. Gandhi</p>
+
+            <div class="mt-4 border-t-2 border-dashed border-yellow-300 pt-3">
+                <h4 class="font-bold text-xs text-yellow-800 mb-1">🌿 HOW CAN WE PROTECT IT?</h4>
+                <div class="flex flex-wrap gap-2 text-xs">
+                    <span class="bg-white border border-slate-600 px-2 py-1 rounded">🚶‍♂️ Walk or cycle nearby</span>
+                    <span class="bg-white border border-slate-600 px-2 py-1 rounded">🚌 Use public transport</span>
+                    <span class="bg-white border border-slate-600 px-2 py-1 rounded">🚿 Reduce water wastage</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer decoration -->
+    <footer class="text-center pb-20 text-slate-500 font-bold text-sm">
+        <p>&copy; Class 6 Science Revision Sheets • Illustrated Nature Study Guide</p>
+    </footer>
+
+    <!-- Dynamic Image Generator & Download Button Code Block -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <button onclick="html2canvas(document.body, {useCORS: true, scale: 2}).then(canvas => { const link = document.createElement('a'); link.download = '11._Nature\'s_Treasures.png'; link.href = canvas.toDataURL('image/png'); link.click(); });" style="position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white; padding: 12px 24px; border-radius: 12px; font-family: sans-serif; font-weight: bold; cursor: pointer; box-shadow: 4px 4px 0px #94a3b8; border: 2px solid #0f172a; z-index: 9999;" data-html2canvas-ignore>💾 Download Image</button>
+
+</body>
+</html>
